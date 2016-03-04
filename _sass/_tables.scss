@@ -1,0 +1,92 @@
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-bottom: 1.5em;
+  margin-top: 1.25em;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid $gray-light;
+  line-height: 1.5em;
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: $gray-accent;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+tbody + tbody {
+  border-top: 2px solid $gray-light;
+}
+
+caption {
+  font-weight: bold;
+  max-width: 48em;
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.no-border {
+  th,
+  td {
+    border: 0;
+  }
+}
+
+.amt,
+.val {
+  text-align: center;
+}
+
+.table-condensed {
+  th,
+  td {
+    padding: .25em .35em;
+  }
+}
+
+// https://techblog.livingsocial.com/blog/2015/04/06/responsive-tables-in-pure-css/
+.responsive {
+  @include bp-max($small-3) {
+    border: 0;
+    display: table;
+    max-width: 100%;
+
+    thead {
+      display: none;
+    }
+
+    tr {
+      margin-bottom: .75em;
+      display: block;
+      border-bottom: 1px solid $gray-light;
+    }
+
+    td {
+      display: block;
+      text-align: right;
+      border-bottom: 1px dotted $gray-accent;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+      }
+    }
+  }
+}

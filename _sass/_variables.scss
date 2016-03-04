@@ -1,0 +1,36 @@
+
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#details-of-approach-b
+$font-family:           -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+$font-family-serif:     Georgia, Times, "Times New Roman", serif;
+$base-size:             16;
+
+$black:                 #222;
+$white:                 #fff;
+$gray:                  #666;
+$gray-light:            #ddd;
+$gray-accent:           #eee;
+$blue:                  #2f81b8;
+$purple:                #77008d;
+$purple-accent:         #eef;
+
+$link:                  $blue;
+$link-visited:          $purple;
+$link-hover:            darken($link, 5%);
+
+$content-max-width:     60em; // 960px
+
+$small:                 24em; // 384px
+$small-2:               29.75em; // 476px
+$small-3:               39.8em; // 637px
+$medium:                46.8em; // 749px
+$medium-2:              48em; // 768px
+$large:                 50em; // 800px
+$large-2:               60em; // 960px
+$large-3:               66em; // 1056px
+$xlarge:                73em; // 1168px
+$xxlarge:               89em; // 1424px
+$xxxlarge:              93em; // 1488px
+
+$sidebar-switch-point:  $large-2;
+$fixed-header-height:   3em; // 48px
+$sidebar-width:         18em; // 288px

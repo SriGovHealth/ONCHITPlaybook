@@ -1,0 +1,29 @@
+name: ONC Playbook
+description: ONC Playbook
+url: //communicatehealth.github.io
+baseurl: "/onc-playbook"
+
+port: 4000
+host: 127.0.0.1
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+lsi: false
+markdown: kramdown
+source: .
+destination: _site
+permalink: /:categories/:title/
+timezone: America/New_York
+
+feed:
+  path: feed.xml
+
+exclude: [node_modules, '.sass-cache', Gemfile, Gemfile.lock, README.md, package.json, Gruntfile.js]
+
+gems:
+- jekyll-feed
+- jekyll-redirect-from
+- jekyll-sitemap
+

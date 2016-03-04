@@ -1,0 +1,199 @@
+.full-bleed {
+  background-color: $purple-accent;
+  padding-bottom: .5em;
+  padding-top: 1em;
+}
+
+.pagination {
+  a {
+    border: 1px solid $gray-light;
+    display: inline-block;
+    padding: .25em .5em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-color: $gray-accent;
+    }
+
+    &.current {
+      background-color: $gray-accent;
+      color: $black;
+    }
+
+    span {
+      color: inherit;
+    }
+  }
+
+  span {
+    color: $gray;
+  }
+}
+
+.panel {
+  background-color: $gray-accent;
+  border: 1px solid $gray-light;
+  padding: .5em 1em;
+
+  p {
+    margin-bottom: .5em;
+    margin-top: .5em;
+  }
+}
+
+.breadcrumb {
+  margin-bottom: .4em;
+  margin-top: .4em;
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: inline;
+    padding-right: .25em;
+
+    &:after {
+      color: $gray;
+      content: '\0020\00BB';
+      padding-left: .25em;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
+}
+
+.search-nav {
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.search-label {
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.search-button {
+  background-color: $gray-light;
+  border: 1px solid $gray;
+  border-radius: 0;
+  float: right;
+  padding: .15em 0;
+  width: 25%;
+}
+
+.search-block {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.search-text {
+  border: 1px solid $gray;
+  border-radius: 0;
+  border-right: 0;
+  font-size: 1em;
+  padding: .15em .25em;
+  width: 75%;
+}
+
+.btn {
+  background-color: $gray-accent;
+  background-image: none;
+  border: 1px solid $gray-light;
+  border-radius: .25em;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0;
+  padding: .25em .75em;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: $gray-light;
+    color: $black;
+  }
+
+  &:active {
+    background-color: $gray-accent;
+    color: $black;
+  }
+}
+
+.btn-large {
+  font-size: 1.25em;
+  padding: .35em 1.5em;
+}
+
+.btn-small {
+  font-size: .8em;
+  padding: .25em .75em;
+}
+
+.btn-dark {
+  background-color: $black;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $gray;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+// match base and hover state to avoid
+// stuck hover state on touch devices
+.btn-touch {
+  background-color: $black;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  + .btn-block {
+    margin-top: .25em;
+  }
+}
+
+// Pattern library color blocks
+.colorblock {
+  border: 1px solid $black;
+  margin-bottom: 1.5em;
+  padding: .5em 1em;
+
+  @include bp($medium) {
+    float: left;
+    margin-right: 1%;
+    min-height: 10em;
+    width: 24%;
+  }
+}
+
+.color {
+  height: 4em;
+  margin: -.5em -1em 0;
+}

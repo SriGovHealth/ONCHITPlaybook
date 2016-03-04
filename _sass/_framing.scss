@@ -1,0 +1,98 @@
+.header {
+  position: absolute;
+  width: $sidebar-width;
+
+  @include bp($sidebar-switch-point) {
+    height: 100%;
+    position: fixed;
+  }
+}
+
+.site-bar {
+  @extend %clearfix;
+  background-color: $gray-light;
+  display: block;
+  height: $fixed-header-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  @include bp($sidebar-switch-point) {
+    position: relative;
+  }
+}
+
+.site-name {
+  margin-left: .75em;
+  margin-top: .75em;
+}
+
+.site-menu {
+  position: absolute;
+  right: .5em;
+  top: .5em;
+
+  @include bp($sidebar-switch-point) {
+    display: none;
+  }
+}
+
+.nav {
+  background-color: $gray-accent;
+  bottom: 0;
+  display: block;
+  left: 0;
+  margin-top: $fixed-header-height;
+  overflow: auto;
+  padding: 0 0 1em;
+  position: fixed;
+  top: 0;
+  transition: left .15s ease;
+  width: $sidebar-width;
+  z-index: 2;
+
+  @include bp($sidebar-switch-point) {
+    bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &.closed {
+    left: -$sidebar-width;
+
+    @include bp($sidebar-switch-point) {
+      left: 0;
+      position: absolute;
+    }
+  }
+}
+
+.overlay {
+  left: -18em;
+  transition: left .15s ease;
+  width: 0;
+  z-index: 1;
+
+  &.on {
+    @include bp-max($sidebar-switch-point) {
+      background-color: rgba($white, .7);
+      bottom: 0;
+      height: 100%;
+      left: $sidebar-width;
+      position: fixed;
+      right: 0;
+      top: $fixed-header-height;
+      width: 100%;
+    }
+  }
+}
+
+.page {
+  margin-top: $fixed-header-height;
+
+  @include bp($sidebar-switch-point) {
+    margin-left: $sidebar-width;
+    margin-top: 0;
+  }
+}

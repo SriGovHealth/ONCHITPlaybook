@@ -1,0 +1,9 @@
+fieldset {
+  max-width: 100%;
+  min-width: 0; // to prevent overflow
+  padding: .5em 1em;
+}
+
+input {
+  max-width: 100%; // to prevent overflow
+}

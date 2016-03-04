@@ -1,0 +1,33 @@
+<a href="#top" class="visually-hidden">Skip to content</a>
+
+<header class="header closed">
+  <div class="site-bar">
+    <div class="site-name"><a href="{{ "/" | prepend: site.baseurl }}">{{ site.name }}</a></div>
+    <div class="site-menu"><button class="btn btn-dark btn-touch">Menu</button></div>
+  </div>
+  <div class="nav closed">
+    <form class="search search-nav" accept-charset="UTF-8" action="#" method="get">
+      <p class="search-label visually-hidden"><label for="query">Search</label></p>
+      <p class="search-block"><input autocomplete="off" class="search-text" id="query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
+    </form>
+    <nav>
+      <ul>
+      {% for section in site.data.nav %}
+        {% if section.subcategories == null %}
+          <li class="group{% if page.permalink == section.permalink %} active{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}">{{ section.title }}</a></li>
+        {% else %}
+          <li class="group has-subnav{% if page.permalink == section.permalink %} active{% endif %}">
+            <a href="{{ section.permalink | prepend: site.baseurl }}">{{ section.title }}</a>
+            <a class="subnav-toggle" id="subnav-toggle-{{ section.section-name }}" aria-controls="subnav-{{ section.section-name }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.section-name }}">&#9660;</a>
+            <ul class="subnav closed" id="subnav-{{ section.section-name }}" aria-hidden="true" aria-expanded="false">
+            {% for subsection in section.subcategories %}
+              <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>
+            {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,638 @@
+---
+layout: default
+title: Style Guide
+permalink: /styleguide/
+
+---
+
+<div class="content">
+
+<h1>{{ page.title }}</h1>
+
+<p>HTML skeleton document borrowed from <a href="https://github.com/bryanbraun/poor-mans-styleguide">Poor Man&rsquo;s Styleguide</a></p>
+
+<hr>
+
+<h1 id="colors">Colors</h1>
+
+<div class="clearfix">
+  <div class="colorblock">
+    <div class="color" style="background-color:#222;"></div>
+    <p>#222<br>
+    $black</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#666;"></div>
+    <p>#666<br>
+    $gray</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#ddd;"></div>
+    <p>#ddd<br>
+    $gray-light</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#eee;"></div>
+    <p>#eee<br>
+    $gray-accent</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#2f81b8;"></div>
+    <p>#2f81b8<br>
+    $blue<br>
+    link</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#77008d;"></div>
+    <p>#77008d<br>
+    $purple<br>
+    visited link</p>
+  </div>
+  <div class="colorblock">
+    <div class="color" style="background-color:#eef;"></div>
+    <p>#eef<br>
+    $purple-accent<br>
+    code, pre background</p>
+  </div>
+</div>
+
+<hr>
+
+<h1 id="grids">Grid System</h1>
+
+
+<div class="row demo">
+  <div class="grid-12">grid-12</div>
+</div>
+<div class="row demo">
+  <div class="grid-1">grid-1</div>
+  <div class="grid-11">grid-11</div>
+</div>
+<div class="row demo">
+  <div class="grid-2">grid-2</div>
+  <div class="grid-10">grid-10</div>
+</div>
+<div class="row demo">
+  <div class="grid-3">grid-3</div>
+  <div class="grid-9">grid-9</div>
+</div>
+<div class="row demo">
+  <div class="grid-4">grid-4</div>
+  <div class="grid-8">grid-8</div>
+</div>
+<div class="row demo">
+  <div class="grid-5">grid-5</div>
+  <div class="grid-7">grid-7</div>
+</div>
+<div class="row demo">
+  <div class="grid-6">grid-6</div>
+  <div class="grid-6">grid-6</div>
+</div>
+<div class="row demo">
+  <div class="grid-7">grid-7</div>
+  <div class="grid-5">grid-5</div>
+</div>
+<div class="row demo">
+  <div class="grid-8">grid-8</div>
+  <div class="grid-4">grid-4</div>
+</div>
+<div class="row demo">
+  <div class="grid-9">grid-9</div>
+  <div class="grid-3">grid-3</div>
+</div>
+<div class="row demo">
+  <div class="grid-10">grid-10</div>
+  <div class="grid-2">grid-2</div>
+</div>
+<div class="row demo">
+  <div class="grid-11">grid-11</div>
+  <div class="grid-1">grid-1</div>
+</div>
+<div class="row demo">
+  <div class="grid-4">grid-4</div>
+  <div class="grid-4">grid-4</div>
+  <div class="grid-4">grid-4</div>
+</div>
+<div class="row demo">
+  <div class="grid-3">grid-3</div>
+  <div class="grid-3">grid-3</div>
+  <div class="grid-3">grid-3</div>
+  <div class="grid-3">grid-3</div>
+</div>
+<div class="row demo">
+  <div class="grid-10 offset-2">.grid-10 .offset-2</div>
+</div>
+<div class="row demo">
+  <div class="grid-5 offset-3">.grid-5 .offset-3</div>
+</div>
+<div class="row demo">
+  <div class="grid-3">.grid-3</div>
+  <div class="grid-3 offset-1">.grid-3 .offset-1</div>
+  <div class="grid-3 offset-1">.grid-3 .offset-1</div>
+</div>
+<div class="row demo">
+  <div class="grid-9 push-3">.grid-9 .push-3 (first element)</div>
+  <div class="grid-3 pull-9">.grid-3 .pull-9 (second element)</div>
+</div>
+<div class="row demo">
+  <div class="grid-6 push-6">.grid-6 .push-6 (first element)</div>
+  <div class="grid-6 pull-6">.grid-6 .pull-6 (second element)</div>
+</div>
+
+<hr>
+
+<h1 id="patterns">Patterns</h1>
+
+<h2>Full-bleed</h2>
+
+</div> <!-- /content -->
+<div class="full-bleed">
+  <div class="content">
+    <p>This is a full-bleed block.</p>
+  </div>
+</div>
+<div class="content">
+
+<h2>Pagination</h2>
+
+<div class="pagination">
+  <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#" class="current">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <span>&hellip;</span>
+  <a href="#">10</a>
+  <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+</div>
+
+<h2>Panel</h2>
+
+<div class="panel">
+  <p>This is a panel.</p>
+</div>
+
+<h2>Breadcrumb</h2>
+
+<div class="breadcrumb">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Project Page</a></li>
+    <li>Project Detail</li>
+  </ul>
+</div>
+
+<h2>Search</h2>
+
+<form class="search" accept-charset="UTF-8" action="#" method="get">
+  <p class="search-label"><label for="query">Search</label></p>
+  <p class="search-block"><input autocomplete="off" class="search-text" id="search-query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
+</form>
+
+<hr>
+
+<h1 id="responsive">Responsive</h1>
+
+<p class="hide-small">This text is hidden on smaller screens</p>
+<p class="hide-medium hide-large"><strong>This text is only visible on smaller screens</strong></p>
+<p class="hide-medium">This text is hidden on medium screens</p>
+<p class="hide-small hide-large"><strong>This text is only visible on medium screens</strong></p>
+<p class="hide-large">This text is hidden on large screens</p>
+<p class="hide-small hide-medium"><strong>This text is only visible on large screens</strong></p>
+
+<h2>Breakpoints</h2>
+
+<table>
+  <tr><th scope="col">Name</th><th scope="col">Width</th></tr>
+  <tr><td>$small</td><td>24em (~384px)</td></tr>
+  <tr><td>$small-2</td><td>29.75em (~476px)</td></tr>
+  <tr><td>$small-3</td><td>39.8em (~637px)</td></tr>
+  <tr><td>$medium</td><td>46.8em (~749px)</td></tr>
+  <tr><td>$medium-2</td><td>48em (~768px)</td></tr>
+  <tr><td>$large</td><td>50em (~800px)</td></tr>
+  <tr><td>$large-2</td><td>60em (~960px)</td></tr>
+  <tr><td>$large-3</td><td>66em (~1056px)</td></tr>
+  <tr><td>$xlarge</td><td>73em (~1168px)</td></tr>
+  <tr><td>$xxlarge</td><td>89em (~1424px)</td></tr>
+  <tr><td>$xxxlarge</td><td>93em (~1488px)</td></tr>
+</table>
+
+<hr>
+
+<h1 id="fonts">Fonts</h1>
+
+<p>Primary font: "San Francisco", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;<br>
+<em>Primary font italic: "San Francisco", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;</em><br>
+<strong>Primary font bold: "San Francisco", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;</strong></p>
+
+<p class="font-secondary">Secondary font: Georgia, Times, "Times New Roman", serif;<br>
+<em>Secondary font italic: Georgia, Times, "Times New Roman", serif;</em><br>
+<strong>Secondary font bold; Georgia, Times, "Times New Roman", serif;</strong></p>
+
+<hr>
+
+<h1 id="headings">Headings</h1>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<hr>
+
+<h1 id="headings-with-text">Headings with Text</h1>
+
+<h1>Heading 1</h1>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h2>Heading 2</h2>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h3>Heading 3</h3>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h4>Heading 4</h4>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h5>Heading 5</h5>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+<h6>Heading 6</h6>
+<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+
+<hr>
+
+<h1 id="text-block">Block Elements</h1>
+
+<h2 id="paragraph">Paragraphs and Images</h2>
+
+<p class="lead">First paragraph with <code>.lead</code> class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+
+<p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
+
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+
+<h2>Blockquote</h2>
+
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<blockquote>
+  "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
+</blockquote>
+<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+<h2>Figure-Caption</h2>
+
+<figure>
+  <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+  <figcaption>The figcaption element example</figcaption>
+</figure>
+
+<h2>Horizontal Rule</h2>
+
+<hr>
+
+
+<h1 id="text-elements">Text Elements</h1>
+
+<p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
+<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+<p>The <b>b element</b> example</p>
+<p>The <cite>cite element</cite> example</p>
+<p>The <code>code element</code> example</p>
+<p>The <data value="3967381398">data element</data> example</p>
+<p>The <del>del element</del> example</p>
+<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+<p>The <em>em element</em> example</p>
+<p>The <i>i element</i> example</p>
+<p>The <ins>ins element</ins> example</p>
+<p>The <kbd>kbd element</kbd> example</p>
+<p>The <mark>mark element</mark> example</p>
+<p>The <q>q element</q> example</p>
+<p>The <q>q element <q>inside</q> a q element</q> example</p>
+<p>The <s>s element</s> example</p>
+<p>The <samp>samp element</samp> example</p>
+<p>The <small>small element</small> example</p>
+<p>The <span>span element</span> example</p>
+<p>The <strong>strong element</strong> example</p>
+<p>The <sub>sub element</sub> example</p>
+<p>The <sup>sup element</sup> example</p>
+<p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
+<p>The <u>u element</u> example</p>
+<p>The <var>var element</var> example</p>
+<p>The <span class="footnote">footnote class</span> example</p>
+<p>The <span class="text-lowercase">lowercase class</span> example</p>
+<p>The <span class="text-uppercase">uppercase class</span> example</p>
+<p>The <span class="text-capitalize">capitalize class</span> example</p>
+
+<hr>
+
+<h1 id="monospace">Monospace / Preformatted</h1>
+<p>Code block wrapped in "pre" and "code" tags</p>
+<pre><code>// Loop through Divs using Javascript.
+var divs = document.querySelectorAll('div'), i;
+
+for (i = 0; i &lt; divs.length; ++i) {
+  divs[i].style.color = "green";
+}</code></pre>
+<p>Monospace Text wrapped in "pre" tags</p>
+<pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;</pre>
+
+<hr>
+
+<h1 id="list_types">List Types</h1>
+
+<h2>Ordered List</h2>
+<ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3
+    <ol>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ol>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ol>
+      </li>
+      <li>List Item 3.3</li>
+    </ol>
+  </li>
+  <li>List Item 4</li>
+</ol>
+
+<h2>Unordered List</h2>
+<ul>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3
+    <ul>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ul>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ul>
+      </li>
+      <li>List Item 3.3</li>
+    </ul>
+  </li>
+  <li>List Item 4</li>
+</ul>
+
+<h2>Unstyled List</h2>
+<ul class="unstyled">
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3
+    <ul>
+      <li>List Item 3.1</li>
+      <li>List Item 3.2
+        <ul>
+          <li>List Item 3.2.1</li>
+          <li>List Item 3.2.2</li>
+        </ul>
+      </li>
+      <li>List Item 3.3</li>
+    </ul>
+  </li>
+  <li>List Item 4</li>
+</ul>
+
+<h2>Inline List</h2>
+<ul class="inline">
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+  <li>List Item 4</li>
+</ul>
+
+<h2>Definition List</h2>
+<dl>
+  <dt>Definition Term 1</dt>
+  <dd>Definition Description 1</dd>
+  <dt>Definition Term 2</dt>
+  <dd>Definition Description 2</dd>
+</dl>
+
+<hr>
+
+<h1 id="tables">Tables</h1>
+
+<h2>Normal Table</h2>
+
+<table>
+  <caption>This is a table caption</caption>
+  <thead>
+    <tr>
+      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+    </tr>
+    <tr>
+      <td colspan="3">A row with a cell spanning all 3 columns</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
+    </tr>
+  </tfoot>
+</table>
+
+<h2>Responsive Table</h2>
+
+<table class="responsive">
+  <caption>This is a table caption</caption>
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Title</th>
+      <th scope="col">Office</th>
+      <th scope="col">Birthday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="First Name">Jane</td>
+      <td data-label="Last Name">Smith</td>
+      <td data-label="Title">Creative Director</td>
+      <td data-label="Office">New York</td>
+      <td data-label="Birthday">June 1</td>
+    </tr>
+    <tr>
+      <td data-label="First Name">Wesley</td>
+      <td data-label="Last Name">Hall</td>
+      <td data-label="Title">Designer</td>
+      <td data-label="Office">San Francisco</td>
+      <td data-label="Birthday">February 29</td>
+    </tr>
+    <tr>
+      <td data-label="First Name">Penelope</td>
+      <td data-label="Last Name">Adams</td>
+      <td data-label="Title">Developer</td>
+      <td data-label="Office">Washington, DC</td>
+      <td data-label="Birthday">September 14</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h1 id="buttons">Buttons</h1>
+
+<p><a class="btn" href="#" role="button">Link</a>
+<button class="btn" type="submit">Button</button>
+<input class="btn" type="button" value="Input">
+<input class="btn" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-dark" href="#" role="button">Link</a>
+<button class="btn btn-dark" type="submit">Button</button>
+<input class="btn btn-dark" type="button" value="Input">
+<input class="btn btn-dark" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-large" href="#" role="button">Link</a>
+<button class="btn btn-large" type="submit">Button</button>
+<input class="btn btn-large" type="button" value="Input">
+<input class="btn btn-large" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-small" href="#" role="button">Link</a>
+<button class="btn btn-small" type="submit">Button</button>
+<input class="btn btn-small" type="button" value="Input">
+<input class="btn btn-small" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-block" href="#" role="button">Link</a>
+<button class="btn btn-block" type="submit">Button</button>
+<input class="btn btn-block" type="button" value="Input">
+<input class="btn btn-block" type="submit" value="Submit"></p>
+
+<hr>
+
+<!--
+<h1 id="media">Media</h1>
+
+<h2>Embedded content:</h2>
+
+<p>YouTube video (iframe):</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
+
+<hr>
+-->
+
+<h1 id="form_elements">Form Elements</h1>
+
+<p>The Fieldset:</p>
+<fieldset>
+  <legend>Legend</legend>
+
+  <p>The Form:</p>
+
+  <form>
+    <p><label for="text_field">Text Field:</label><br>
+      <input type="text" id="text_field" />
+    </p>
+
+    <p><label for="text_field_disabled">Disabled Text Field:</label><br>
+      <input type="text" id="text_field_disabled" disabled value="Disabled text field" />
+    </p>
+
+    <p><label for="text_field_readonly">Readonly Text Field:</label><br>
+      <input type="text" id="text_field_readonly" readonly value="Readonly text field" />
+    </p>
+
+    <p><label for="text_area">Text Area:</label><br>
+      <textarea id="text_area"></textarea>
+    </p>
+
+    <p><label for="text_area_disabled">Disabled Text Area:</label><br>
+      <textarea id="text_area_disabled" disabled>Disabled text area</textarea>
+    </p>
+
+    <p><label for="text_area_readonly">Readonly Text Area:</label><br>
+      <textarea id="text_area_readonly" readonly>Readonly text area</textarea>
+    </p>
+
+    <p><label for="select_element">Select Element:</label><br>
+      <select id="select_element">
+        <optgroup label="Option Group 1">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </optgroup>
+        <optgroup label="Option Group 2">
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3" disabled>Disabled Option</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
+      <select id="select_element_disabled" disabled>
+        <option value="1">Unselectable Option</option>
+        <option value="2">This option should not even be seen</option>
+      </select>
+    </p>
+
+    <p>Radio Buttons:<br>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
+      <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
+    </p>
+
+    <p>Checkboxes:<br>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
+      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
+    </p>
+
+    <p><label for="password">Password:</label><br>
+      <input type="password" class="password" id="password" />
+    </p>
+
+    <p><label for="file">File Input:</label><br>
+      <input type="file" class="file" id="file" />
+    </p>
+
+    <h3>HTML5-specific Form Elements</h3>
+
+    <p><label for="email">Email:</label><br>
+      <input type="email" id="email" />
+    </p>
+
+    <p><label for="url">URL:</label><br>
+      <input type="url" id="url" />
+    </p>
+
+    <p><label for="tel">Telephone:</label><br>
+      <input type="tel" id="tel" />
+    </p>
+
+    <p><label for="number">Number:</label><br>
+      <input type="number" id="number" min="0" max="10" step="1" value="5" />
+    </p>
+
+    <p><label for="search">Search:</label><br>
+      <input type="search" id="search" />
+    </p>
+
+    <p>
+      <button class="button">Button Element</button>
+      <input class="button" type="reset" value="Clear" />
+      <input class="button" type="submit" value="Submit" />
+    </p>
+  </form>
+
+</fieldset>
+</div>
