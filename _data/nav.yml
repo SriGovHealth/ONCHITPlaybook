@@ -1,3 +1,6 @@
 - title: "Style Guide"
   permalink: "/styleguide/"
   position: top-level
+- title: "Content Style Guide"
+  permalink: "/styleguide/content/"
+  position: top-level
