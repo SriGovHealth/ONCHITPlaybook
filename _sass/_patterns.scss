@@ -1,23 +1,23 @@
 .full-bleed {
-  background-color: $purple-accent;
+  background-color: $code;
   padding-bottom: .5em;
   padding-top: 1em;
 }
 
 .pagination {
   a {
-    border: 1px solid $gray-light;
+    border: 1px solid $off-white;
     display: inline-block;
     padding: .25em .5em;
     text-decoration: none;
 
     &:hover,
     &:focus {
-      background-color: $gray-accent;
+      background-color: $off-white;
     }
 
     &.current {
-      background-color: $gray-accent;
+      background-color: $off-white;
       color: $black;
     }
 
@@ -32,8 +32,8 @@
 }
 
 .panel {
-  background-color: $gray-accent;
-  border: 1px solid $gray-light;
+  background-color: $off-white;
+  border: 1px solid $off-white;
   padding: .5em 1em;
 
   p {
@@ -79,7 +79,7 @@
 }
 
 .search-button {
-  background-color: $gray-light;
+  background-color: $off-white;
   border: 1px solid $gray;
   border-radius: 0;
   float: right;
@@ -102,9 +102,9 @@
 }
 
 .btn {
-  background-color: $gray-accent;
+  background-color: $off-white;
   background-image: none;
-  border: 1px solid $gray-light;
+  border: 1px solid $off-white;
   border-radius: .25em;
   color: $black;
   cursor: pointer;
@@ -121,12 +121,12 @@
 
   &:hover,
   &:focus {
-    background-color: $gray-light;
+    background-color: $off-white;
     color: $black;
   }
 
   &:active {
-    background-color: $gray-accent;
+    background-color: $off-white;
     color: $black;
   }
 }

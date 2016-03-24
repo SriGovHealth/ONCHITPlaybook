@@ -31,14 +31,13 @@ nav {
     text-decoration: none;
 
     &:hover {
-      background-color: darken($gray-accent, 5%);
+      background-color: darken($off-white, 5%);
     }
   }
 }
 
 .subnav-toggle {
   display: block;
-  font-family: $font-family;
   height: 2.35em;
   line-height: 2.35;
   padding: 0;
@@ -51,7 +50,7 @@ nav {
 
 .active {
   a {
-    background-color: darken($gray-accent, 5%);
+    background-color: darken($off-white, 5%);
   }
 
   .subnav {

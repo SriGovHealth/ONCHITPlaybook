@@ -10,7 +10,7 @@
 
 .site-bar {
   @extend %clearfix;
-  background-color: $gray-light;
+  background-color: $off-white;
   display: block;
   height: $fixed-header-height;
   left: 0;
@@ -40,7 +40,7 @@
 }
 
 .nav {
-  background-color: $gray-accent;
+  background-color: $off-white;
   bottom: 0;
   display: block;
   left: 0;

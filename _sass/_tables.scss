@@ -13,7 +13,7 @@ table {
 
 th,
 td {
-  border: 1px solid $gray-light;
+  border: 1px solid $off-white;
   line-height: 1.5em;
   padding: .5em;
   text-align: left;
@@ -21,13 +21,13 @@ td {
 }
 
 th {
-  background: $gray-accent;
+  background: $off-white;
   font-weight: bold;
   vertical-align: bottom;
 }
 
 tbody + tbody {
-  border-top: 2px solid $gray-light;
+  border-top: 2px solid $off-white;
 }
 
 caption {
@@ -70,13 +70,13 @@ caption {
     tr {
       margin-bottom: .75em;
       display: block;
-      border-bottom: 1px solid $gray-light;
+      border-bottom: 1px solid $off-white;
     }
 
     td {
       display: block;
       text-align: right;
-      border-bottom: 1px dotted $gray-accent;
+      border-bottom: 1px dotted $off-white;
 
       &:last-child {
         border-bottom: 0;
