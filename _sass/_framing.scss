@@ -1,4 +1,5 @@
 .header {
+  box-shadow: .5em 0 1.5em rgba($black, .25);
   position: absolute;
   width: $sidebar-width;
 
@@ -42,6 +43,7 @@
 .nav {
   background-color: $white;
   bottom: 0;
+  box-shadow: .5em 0 1.5em rgba($black, .25);
   display: block;
   left: 0;
   margin-top: $fixed-header-height;
@@ -55,10 +57,12 @@
 
   @include bp($sidebar-switch-point) {
     bottom: 0;
+    box-shadow: none;
     padding-bottom: 0;
   }
 
   &.closed {
+    box-shadow: none;
     left: -$sidebar-width;
 
     @include bp($sidebar-switch-point) {
