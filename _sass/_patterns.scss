@@ -101,25 +101,60 @@
   width: 75%;
 }
 
-.callout {
+.callout,
+.chapter-intro {
   background-color: $gray;
   font-family: $font-header-alt;
-  max-width: 25em;
-  padding-top: 10em;
+  padding-bottom: 0;
+
+  h1,
+  .h1,
+  h2,
+  .h2 {
+    font-family: $font-header-alt;
+  }
 }
 
+.chapter-intro {
+  margin-bottom: 3em;
+  padding-top: 15em;
+}
+
+.callout {
+  max-width: 25em;
+  padding-top: 15em;
+}
+
+.chapter-intro-inner,
 .callout-inner {
   background-color: rgba($black, .7);
   color: $white;
   margin-left: 1.5em;
   padding: 1em 0 1em 1em;
+}
 
-  p {
-    border-bottom: 3px solid $green;
-    font-size: 1.3em;
-    padding-bottom: .5em;
-    padding-right: .8em;
-  }
+.chapter-intro-inner {
+  padding-right: 1.5em;
+}
+
+.chapter-number {
+  color: $yellow;
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.chapter-title {
+  border-bottom: 3px solid $green;
+  font-size: 2.5em;
+  margin-top: 0;
+  padding-bottom: .4em;
+}
+
+.underlined {
+  border-bottom: 3px solid $green;
+  font-size: 1.3em;
+  padding-bottom: .5em;
+  padding-right: .8em;
 }
 
 .callout-icon {
@@ -274,7 +309,8 @@
 .btn-arrow {
   font-size: 1.2em;
   font-weight: 700;
-  padding: .23em .5em;
+  line-height: 1;
+  padding: .4em .5em;
 }
 
 // match base and hover state to avoid
