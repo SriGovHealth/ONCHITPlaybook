@@ -4,6 +4,15 @@
   padding-top: 1em;
 }
 
+.dark-block {
+  background-color: rgba($black, .7);
+  color: $white;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+}
+
 .pagination {
   a {
     border: 1px solid $off-white;
@@ -134,7 +143,8 @@
 }
 
 .chapter-intro-inner {
-  padding-right: 1.5em;
+  margin-left: 2.5em;
+  padding-left: 1.5em;
 }
 
 .chapter-number {

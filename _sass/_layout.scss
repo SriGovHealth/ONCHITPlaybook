@@ -64,3 +64,9 @@ nav {
     }
   }
 }
+
+.references {
+  a {
+    @extend %word-wrap;
+  }
+}
