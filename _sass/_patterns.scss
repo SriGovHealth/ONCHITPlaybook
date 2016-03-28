@@ -101,33 +101,144 @@
   width: 75%;
 }
 
+.callout {
+  background-color: $gray;
+  font-family: $font-header-alt;
+  max-width: 25em;
+  padding-top: 10em;
+}
+
+.callout-inner {
+  background-color: rgba($black, .7);
+  color: $white;
+  margin-left: 1.5em;
+  padding: 1em 0 1em 1em;
+
+  p {
+    border-bottom: 3px solid $green;
+    font-size: 1.3em;
+    padding-bottom: .5em;
+    padding-right: .8em;
+  }
+}
+
+.callout-icon {
+  border: 1px solid $yellow;
+  color: $yellow;
+  display: inline-block;
+  font-size: 3em;
+  padding: 0;
+  text-align: center;
+
+  span {
+    display: block;
+    margin: 0 0 -.4em;
+    padding: 0 .15em;
+  }
+}
+
+.icon {
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid $black;
+  border-radius: 4em;
+  display: inline-block;
+  height: 5em;
+  text-indent: -999em;
+  width: 5em;
+}
+
+.icon-computer {
+  background-image: url('../img/icon-computer.png');
+  background-size: 3.5em;
+}
+
+.icon-rx {
+  background-image: url('../img/icon-rx.png');
+  background-size: 1.5em;
+}
+
+.icon-portal {
+  background-image: url('../img/icon-portal.png');
+  background-size: 3em;
+}
+
 .btn {
-  background-color: $off-white;
+  background-color: $white;
   background-image: none;
-  border: 1px solid $off-white;
+  border: 1px solid $green-dark;
   border-radius: .25em;
-  color: $black;
+  color: $green-dark;
   cursor: pointer;
   display: inline-block;
+  font-family: $font-header;
   font-size: 1em;
   font-weight: 400;
   line-height: 1.4;
   margin-bottom: 0;
-  padding: .25em .75em;
+  padding: .4em .75em;
   text-align: center;
   text-decoration: none;
+  transition: all .4s;
   vertical-align: middle;
   white-space: nowrap;
 
   &:hover,
   &:focus {
-    background-color: $off-white;
-    color: $black;
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
   }
 
   &:active {
-    background-color: $off-white;
-    color: $black;
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
+.btn-chapter {
+  border: 1px solid $blue;
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $blue;
+    border-color: $blue;
+    color: $white;
+  }
+}
+
+.btn-search {
+  background-image: url('../img/icon-search.png');
+  background-position: 85% center;
+  background-repeat: no-repeat;
+  background-size: 1em;
+  border: 1px solid $blue-dark;
+  color: $blue-dark;
+  padding-right: 2em;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-dark;
+    background-image: url('../img/icon-search-hover.png');
+    border-color: $blue-dark;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+    background-image: url('../img/icon-search-hover.png');
+    border-color: $blue-dark;
+    color: $white;
   }
 }
 
@@ -143,18 +254,27 @@
 
 .btn-dark {
   background-color: $black;
+  border-color: $black;
   color: $white;
 
   &:hover,
   &:focus {
     background-color: $gray;
+    border-color: $gray;
     color: $white;
   }
 
   &:active {
     background-color: $black;
+    border-color: $gray;
     color: $white;
   }
+}
+
+.btn-arrow {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: .23em .5em;
 }
 
 // match base and hover state to avoid
@@ -189,7 +309,7 @@
     float: left;
     margin-right: 1%;
     min-height: 10em;
-    width: 24%;
+    width: 15%;
   }
 }
 

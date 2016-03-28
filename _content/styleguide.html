@@ -12,6 +12,7 @@ permalink: /styleguide/
 <p>HTML skeleton document borrowed from <a href="https://github.com/bryanbraun/poor-mans-styleguide">Poor Man&rsquo;s Styleguide</a></p>
 
 <ul>
+  <li><a href="#look">Look &amp; Feel</a></li>
   <li><a href="#colors">Colors</a></li>
   <li><a href="#grids">Grid System</a></li>
   <li><a href="#patterns">Patterns</a></li>
@@ -26,6 +27,36 @@ permalink: /styleguide/
   <li><a href="#buttons">Buttons</a></li>
   <li><a href="#form-elements">Form Elements</a></li>
 </ul>
+
+<hr>
+
+<h1 id="look">Look &amp; Feel</h1>
+
+<div class="row">
+  <div class="grid-7">
+    <h1>Headline</h1>
+    <h2>Subhead</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Fusce nec tellus sed augue semper porta.</p>
+    <h3 class="h6">Buttons</h3>
+    <p><a class="btn btn-arrow" href="#" role="button">&darr;</a>
+    <a class="btn btn-arrow" href="#" role="button">&uarr;</a>
+    <a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
+    <a class="btn btn-search" href="#" role="button">Search</a></p>
+    <h3 class="h6">Icons</h3>
+    <div class="icon icon-computer">Computer</div>
+    <div class="icon icon-rx">Prescription</div>
+    <div class="icon icon-portal">Patient Portal</div>
+
+  </div>
+  <div class="grid-5 space-top-4">
+    <div class="callout">
+      <div class="callout-inner">
+        <div class="callout-icon" aria-hidden="true"><span>*</span></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <hr>
 
@@ -226,6 +257,16 @@ permalink: /styleguide/
 </div>
 <div class="content">
 
+
+<h2>Callout</h2>
+
+<div class="callout">
+  <div class="callout-inner">
+    <div class="callout-icon" aria-hidden="true"><span>*</span></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</div>
+
 <h2>Pagination</h2>
 
 <div class="pagination">
@@ -262,6 +303,12 @@ permalink: /styleguide/
   <p class="search-label"><label for="query">Search</label></p>
   <p class="search-block"><input autocomplete="off" class="search-text" id="search-query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
 </form>
+
+<h2>Icons</h2>
+
+<div class="icon icon-computer">Computer</div>
+<div class="icon icon-rx">Prescription</div>
+<div class="icon icon-portal">Patient Portal</div>
 
 <hr>
 
@@ -559,10 +606,27 @@ for (i = 0; i &lt; divs.length; ++i) {
 
 <h1 id="buttons">Buttons</h1>
 
+<p><a class="btn btn-arrow" href="#" role="button">&darr;</a>
+<a class="btn btn-arrow" href="#" role="button">&uarr;</a>
+<a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
+<a class="btn btn-search" href="#" role="button">Search</a></p>
+
+<h2>Button Variants</h2>
+
 <p><a class="btn" href="#" role="button">Link</a>
 <button class="btn" type="submit">Button</button>
 <input class="btn" type="button" value="Input">
 <input class="btn" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-chapter" href="#" role="button">Link</a>
+<button class="btn btn-chapter" type="submit">Button</button>
+<input class="btn btn-chapter" type="button" value="Input">
+<input class="btn btn-chapter" type="submit" value="Submit"></p>
+
+<p><a class="btn btn-search" href="#" role="button">Link</a>
+<button class="btn btn-search" type="submit">Button</button>
+<input class="btn btn-search" type="button" value="Input">
+<input class="btn btn-search" type="submit" value="Submit"></p>
 
 <p><a class="btn btn-dark" href="#" role="button">Link</a>
 <button class="btn btn-dark" type="submit">Button</button>
