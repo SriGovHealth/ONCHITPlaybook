@@ -77,9 +77,12 @@
   }
 }
 
+.search {
+  background-color: $off-white;
+}
+
 .search-nav {
-  padding-left: .75em;
-  padding-right: .75em;
+  padding: .1em .75em;
 }
 
 .search-label {

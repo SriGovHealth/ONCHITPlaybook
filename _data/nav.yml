@@ -1,5 +1,21 @@
+- title: "About"
+  permallink: "/about/"
+  position: top-level
+- title: "Chapter 1"
+  subtitle: "Facilitate easy enrollment"
+  permalink: "/chapter-1/"
+  position: top-level
 - title: "Chapter 2"
+  subtitle: "Meet patient needs"
   permalink: "/chapter-2/"
+  position: top-level
+- title: "Chapter 3"
+  subtitle: "Involve caregivers"
+  permalink: "/chapter-3/"
+  position: top-level
+- title: "Chapter 4"
+  subtitle: "Integrate patient-generated data"
+  permalink: "/chapter-4/"
   position: top-level
 - title: "Style Guide"
   permalink: "/styleguide/"

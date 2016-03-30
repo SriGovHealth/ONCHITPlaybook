@@ -11,7 +11,8 @@
 
 .site-bar {
   @extend %clearfix;
-  background-color: $off-white;
+  background-color: $white;
+  box-shadow: 0 .5em 1.5em rgba($black, .25);
   display: block;
   height: $fixed-header-height;
   left: 0;
@@ -21,19 +22,37 @@
   z-index: 2;
 
   @include bp($sidebar-switch-point) {
+    box-shadow: none;
     position: relative;
+    width: $sidebar-width;
   }
 }
 
 .site-name {
-  margin-left: .75em;
-  margin-top: .75em;
+  margin-left: .5em;
+  margin-top: .15em;
+
+  a {
+    display: block;
+  }
+
+  img {
+    max-height: $fixed-header-height - .25em;
+
+    @include bp($sidebar-switch-point) {
+      max-height: inherit;
+    }
+  }
+
+  @include bp($sidebar-switch-point) {
+    margin: .75em 1.5em;
+  }
 }
 
 .site-menu {
   position: absolute;
   right: .5em;
-  top: .5em;
+  top: .35em;
 
   @include bp($sidebar-switch-point) {
     display: none;
@@ -58,6 +77,7 @@
   @include bp($sidebar-switch-point) {
     bottom: 0;
     box-shadow: none;
+    margin-top: 5.5em;
     padding-bottom: 0;
   }
 
