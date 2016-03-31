@@ -5,13 +5,26 @@
   subtitle: "Facilitate easy enrollment"
   permalink: "/chapter-1/"
   position: top-level
+  subcategories:
+    - title: "1.1 Develop an opt-out policy"
+      permalink: "/chapter-1/section-1/"
+    - title: "1.2 Register patients in the office"
+      permalink: "/chapter-1/section-2/"
+    - title: "1.3 Train staff to use encouraging language"
+      permalink: "/chapter-1/section-3/"
+    - title: "1.4 Explain the portal’s value"
+      permalink: "/chapter-1/section-4/"
 - title: "Chapter 2"
   subtitle: "Meet patient needs"
   permalink: "/chapter-2/"
   position: top-level
   subcategories:
     - title: "2.1 Allow online booking and prescription refills"
-    - permalink: "/chapter-2/section-1"
+      permalink: "/chapter-2/section-1/"
+    - title: "2.2 Set up secure information sharing"
+      permalink: "/chapter-2/section-2/"
+    - title: "2.3 Share notes"
+      permalink: "/chapter-2/section-3/"
 - title: "Chapter 3"
   subtitle: "Involve caregivers"
   permalink: "/chapter-3/"
@@ -20,6 +33,11 @@
   subtitle: "Integrate patient-generated data"
   permalink: "/chapter-4/"
   position: top-level
+  subcategories:
+    - title: "4.1 Track patient-generated data"
+      permalink: "/chapter-4/section-1/"
+    - title: "4.2 Collect patient family histories"
+      permalink: "/chapter-4/section-2/"
 - title: "Style Guide"
   permalink: "/styleguide/"
   position: top-level
