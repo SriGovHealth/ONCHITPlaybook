@@ -7,18 +7,19 @@
   </div>
   <div class="nav closed">
     <form class="search search-nav" accept-charset="UTF-8" action="#" method="get">
-      <p class="search-label"><label for="query">Search</label></p>
-      <p class="search-block"><input autocomplete="off" class="search-text" id="query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
+      <label for="query" class="search-label">Search</label>
+      <input autocomplete="off" class="search-text" id="query" name="query" type="text" />
+      <button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
     </form>
     <nav>
       <ul>
       {% for section in site.data.nav %}
         {% if section.subcategories == null %}
-          <li class="group{% if page.permalink == section.permalink %} active{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}">{{ section.title }}</a></li>
+          <li class="group{% if page.permalink == section.permalink %} active{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a></li>
         {% else %}
           <li class="group has-subnav{% if page.permalink == section.permalink %} active{% endif %}">
-            <a href="{{ section.permalink | prepend: site.baseurl }}">{{ section.title }}</a>
-            <a class="subnav-toggle" id="subnav-toggle-{{ section.section-name }}" aria-controls="subnav-{{ section.section-name }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.section-name }}">&#9660;</a>
+            <a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a>
+            <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.section-name }}" aria-controls="subnav-{{ section.section-name }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.section-name }}">&darr;</a>
             <ul class="subnav closed" id="subnav-{{ section.section-name }}" aria-hidden="true" aria-expanded="false">
             {% for subsection in section.subcategories %}
               <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>

@@ -9,6 +9,9 @@
   subtitle: "Meet patient needs"
   permalink: "/chapter-2/"
   position: top-level
+  subcategories:
+    - title: "2.1 Allow online booking and prescription refills"
+    - permalink: "/chapter-2/section-1"
 - title: "Chapter 3"
   subtitle: "Involve caregivers"
   permalink: "/chapter-3/"

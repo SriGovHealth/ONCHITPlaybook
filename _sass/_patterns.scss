@@ -82,21 +82,29 @@
 }
 
 .search-nav {
-  padding: .1em .75em;
+  padding: .75em;
 }
 
 .search-label {
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0;
 }
 
 .search-button {
-  background-color: $off-white;
-  border: 1px solid $gray;
+  background-color: $blue;
+  border: 0;
   border-radius: 0;
+  color: $white;
+  display: block;
   float: right;
-  padding: .15em 0;
-  width: 25%;
+  padding: 0;
+
+  img {
+    display: block;
+    height: 1.65em;
+    padding: .2em;
+    width: 1.6em;
+  }
 }
 
 .search-block {
@@ -105,12 +113,14 @@
 }
 
 .search-text {
-  border: 1px solid $gray;
+  border: .1em solid $gray;
   border-radius: 0;
   border-right: 0;
   font-size: 1em;
+  height: 1.65em;
+  margin-right: -1em;
   padding: .15em .25em;
-  width: 75%;
+  width: 12em;
 }
 
 .callout,
@@ -328,6 +338,8 @@
   font-weight: 700;
   line-height: 1;
   padding: .4em .5em;
+  text-align: center;
+  width: 2em;
 }
 
 // match base and hover state to avoid

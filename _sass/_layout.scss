@@ -7,6 +7,7 @@ nav {
   }
 
   ul {
+    font-family: $font-header;
     list-style-type: none;
     margin-left: 0;
     margin-right: 0;
@@ -36,16 +37,27 @@ nav {
   }
 }
 
+.section-title {
+  color: $black;
+  display: block;
+}
+
+.section-subtitle {
+  color: $black-light;
+  display: block;
+  font-size: .9em;
+}
+
 .subnav-toggle {
   display: block;
-  height: 2.35em;
-  line-height: 2.35;
-  padding: 0;
+  //height: 2.35em;
+  //line-height: 2.35;
+  //padding: 0;
   position: absolute;
-  right: 0;
+  right: .5em;
   text-align: center;
-  top: 0;
-  width: 2.35em;
+  top: .5em;
+  //width: 2.35em;
 }
 
 .active {

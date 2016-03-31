@@ -30,7 +30,7 @@ $(".subnav a").click(function (event) {
 // Open subnav of active page
 if ($(".group").hasClass("active")) {
   $(".group.active").children("ul .subnav").removeClass("closed").attr("aria-hidden", "false").attr("aria-expanded", "true");
-  $(".group.active").children("a.subnav-toggle").html("►");
+  $(".group.active").children("a.subnav-toggle").html("&rarr;");
 }
 
 // Open/close subnavsw
@@ -42,15 +42,15 @@ $(".subnav-toggle").click(function (event) {
     // reset other nav links
     $(".subnav").addClass("closed").attr("aria-hidden", "true").attr("aria-expanded", "false");
     $(".has-subnav").removeClass("active");
-    $(".subnav-toggle").html("&#9660;");
+    $(".subnav-toggle").html("&darr;");
 
     $(this).parent().find(".subnav").removeClass("closed").attr("aria-hidden", "false").attr("aria-expanded", "true");
-    $(this).html("►");
+    $(this).html("&rarr;");
     $(this).parent().addClass("active");
   }
   else {
     $(this).parent().find(".subnav").addClass("closed").attr("aria-hidden", "true").attr("aria-expanded", "false");
-    $(this).html("&#9660;");
+    $(this).html("&darr;");
     $(this).parent().removeClass("active");
   }
 });
