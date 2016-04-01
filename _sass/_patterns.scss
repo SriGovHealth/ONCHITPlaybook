@@ -4,6 +4,16 @@
   padding-top: 1em;
 }
 
+.home-block {
+  background-color: $off-white;
+  background-image: url('../img/bg-home.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 1.5em;
+  padding-top: 2em;
+}
+
 .case-block {
   background-color: $off-white;
   margin-bottom: 1.5em;
@@ -137,6 +147,10 @@
 }
 
 .chapter-intro {
+  background-image: url('../img/bg-chapter.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 3em;
   padding-top: 15em;
 }
