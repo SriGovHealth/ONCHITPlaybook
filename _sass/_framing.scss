@@ -12,7 +12,7 @@
 .site-bar {
   @extend %clearfix;
   background-color: $white;
-  box-shadow: 0 .5em 1.5em rgba($black, .25);
+  box-shadow: 0 .15em 1.5em rgba($black, .15);
   display: block;
   height: $fixed-header-height;
   left: 0;
@@ -118,5 +118,15 @@
   @include bp($sidebar-switch-point) {
     margin-left: $sidebar-width;
     margin-top: 0;
+  }
+}
+
+.home {
+  .page {
+    margin-top: 0;
+
+    @include bp($sidebar-switch-point) {
+      margin-left: 0;
+    }
   }
 }

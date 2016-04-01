@@ -1,12 +1,11 @@
 ---
 ---
 {% include head.html %}
-<body>
+<body class="home">
   <div class="wrapper">
-    {% include header.html %}
     <main id="top" class="page">
-      <div class="overlay"></div>
       {{ content }}
+      {% include footer.html %}
     </main>
   </div>
 {% include scripts.html %}

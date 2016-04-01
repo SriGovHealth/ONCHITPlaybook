@@ -18,7 +18,7 @@ nav {
   }
 
   li {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $off-white-dark;
     position: relative;
   }
 
@@ -109,5 +109,26 @@ nav {
 .references {
   a {
     @extend %word-wrap;
+  }
+}
+
+.footer {
+  border-top: 2px solid $gray-light;
+  margin-top: 2em;
+  padding-bottom: 1em;
+  padding-top: 2em;
+
+  .footer-links {
+    a {
+      font-size: .9em;
+      margin-right: 1em;
+    }
+  }
+
+  .footer-logos {
+    img {
+      display: block;
+      margin-top: -1em;
+    }
   }
 }
