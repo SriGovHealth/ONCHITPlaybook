@@ -19,8 +19,8 @@
         {% else %}
           <li class="group has-subnav{% if page.permalink == section.permalink %} active{% endif %}">
             <a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a>
-            <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.section-name }}" aria-controls="subnav-{{ section.section-name }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.section-name }}">&darr;</a>
-            <ul class="subnav closed" id="subnav-{{ section.section-name }}" aria-hidden="true" aria-expanded="false">
+            <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.slug }}" aria-controls="subnav-{{ section.slug }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.slug }}">&darr;</a>
+            <ul class="subnav closed" id="subnav-{{ section.slug }}" aria-hidden="true" aria-expanded="false">
             {% for subsection in section.subcategories %}
               <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>
             {% endfor %}
@@ -30,5 +30,6 @@
       {% endfor %}
       </ul>
     </nav>
+    <p class="text-center"><a href="https://www.healthIT.gov/"><img src="{{ "/img/healthIT-logo.png" | prepend: site.baseurl }}" alt="A product of HealthIT.gov"></a></p>
   </div>
 </header>

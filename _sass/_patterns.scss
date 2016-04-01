@@ -334,12 +334,37 @@
 }
 
 .btn-arrow {
+  border-color: $green-dark;
+  color: $green-dark;
   font-size: 1em;
   font-weight: 700;
   line-height: 1;
   padding: .4em;
   text-align: center;
   width: 1.8em;
+}
+
+.header .btn-arrow {
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
 }
 
 // match base and hover state to avoid
