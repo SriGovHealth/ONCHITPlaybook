@@ -441,6 +441,7 @@
   &:hover,
   &:focus {
     background-color: $black;
+    color: $white;
 
     .section-title {
       color: $yellow;
