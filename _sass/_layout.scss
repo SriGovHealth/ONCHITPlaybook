@@ -78,7 +78,7 @@ nav {
     outline: 0;
 
     li {
-      border-bottom: 1px solid $gray;
+      border-bottom: 0;
     }
 
     a {
@@ -95,6 +95,7 @@ nav {
     .active {
       a {
         background-color: lighten($green-light, 10%);
+        font-weight: bold;
       }
     }
   }

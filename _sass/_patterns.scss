@@ -280,20 +280,25 @@
 }
 
 .btn-chapter {
+  background-color: $blue;
   border: 1px solid $blue;
-  color: $blue;
+  color: $white;
 
-  &:hover,
-  &:focus {
-    background-color: $blue;
-    border-color: $blue;
+  &:visited {
     color: $white;
   }
 
-  &:active {
-    background-color: $blue;
+  &:hover,
+  &:focus {
+    background-color: $white;
     border-color: $blue;
-    color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    background-color: $white;
+    border-color: $blue;
+    color: $blue;
   }
 }
 
@@ -363,6 +368,8 @@
 }
 
 .header .btn-arrow {
+  background-color: $white;
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
@@ -453,6 +460,15 @@
       color: $white;
 
     }
+  }
+}
+
+.next {
+  margin: 3em 0;
+
+  .btn-chapter {
+    font-size: 1.4em;
+    padding: .75em 1.5em;
   }
 }
 
