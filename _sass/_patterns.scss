@@ -411,6 +411,50 @@
   }
 }
 
+.btn-landing {
+  background-color: $blue-dark;
+  color: $white;
+  display: block;
+  font-size: 1.2em;
+  margin: .75em 0;
+  padding: 1.5em 3em 1.5em 1em;
+  position: relative;
+  text-decoration: none;
+
+  .section-title {
+    color: $white;
+    display: block;
+    font-family: $font-header
+  }
+
+  .btn-arrow {
+    background-color: transparent;
+    position: absolute;
+    right: 1em;
+    top: 35%;
+  }
+
+  &:visited {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $black;
+
+    .section-title {
+      color: $yellow;
+    }
+
+    .btn-arrow {
+      background-color: $green;
+      border-color: $white;
+      color: $white;
+
+    }
+  }
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
