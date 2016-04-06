@@ -71,7 +71,7 @@ nav {
 
 .active {
   a {
-    background-color: $green-light;
+    background-color: $white;
   }
 
   .subnav {
@@ -92,11 +92,10 @@ nav {
       }
     }
 
-    .active {
-      a {
-        background-color: lighten($green-light, 10%);
-        font-weight: bold;
-      }
+    .active a,
+    .now {
+      background-color: lighten($green-light, 10%);
+      font-weight: bold;
     }
   }
 
@@ -104,6 +103,12 @@ nav {
     border: 2px solid $green;
     border-right: 3px solid $green;
     margin-right: -1px;
+  }
+}
+
+.current {
+  a {
+    background-color: $green-light;
   }
 }
 
