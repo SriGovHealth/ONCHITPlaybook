@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           }
         },
         files: {
-          src: ['Gruntfile.js', 'js/lib/nav.js', 'js/lib/jumplink.js', 'js/lib/outlink.js']
+          src: ['Gruntfile.js', 'js/lib/nav.js', 'js/lib/jumplink.js', 'js/lib/outlink.js', 'js/lib/onc.js']
         }
       }
     },
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           mangle : true,
           compress : true
         },
-        src: ['js/lib/jumplink.js','js/lib/outlink.js', 'js/vendor/jquery.js', 'js/lib/nav.js'],
+        src: ['js/lib/jumplink.js','js/lib/outlink.js', 'js/vendor/jquery.js', 'js/lib/nav.js', 'js/vendor/jquery.stickOnScroll.js', 'js/lib/onc.js'],
         dest: 'js/base.js'
       }
     },

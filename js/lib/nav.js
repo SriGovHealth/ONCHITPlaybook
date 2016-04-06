@@ -45,7 +45,7 @@ $(".subnav-toggle").click(function (event) {
     $(".subnav-toggle").html("&darr;");
 
     $(this).parent().find(".subnav").removeClass("closed").attr("aria-hidden", "false").attr("aria-expanded", "true");
-    $(this).html("&rarr;");
+    $(this).html("&uarr;");
     $(this).parent().addClass("active");
   }
   else {

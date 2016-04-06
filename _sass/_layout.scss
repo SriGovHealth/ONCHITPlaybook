@@ -24,7 +24,7 @@ nav {
 
   a {
     display: block;
-    padding: .5em 1em;
+    padding: .5em 2.75em .5em 1em;
     text-decoration: none;
 
     &:hover,
@@ -137,4 +137,8 @@ nav {
       margin-top: -1em;
     }
   }
+}
+
+.hasStickOnScroll {
+    background-color: $white;
 }
