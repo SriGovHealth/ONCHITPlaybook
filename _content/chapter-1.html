@@ -3,6 +3,8 @@ layout: chapter
 title: Chapter 1
 permalink: /chapter-1/
 
+next-title: "Chapter 2"
+next-url: "/chapter-2/"
 ---
 
 <div class="content">
@@ -18,6 +20,15 @@ permalink: /chapter-1/
   <div class="row">
     <div class="grid-12">
       <p>Chapter 1 content</p>
+
+      <h2 id="section-1">Section 1</h2>
+      <h2 id="section-2">Section 2</h2>
+      <h2 id="section-3">Section 3</h2>
+      <h2 id="section-4">Section 4</h2>
+
+      {% include block-next.html %}
+
+      {% include block-comments.html %}
     </div>
   </div>
 </div>

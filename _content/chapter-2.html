@@ -3,6 +3,8 @@ layout: chapter
 title: Chapter 2
 permalink: /chapter-2/
 
+next-title: "Chapter 3"
+next-url: "/chapter-3/"
 ---
 
 <div class="content">
@@ -28,13 +30,12 @@ permalink: /chapter-2/
         <li>Manage care</li>
       </ul>
 
-      <p><img src="http://dummyimage.com/1200x700/999999/ffffff&amp;text=graphic" alt=""></p>
-      <p>Proposed graphic: Checklist of solutions (features to activate in the portal)</p>
+      {% include infographic-2.html %}
 
       <p>Use these features to engage your patients in their care and make care coordination and communication more convenient, efficient, and effective &mdash; for them and for you.</p>
 
 
-      <h2>Allow online booking and prescription refills</h2>
+      <h2 id="section-1">Allow online booking and prescription refills</h2>
 
       <p>Booking medical appointments and refilling prescriptions over the phone can be time-consuming for both patients and providers. On average, it takes a little more than 8 minutes to make an appointment over the phone.<a href="#_ftn1" name="_ftnref1">[1]</a></p>
 
@@ -72,7 +73,7 @@ permalink: /chapter-2/
   <div class="row">
     <div class="grid-12">
 
-      <h2>Set up secure information sharing</h2>
+      <h2 id="section-2">Set up secure information sharing</h2>
 
       <p>There are many scenarios in which patients and providers need to communicate in between visits. Patients may have follow-up questions about a provider&rsquo;s guidance or a medication<a href="#_ftn6" name="_ftnref6">[6]</a>. Providers may need to share test results or explain a recommendation in more detail.</p>
 
@@ -156,7 +157,7 @@ permalink: /chapter-2/
   <div class="row">
     <div class="grid-12">
 
-      <h2>Share notes</h2>
+      <h2 id="section-3">Share notes</h2>
 
       <p>Patients immediately forget up to 80 percent of the clinical information they receive during a visit.<a href="#_ftn13" name="_ftnref13">[13]</a> Provider notes can give patients a snapshot of a visit so they can better remember, understand, and act on their provider&rsquo;s advice after the visit has ended. Patients have always had a right to see these notes &mdash; but until recently there hasn&rsquo;t been a simple, straight-forward way to access them.<a href="#_ftn14" name="_ftnref14">[14]</a></p>
 
@@ -271,11 +272,9 @@ permalink: /chapter-2/
       <li>Share notes</li>
       </ul>
 
-      <div class="next">
-        <p class="text-center"><a href="{{ "/chapter-3/" | prepend: site.baseurl }}" class="btn btn-chapter">Go to Chapter 3 &rarr;</a></p>
-      </div>
+      {% include block-next.html %}
 
-      <p><img src="http://dummyimage.com/1200x600/999999/ffffff&amp;text=comments" alt=""></p>
+      {% include block-comments.html %}
 
       <div class="references">
         <p><a href="#_ftnref1" name="_ftn1">[1]</a> http://searchhealthit.techtarget.com/blog/Health-IT-Pulse/Expansion-of-online-appointment-scheduling-could-lead-to-cost-savings</p>
