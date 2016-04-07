@@ -42,7 +42,8 @@ nav {
 .section-subtitle {
   color: $black-light;
   display: block;
-  font-size: .9em;
+  font-size: .8em;
+  line-height: 1.5;
 }
 
 .subnav-toggle {
@@ -83,7 +84,8 @@ nav {
 
     a {
       background-color: $white;
-      font-size: .9em;
+      font-size: .75em;
+      line-height: 1.5;
       padding-left: 1.5em;
 
       &:hover,
