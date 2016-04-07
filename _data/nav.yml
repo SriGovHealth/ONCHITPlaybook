@@ -1,5 +1,5 @@
-- title: "About"
-  permalink: "/about/"
+- title: "Introduction"
+  permalink: "/introduction/"
   position: top-level
 - title: "Chapter 1"
   subtitle: "Facilitate easy enrollment"

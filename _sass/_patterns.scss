@@ -472,6 +472,57 @@
   }
 }
 
+.sharing {
+  background-color: rgba($black, .5);
+  border-top: 0;
+  padding: .5em;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  z-index: 1;
+}
+
+.btn-sharing {
+  border: 2px solid rgba($black, 0);
+  border-radius: .875em;
+  display: inline-block;
+  height: 1.75em;
+  text-indent: -9999px;
+  width: 1.75em;
+
+  &:hover {
+    border: 2px solid $green;
+  }
+}
+
+.btn-facebook {
+  background-image: url('../img/icon-facebook.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-twitter {
+  background-image: url('../img/icon-twitter.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-linkedin {
+  background-image: url('../img/icon-linkedin.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn-google {
+  background-image: url('../img/icon-google.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
