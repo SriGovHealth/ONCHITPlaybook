@@ -34,7 +34,7 @@ $(document).scroll(function () {
 });
 
 /*
-$(".content h2").stickOnScroll({
+$(".sticky-header").stickOnScroll({
     topOffset: 0,
     setParentOnStick:   true,
     setWidthOnStick:    true
