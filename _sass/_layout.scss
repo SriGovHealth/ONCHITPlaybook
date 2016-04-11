@@ -132,15 +132,27 @@ nav {
 
   .footer-links {
     a {
+      color: $black;
       font-size: .9em;
       margin-right: 1em;
+      text-decoration: none;
+
+      &:visited {
+        color: $black;
+      }
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
     }
   }
 
   .footer-logos {
-    img {
-      display: block;
-      margin-top: -1em;
+    margin-top: 0;
+
+    a {
+      margin-left: 1em;
     }
   }
 }
