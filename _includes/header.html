@@ -8,8 +8,9 @@
   <div class="nav closed">
     <form class="search search-nav" accept-charset="UTF-8" action="#" method="get">
       <label for="query" class="search-label">Search</label>
-      <input autocomplete="off" class="search-text" id="query" name="query" type="text" />
-      <button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
+      <div class="search-block">
+        <input autocomplete="off" class="search-text" id="query" name="query" type="text" /><button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
+      </div>
     </form>
     <nav>
       <ul>
