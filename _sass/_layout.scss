@@ -131,6 +131,8 @@ nav {
   }
 
   .footer-links {
+    float: left;
+
     a {
       color: $black;
       font-size: .9em;
@@ -149,10 +151,23 @@ nav {
   }
 
   .footer-logos {
+    clear: left;
+    float: left;
     margin-top: 0;
 
+    @include bp($large-2) {
+      clear: none;
+      float: right;
+      text-align: right;
+    }
+
     a {
-      margin-left: 1em;
+      margin-right: .5em;
+
+      @include bp($large-2) {
+        margin-left: 1em;
+        margin-right: 0;
+      }
     }
   }
 }
