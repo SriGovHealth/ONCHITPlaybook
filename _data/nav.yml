@@ -45,3 +45,7 @@
       permalink: "/chapter-4/#section-1"
     - title: "4.2 Collect family histories"
       permalink: "/chapter-4/#section-2"
+- title: "References"
+  permalink: "/references/"
+  position: top-level
+  slug: "references"
