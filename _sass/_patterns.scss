@@ -517,6 +517,13 @@
   }
 }
 
+.btn-print {
+  &:hover,
+  &:focus {
+    border: 1px solid $white;
+  }
+}
+
 .next {
   margin: 3em 0;
 
