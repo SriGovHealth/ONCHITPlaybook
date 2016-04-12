@@ -33,13 +33,21 @@ $(document).scroll(function () {
   });
 });
 
-/*
-$(".sticky-header").stickOnScroll({
-    topOffset: 0,
-    setParentOnStick:   true,
-    setWidthOnStick:    true
+$(".myth-block").addClass("myth-on");
+
+$(".myth-control button").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  if ($(this).parent().parent().parent().parent().find(".myth-block").hasClass("myth-on")) {
+    $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-on");
+    $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-off");
+  }
+  else {
+    $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-off");
+    $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-on");
+  }
 });
-*/
 
 $("#sticky-header-1").stickOnScroll({
     footerElement:      $("#sticky-header-2"),
