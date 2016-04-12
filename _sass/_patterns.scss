@@ -25,6 +25,7 @@
 .quote-block {
   background-color: $blue;
   border-bottom: 5px solid $blue-dark;
+  border-radius: .25em;
   color: $white;
   padding: 1em;
 
@@ -279,12 +280,14 @@
 
 .callout-mild {
   background-color: $white;
+  border-radius: .25em;
   font-size: 90%;
   padding: .5em 1em;
 }
 
 .myth-block {
   background-color: $black;
+  border-radius: .25em;
   color: $white;
   padding: .5em 1em;
 
@@ -327,7 +330,7 @@
 
   .myth-content,
   .reality-content {
-    transition: opacity 1s;
+    transition: all 1s;
 
     p {
       margin-top: 0;
@@ -343,7 +346,8 @@
     transition: all .75s;
   }
 
-  .reality-content {
+  .reality-content,
+  .reality-content .myth-control  {
     max-height: 0;
     opacity: 0;
   }
@@ -355,9 +359,11 @@
     transition: all .75s;
   }
 
-  .myth-content {
+  .myth-content,
+  .myth-content .myth-control {
     max-height: 0;
     opacity: 0;
+
   }
 }
 
