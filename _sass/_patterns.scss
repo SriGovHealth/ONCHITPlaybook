@@ -366,6 +366,7 @@
   .reality-content .myth-control  {
     max-height: 0;
     opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -379,6 +380,7 @@
   .myth-content .myth-control {
     max-height: 0;
     opacity: 0;
+    visibility: hidden;
 
   }
 }

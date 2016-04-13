@@ -51,23 +51,19 @@ $(".myth-control button").click(function (event) {
 
 $("#sticky-header-1").stickOnScroll({
     footerElement:      $("#sticky-header-2"),
-    topOffset: 0,
     setWidthOnStick:    true
 });
 
 $("#sticky-header-2").stickOnScroll({
     footerElement:      $("#sticky-header-3"),
-    topOffset: 0,
     setWidthOnStick:    true
 });
 
 $("#sticky-header-3").stickOnScroll({
     footerElement:      $("#sticky-header-4"),
-    topOffset: 0,
     setWidthOnStick:    true
 });
 
 $("#sticky-header-4").stickOnScroll({
-    topOffset: 0,
     setWidthOnStick:    true
 });
