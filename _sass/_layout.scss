@@ -177,6 +177,23 @@ nav {
   padding-top: 0;
   z-index: 1;
 
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .section-number {
+    border: 1px solid $black;
+    border-radius: 3em;
+    display: block;
+    float: left;
+    font-size: .8em;
+    height: 2.25em;
+    padding: .35em .5em;
+    margin-right: .5em;
+    margin-top:-.25em;
+    width: 2.25em;
+  }
+
   .btn-print {
     display: none;
   }
@@ -188,10 +205,14 @@ nav {
 
   .btn-print {
     display: inline-block;
+    float: right;
+    margin-top: .65em;
   }
 
   h2 {
     color: $black;
+    font-size: 1.5em;
+    float: left;
     margin-top: .5em;
   }
 }
