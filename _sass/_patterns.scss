@@ -160,7 +160,8 @@
 }
 
 .search-block {
-  border: 1px solid $gray;
+  border: 1px solid #F6F9FC;
+  border-radius: .25em;
   display: block;
   float: right;
   width: 75%;
@@ -168,7 +169,13 @@
   .search-text {
     border: 0;
     height: 1.5em;
+    padding-left: .3em;
     width: 85%;
+
+    &:focus {
+      border: 1px solid $blue;
+      outline: 0;
+    }
   }
 
   .search-button {
@@ -176,6 +183,7 @@
     border: 0;
     font-family: $font-header;
     height: 1.5em;
+    margin-top: -.1em;
     //padding: 0 .3em;
     width: 15%;
 
