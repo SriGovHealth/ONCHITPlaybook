@@ -59,6 +59,10 @@ nav {
 }
 
 .subnav {
+  li {
+    font-size: 1em;
+  }
+
   a {
     color: $black;
     font-family: $font-body;

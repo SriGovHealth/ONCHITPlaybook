@@ -347,7 +347,7 @@
     border-radius: 1.5em;
     color: $yellow;
     font-size: .8em;
-    padding: .25em .5em;
+    padding: .35em .5em;
   }
 
   .myth-control {
@@ -379,6 +379,7 @@
     transition: all 1s;
 
     p {
+      font-size: 1em;
       margin-top: 0;
       margin-bottom: 0;
       padding-bottom: 1em;
