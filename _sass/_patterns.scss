@@ -37,12 +37,24 @@
 
   .quote-content {
     font-family: $font-header-alt;
+    text-align: center;
   }
 
   .quote-source {
     font-family: $font-body;
     font-size: 80%;
+    text-align: left;
   }
+}
+
+.quote-light {
+  background-color: $off-white;
+  color: $black;
+}
+
+.quote-lighter {
+  background-color: $white;
+  color: $black;
 }
 
 .pagination {
@@ -281,6 +293,7 @@
 
 .callout-mild {
   background-color: $white;
+  border-bottom: 3px solid $blue;
   border-radius: .25em;
   font-size: 90%;
   margin-top: 1em;
