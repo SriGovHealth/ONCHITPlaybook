@@ -217,7 +217,7 @@ nav {
   color: $black;
 
   @include bp-max($sidebar-switch-point) {
-    top: $fixed-header-height !important;
+    margin-top: $fixed-header-height;
   }
 
   .btn-print {
