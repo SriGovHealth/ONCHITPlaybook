@@ -203,7 +203,7 @@ nav {
 
     @include bp-max($sidebar-switch-point) {
       float: none;
-      margin: 0 auto .25em;
+      margin-bottom: .25em;
     }
   }
 
