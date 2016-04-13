@@ -102,6 +102,21 @@
     }
   }
 
+  .stickOnScroll-on {
+    position: relative !important;
+    width: inherit !important;
+    top: inherit !important;
+  }
+
+  .sticky-header {
+    h2 {
+      font-size: 2em !important;
+    }
+    .section-number {
+      display: none !important;
+    }
+  }
+
   .page {
     margin-top: 0 !important;
   }
@@ -113,7 +128,8 @@
   .next,
   .comments,
   .footer,
-  .myth-control {
-    display: none;
+  .myth-control,
+  .btn-print {
+    display: none !important;
   }
 }
