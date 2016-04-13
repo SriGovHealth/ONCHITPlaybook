@@ -47,6 +47,25 @@
   }
 }
 
+.quote-left {
+  @include bp($medium) {
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-top: -.5em;
+    width: 16em;
+  }
+}
+
+.quote-right {
+  @include bp($medium) {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    width: 16em;
+  }
+}
+
 .quote-light {
   background-color: $off-white;
   color: $black;
@@ -300,6 +319,15 @@
   padding: .5em 1em;
 }
 
+.callout-right {
+  @include bp($medium) {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    width: 16em;
+  }
+}
+
 .myth-block {
   background-color: $black;
   border-radius: .25em;
@@ -323,6 +351,7 @@
   }
 
   .myth-control {
+    font-family: $font-body;
     margin-bottom: 0;
     text-align: center;
 
@@ -346,6 +375,7 @@
 
   .myth-content,
   .reality-content {
+    font-family: $font-header-alt;
     transition: all 1s;
 
     p {
@@ -353,6 +383,15 @@
       margin-bottom: 0;
       padding-bottom: 1em;
     }
+  }
+}
+
+.myth-right {
+  @include bp($medium) {
+    float: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    width: 16em;
   }
 }
 
