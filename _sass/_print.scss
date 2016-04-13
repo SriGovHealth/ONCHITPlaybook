@@ -85,6 +85,23 @@
     border-bottom: 2px solid $black;
   }
 
+  .myth-block {
+    color: $black;
+    float: none !important;
+    width: inherit !important;
+
+    .myth-content,
+    .reality-content {
+      max-height: inherit !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+
+    .myth-subhead {
+      display: block;
+    }
+  }
+
   .page {
     margin-top: 0 !important;
   }
@@ -95,7 +112,8 @@
   .nav-logo,
   .next,
   .comments,
-  .footer {
+  .footer,
+  .myth-control {
     display: none;
   }
 }

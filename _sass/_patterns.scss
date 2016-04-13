@@ -387,6 +387,10 @@
   }
 }
 
+.myth-subhead {
+  display: none;
+}
+
 .myth-right {
   @include bp($medium) {
     float: right;
