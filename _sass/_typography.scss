@@ -79,11 +79,12 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.375em;
-  font-weight: 400;
+  font-family: $font-body;
+  font-size: 1.25em;
+  font-weight: 700;
   line-height: 1.4;
-  margin-bottom: .25em;
-  margin-top: .75em;
+  margin-bottom: 0;
+  margin-top: .5em;
 }
 
 h4,
