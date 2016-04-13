@@ -2,7 +2,7 @@ body {
   color: $black;
   font-family: $font-body;
   font-size: 100%;
-  font-weight: 400;
+  font-weight: 300;
 
   @include bp-max($small) {
     font-size: 95%;
