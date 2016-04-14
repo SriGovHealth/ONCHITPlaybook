@@ -146,9 +146,10 @@ ul {
   list-style-type: disc;
 }
 
-p + ul {
+p + ul,
+p + ol {
   margin-bottom: 1.5em;
-  margin-top: -.5em;
+  margin-top: -.75em;
 }
 
 li {

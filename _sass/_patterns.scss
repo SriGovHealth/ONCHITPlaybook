@@ -339,6 +339,7 @@
 
 .callout-right {
   @include bp($medium) {
+    clear: right;
     float: right;
     margin-bottom: 1em;
     margin-left: 1.5em;
