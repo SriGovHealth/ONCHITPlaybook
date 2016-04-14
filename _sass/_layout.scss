@@ -199,6 +199,7 @@ nav {
     padding: .35em .5em;
     margin-right: .5em;
     margin-top:-.25em;
+    text-align: center;
     width: 2.25em;
 
     @include bp-max($sidebar-switch-point) {
@@ -257,5 +258,24 @@ nav {
 
   @include bp-max($sidebar-switch-point) {
     font-size: 2em;
+  }
+
+  .section-number {
+    border: 1px solid $black;
+    border-radius: 3em;
+    display: block;
+    float: left;
+    font-size: .8em;
+    height: 2.25em;
+    padding: .35em .5em;
+    margin-right: .5em;
+    margin-top:-.25em;
+    text-align: center;
+    width: 2.25em;
+
+    @include bp-max($sidebar-switch-point) {
+      float: none;
+      margin-bottom: .25em;
+    }
   }
 }
