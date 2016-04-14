@@ -399,11 +399,19 @@
   }
 
   .versus {
-    border: 1px solid $yellow;
-    border-radius: 1.5em;
-    color: $yellow;
-    font-size: .8em;
-    padding: .35em .5em;
+    background-image: url('../img/icon-vs-small.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 1.75em;
+    text-indent: -9999px;
+    width: 2em;
+
+    //border: 1px solid $yellow;
+    //border-radius: 1.5em;
+    //color: $yellow;
+    //font-size: .8em;
+    //padding: .35em .5em;
   }
 
   .myth-control {
