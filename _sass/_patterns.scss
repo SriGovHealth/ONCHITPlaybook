@@ -347,7 +347,7 @@
 }
 
 .expand-block {
-  @include bp($medium) {
+  @include bp($sidebar-switch-point) {
     float: right;
     margin-bottom: 1em;
     margin-left: 1.5em;
@@ -375,6 +375,10 @@
     right: 1px;
     text-decoration: none;
     transition: all .4s;
+
+    @include bp-max($sidebar-switch-point) {
+      display: none;
+    }
 
     &:hover,
     &:focus {
