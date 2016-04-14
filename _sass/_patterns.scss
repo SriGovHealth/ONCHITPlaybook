@@ -48,7 +48,6 @@
     span {
       color: $gray;
       font-weight: 400;
-      letter-spacing: .1em;
     }
   }
 }
@@ -189,7 +188,7 @@
 
 .search-nav {
   @extend %clearfix;
-  padding: .75em 1em;
+  padding: .75em 1.25em;
 }
 
 .search-label {

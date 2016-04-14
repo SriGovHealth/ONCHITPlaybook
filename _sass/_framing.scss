@@ -44,7 +44,10 @@
     max-height: $fixed-header-height - .25em;
 
     @include bp($sidebar-switch-point) {
+      display: block;
+      margin: 0 auto;
       max-height: inherit;
+
     }
   }
 
