@@ -178,7 +178,7 @@ nav {
 .sticky-header {
   background-color: $white;
   //padding-bottom: 0;
-  padding-top: 0;
+  padding-top: 2em;
   z-index: 1;
 
   h2 {
@@ -215,6 +215,7 @@ nav {
 .stickOnScroll-on {
   background-color: $green;
   color: $black;
+  padding-top: 0;
 
   @include bp-max($sidebar-switch-point) {
     margin-top: $fixed-header-height;
