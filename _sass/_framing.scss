@@ -52,7 +52,7 @@
   }
 
   @include bp($sidebar-switch-point) {
-    margin: .75em 1.5em;
+    margin: 1em 1.5em;
   }
 }
 
@@ -84,7 +84,7 @@
   @include bp($sidebar-switch-point) {
     bottom: 0;
     box-shadow: none;
-    margin-top: 5.5em;
+    margin-top: 6.5em;
     padding-bottom: 0;
   }
 
