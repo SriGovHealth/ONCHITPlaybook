@@ -204,6 +204,7 @@
 }
 
 .search-block {
+  background-color: $white;
   border: 1px solid #F6F9FC;
   border-radius: .25em;
   display: block;
@@ -211,6 +212,7 @@
   width: 75%;
 
   .search-text {
+    background-color: transparent;
     border: 0;
     height: 1.5em;
     padding-left: .3em;
@@ -225,6 +227,8 @@
   .search-button {
     background-color: $blue;
     border: 0;
+    border-top-right-radius: .25em;
+    border-bottom-right-radius: .25em;
     font-family: $font-header;
     height: 1.5em;
     margin-top: -.1em;
