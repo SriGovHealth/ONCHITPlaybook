@@ -97,6 +97,18 @@
   }
 }
 
+.quote-wide {
+  .quote-icon {
+    float: left;
+    margin-top: .5em;
+  }
+
+  .quote-content {
+    margin-left: 5em;
+    text-align: left;
+  }
+}
+
 .quote-light {
   background-color: $off-white;
   color: $black;
