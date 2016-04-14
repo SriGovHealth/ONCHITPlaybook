@@ -827,6 +827,22 @@
   background-size: contain;
 }
 
+ul.checklist {
+  list-style-type: none;
+  margin-left: 1em;
+
+  .check {
+    color: $black;
+    display: block;
+    float: left;
+  }
+
+  .check-item {
+    display: block;
+    margin-left: 1.5em;
+  }
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
