@@ -238,7 +238,16 @@ nav {
   }
 
   .section-number {
-    display: none;
+    border: 0;
+    border-radius: 0;
+    display: inline;
+    float: none;
+    font-size: inherit;
+    height: inherit;
+    padding: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    width: inherit;
   }
 }
 
