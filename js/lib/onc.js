@@ -69,3 +69,4 @@ $("#sticky-header-4").stickOnScroll({
 });
 
 $('.expand-control').colorbox({maxHeight:'95%'});
+$('.expand-thumbnail').colorbox({maxHeight:'95%'});
