@@ -67,3 +67,5 @@ $("#sticky-header-3").stickOnScroll({
 $("#sticky-header-4").stickOnScroll({
     setWidthOnStick:    true
 });
+
+$('.expand-control').colorbox({maxHeight:'95%'});
