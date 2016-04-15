@@ -772,14 +772,19 @@
   background-image: url('../img/icon-print.png');
   background-position: 5% center;
   background-repeat: no-repeat;
-  border: 1px solid $white;
-  color: $black;
+  border: 2px solid transparent;
+  border-radius: .25em;
+  color: $white;
   font-family: $font-body;
-  padding-left: 2.25em;
+  padding-left: 1.75em;
+  padding-right: .25em;
+  text-decoration: none;
 
   &:hover,
   &:focus {
-    border: 1px solid $white;
+    color: $white;
+    text-decoration: none;
+    border: 2px solid $green;
   }
 }
 
