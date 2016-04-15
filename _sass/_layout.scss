@@ -263,6 +263,10 @@ nav {
   }
 
   .section-number {
+    background-image: url('../img/icon-check-green-small.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 1.5em;
     border: 1px solid $black;
     border-radius: 3em;
     display: block;

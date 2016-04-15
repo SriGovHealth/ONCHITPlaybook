@@ -834,9 +834,15 @@ ul.checklist {
   margin-left: 1em;
 
   .check {
+    background-image: url('../img/icon-check-gray-small.png');
+    background-position: center center;
+    background-repeat: no-repeat;
     color: $black;
     display: block;
     float: left;
+    height: 1em;
+    margin-top: .25em;
+    width: 1em;
   }
 
   .check-item {
