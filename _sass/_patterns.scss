@@ -20,6 +20,10 @@
   margin-top: 1em;
   padding-bottom: 3.5em;
   padding-top: 3.75em;
+
+  & + .case-block {
+    margin-top: -1.5em;
+  }
 }
 
 .ftf-block {
