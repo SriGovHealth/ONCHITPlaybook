@@ -155,6 +155,10 @@ p + ol {
 li {
   font-size: 1.125em;
   line-height: 1.5em;
+
+  & li {
+    font-size: 1em;
+  }
 }
 
 dl {
