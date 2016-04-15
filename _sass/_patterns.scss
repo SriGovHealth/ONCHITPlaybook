@@ -100,14 +100,22 @@
 }
 
 .quote-wide {
+  margin-top: 2em;
+  margin-bottom: 2em;
+
   .quote-icon {
     float: left;
     margin-top: .5em;
   }
 
   .quote-content {
+    font-size: 1.2em;
     margin-left: 5em;
     text-align: left;
+
+    p {
+      margin-bottom: .5em;
+    }
   }
 }
 
