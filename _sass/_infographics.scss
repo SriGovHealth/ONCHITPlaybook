@@ -6,10 +6,51 @@
 
 .infographic-container {
   background-color: $white;
-  min-height: 10em;
 }
 
 .slide {
   border: 1px solid $black;
+  min-height: 25em;
   position: relative;
+}
+
+.off {
+  display: none;
+}
+
+.slide-content {
+  padding: 1em;
+}
+
+.slide-nav {
+  background-color: $black-light;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.btn-previous,
+.btn-next {
+  background-color: $gray-dark;
+  border: 1px solid $white;
+  color: $white;
+}
+
+.btn-previous {
+  float: left;
+  margin: .75em 0 .75em 1em;
+}
+
+.btn-next {
+  float: right;
+  margin: .75em 1em .75em 0;
+}
+
+.dot-nav {
+  color: $white;
+  display: block;
+  max-width: 6em;
+  margin: 1em auto .5em;
+  text-align: center;
 }
