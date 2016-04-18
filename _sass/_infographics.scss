@@ -6,22 +6,47 @@
 
 .infographic-container {
   background-color: $white;
+  position: relative;
+  min-height: 25em;
 }
 
 .slide {
   background-color: $gray-light;
-  min-height: 25em;
-  position: relative;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 11;
 }
 
 .off {
-  //position: absolute;
-  //left: -9999px;
-  display: none;
+  z-index: 10;
 }
 
 .slide-content {
   padding: 1em;
+}
+
+.in-1 {
+  opacity: 1;
+  transition: opacity 1s;
+
+  .off & {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+
+.in-2 {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 1s;
+
+  .off & {
+    opacity: 0;
+    transition: opacity 1s;
+  }
 }
 
 .heading-block {
