@@ -284,3 +284,10 @@ nav {
     }
   }
 }
+
+.logo {
+  text-align: right;
+  @include bp-max($sidebar-switch-point) {
+    text-align: left;
+  }
+}
