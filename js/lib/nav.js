@@ -2,27 +2,27 @@ $(".site-menu button").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
 
-  if ($(".nav").hasClass("closed")) {
-    $(".nav").removeClass("closed");
-    $(".nav").addClass("open").attr("aria-expanded", "true");
+  if ($(".sidebar").hasClass("closed")) {
+    $(".sidebar").removeClass("closed");
+    $(".sidebar").addClass("open").attr("aria-expanded", "true");
     $(".overlay").addClass("on");
   }
   else {
-    $(".nav").removeClass("open");
-    $(".nav").addClass("closed").attr("aria-expanded", "false");
+    $(".sidebar").removeClass("open");
+    $(".sidebar").addClass("closed").attr("aria-expanded", "false");
     $(".overlay").removeClass("on");
   }
 });
 
 $(".overlay").click(function (event) {
-  $(".nav").removeClass("open");
-  $(".nav").addClass("closed").attr("aria-expanded", "false");
+  $(".sidebar").removeClass("open");
+  $(".sidebar").addClass("closed").attr("aria-expanded", "false");
   $(".overlay").removeClass("on");
 });
 
 $(".subnav a").click(function (event) {
-  $(".nav").removeClass("open");
-  $(".nav").addClass("closed").attr("aria-expanded", "false");
+  $(".sidebar").removeClass("open");
+  $(".sidebar").addClass("closed").attr("aria-expanded", "false");
   $(".overlay").removeClass("on");
 });
 
@@ -58,12 +58,12 @@ $(".subnav-toggle").click(function (event) {
 // Display:none updates aria-hidden (JAWS bug)
 if (window.matchMedia) {
   if (window.matchMedia("(min-width: 56.25em)").matches) {
-    $(".site-bar").attr("aria-hidden", "true");
-    $("nav").attr("aria-expanded", "true");
+    $(".mobile-menu").attr("aria-hidden", "true");
+    $(".sidebar").attr("aria-expanded", "true");
   }
   if (window.matchMedia("(max-width: 56.25em)").matches) {
-    $(".site-bar").attr("aria-hidden", "false");
-    $("nav").attr("aria-expanded", "false");
+    $(".mobile-menu").attr("aria-hidden", "false");
+    $(".sidebar").attr("aria-expanded", "false");
   }
 }
 

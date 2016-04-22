@@ -1,4 +1,4 @@
-nav {
+.nav {
   margin-bottom: 1em;
   margin-top: 0;
 
@@ -20,17 +20,26 @@ nav {
   li {
     border-bottom: 1px solid $off-white-2;
     position: relative;
+
+    a {
+      display: block;
+      padding: .5em 2.75em .5em 1em;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: lighten($green-light, 10%);
+      }
+    }
   }
 
-  a {
+  .subnav-toggle {
     display: block;
-    padding: .5em 2.75em .5em 1em;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      background-color: lighten($green-light, 10%);
-    }
+    padding: .5em;
+    position: absolute;
+    right: .5em;
+    text-align: center;
+    top: 1em;
   }
 }
 
@@ -44,18 +53,6 @@ nav {
   display: block;
   font-size: .8em;
   line-height: 1.5;
-}
-
-.subnav-toggle {
-  display: block;
-  //height: 2.35em;
-  //line-height: 2.35;
-  //padding: 0;
-  position: absolute;
-  right: .5em;
-  text-align: center;
-  top: 1em;
-  //width: 2.35em;
 }
 
 .subnav {

@@ -1,18 +1,104 @@
-.header {
+.mobile-menu {
+  background-color: $white;
+  height: $fixed-header-height;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+  @include bp($sidebar-switch-point) {
+    display: none;
+  }
+
+  .site-name {
+    margin-left: .5em;
+    margin-top: .15em;
+
+    a {
+      display: block;
+    }
+
+    img {
+      max-height: $fixed-header-height - .25em;
+    }
+  }
+
+  .site-menu {
+    position: absolute;
+    right: .5em;
+    top: .35em;
+  }
+}
+
+.sidebar {
+  background-color: $white;
   box-shadow: .5em 0 1.5em rgba($black, .15);
-  position: absolute;
+  position: fixed;
+  left: 0;
   width: $sidebar-width;
+  transition: left .15s ease;
+  z-index: 10;
 
   @include bp($sidebar-switch-point) {
     height: 100%;
-    position: fixed;
   }
 
   .ie9 & {
     box-shadow: none;
   }
+
+  &.closed {
+    //box-shadow: none;
+    left: -$sidebar-width;
+    transition: left .15s ease;
+
+    @include bp($sidebar-switch-point) {
+      left: 0;
+    }
+  }
+
+  .site-name {
+    padding: 1em;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @include bp-max($sidebar-switch-point) {
+      display: none;
+    }
+  }
 }
 
+.header {
+  box-shadow: .5em 0 1.5em rgba($black, .15);
+  position: fixed;
+  height: 9.5em;
+  width: $sidebar-width;
+
+  @include bp($sidebar-switch-point) {
+    box-shadow: none;
+  }
+}
+
+.nav {
+  background-color: $white;
+  bottom: 0;
+  box-shadow: .5em 0 1.5em rgba($black, .15);
+  position: fixed;
+  overflow: auto;
+  top: 6em;
+  width: $sidebar-width;
+
+  @include bp($sidebar-switch-point) {
+    box-shadow: none;
+    top: 9.5em;
+  }
+}
+
+/*
 .site-bar {
   @extend %clearfix;
   background-color: $white;
@@ -30,39 +116,14 @@
     position: relative;
     width: $sidebar-width;
   }
-}
 
-.site-name {
-  margin-left: .5em;
-  margin-top: .15em;
-
-  a {
-    display: block;
-  }
-
-  img {
-    max-height: $fixed-header-height - .25em;
+  &.closed {
+    box-shadow: none;
+    left: -$sidebar-width;
 
     @include bp($sidebar-switch-point) {
-      display: block;
-      margin: 0 auto;
-      max-height: inherit;
-
+      left: 0;
     }
-  }
-
-  @include bp($sidebar-switch-point) {
-    margin: 1em 1.5em;
-  }
-}
-
-.site-menu {
-  position: absolute;
-  right: .5em;
-  top: .35em;
-
-  @include bp($sidebar-switch-point) {
-    display: none;
   }
 }
 
@@ -98,12 +159,12 @@
     }
   }
 }
-
+*/
 .overlay {
   left: -18em;
   transition: left .15s ease;
   width: 0;
-  z-index: 1;
+  z-index: 9;
 
   &.on {
     @include bp-max($sidebar-switch-point) {
@@ -120,6 +181,7 @@
 }
 
 .page {
+  position: relative;
   margin-top: $fixed-header-height;
 
   @include bp($sidebar-switch-point) {

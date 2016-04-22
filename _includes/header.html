@@ -1,36 +1,40 @@
 <a href="#top" class="visually-hidden">Skip to content</a>
 
-<header class="header closed">
-  <div class="site-bar">
+<div class="mobile-menu">
+  <div class="site-name"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/img/site-logo.png" | prepend: site.baseurl }}" alt="ONC Patient Engagement Playbook logo"></a></div>
+  <div class="site-menu"><button class="btn btn-chapter btn-touch">Menu</button></div>
+</div>
+
+<div class="sidebar closed">
+  <div class="header">
     <div class="site-name"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/img/site-logo.png" | prepend: site.baseurl }}" alt="ONC Patient Engagement Playbook logo"></a></div>
-    <div class="site-menu"><button class="btn btn-chapter btn-touch">Menu</button></div>
-  </div>
-  <div class="nav closed">
+
     <form class="search search-nav" accept-charset="UTF-8" action="#" method="get">
       <label for="query" class="search-label">Search</label>
       <div class="search-block">
         <input autocomplete="off" class="search-text" id="query" name="query" type="text" /><button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
       </div>
     </form>
-    <nav>
-      <ul>
-      {% for section in site.data.nav %}
-        {% if section.subcategories == null %}
-          <li class="group{% if page.permalink == section.permalink %} active current{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a></li>
-        {% else %}
-          <li class="group has-subnav{% if page.permalink == section.permalink %} active current{% endif %}">
-            <a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a>
-            <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.slug }}" aria-controls="subnav-{{ section.slug }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.slug }}">&darr;</a>
-            <ul class="subnav closed" id="subnav-{{ section.slug }}" aria-hidden="true" aria-expanded="false">
-            {% for subsection in section.subcategories %}
-              <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>
-            {% endfor %}
-            </ul>
-          </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </nav>
+  </div>
+
+  <div class="nav">
+    <ul>
+    {% for section in site.data.nav %}
+      {% if section.subcategories == null %}
+        <li class="group{% if page.permalink == section.permalink %} active current{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a></li>
+      {% else %}
+        <li class="group has-subnav{% if page.permalink == section.permalink %} active current{% endif %}">
+          <a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a>
+          <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.slug }}" aria-controls="subnav-{{ section.slug }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.slug }}">&darr;</a>
+          <ul class="subnav closed" id="subnav-{{ section.slug }}" aria-hidden="true" aria-expanded="false">
+          {% for subsection in section.subcategories %}
+            <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>
+          {% endfor %}
+          </ul>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
     <p class="text-center nav-logo"><a href="https://www.healthIT.gov/"><img src="{{ "/img/healthIT-logo.png" | prepend: site.baseurl }}" alt="A product of HealthIT.gov"></a></p>
   </div>
-</header>
+</div>
