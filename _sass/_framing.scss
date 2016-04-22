@@ -118,6 +118,10 @@
       left: 0;
     }
   }
+
+  .ie9 & {
+    box-sizing: content-box;
+  }
 }
 
 .overlay {
