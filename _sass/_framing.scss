@@ -84,6 +84,12 @@
 
   .closed & {
     box-shadow: none;
+    left: -$sidebar-width;
+    transition: left .15s ease;
+
+    @include bp($sidebar-switch-point) {
+      left: 0;
+    }
   }
 }
 
@@ -103,6 +109,12 @@
 
   .closed & {
     box-shadow: none;
+    left: -$sidebar-width;
+    transition: left .15s ease;
+
+    @include bp($sidebar-switch-point) {
+      left: 0;
+    }
   }
 }
 
