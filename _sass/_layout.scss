@@ -286,8 +286,10 @@ nav {
 }
 
 .logo {
-  text-align: right;
-  @include bp-max($sidebar-switch-point) {
-    text-align: center;
+  text-align: center;
+
+  @include bp($sidebar-switch-point) {
+    margin-top: 1em;
+    text-align: right;
   }
 }
