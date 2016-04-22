@@ -287,8 +287,9 @@ nav {
 
 .logo {
   text-align: center;
+  margin-top: -.5em;
 
-  @include bp($sidebar-switch-point) {
+  @include bp($medium-2) {
     margin-top: 1em;
     text-align: right;
   }
