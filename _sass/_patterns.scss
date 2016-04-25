@@ -110,12 +110,20 @@
   .quote-icon {
     float: left;
     margin-top: .5em;
+
+    @include bp-max($medium) {
+      float: none;
+    }
   }
 
   .quote-content {
     font-size: 1.2em;
     margin-left: 5em;
     text-align: left;
+
+    @include bp-max($medium) {
+      margin-left: 0;
+    }
 
     p {
       margin-bottom: .5em;
