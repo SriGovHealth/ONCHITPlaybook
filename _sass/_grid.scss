@@ -124,6 +124,11 @@
       width: 100%;
     }
 
+    &:after,
+    &:before {
+      content: none;
+    }
+
     [class*="offset"]:first-child {
       margin-left: 0;
     }
