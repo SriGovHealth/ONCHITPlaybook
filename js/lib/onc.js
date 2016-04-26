@@ -69,21 +69,25 @@ $(".myth-control button").click(function (event) {
 
 $("#sticky-header-1").stickOnScroll({
     footerElement:      $("#sticky-header-2"),
-    setWidthOnStick:    true
+    setWidthOnStick:    true,
+    setParentOnStick:   true
 });
 
 $("#sticky-header-2").stickOnScroll({
     footerElement:      $("#sticky-header-3"),
-    setWidthOnStick:    true
+    setWidthOnStick:    true,
+    setParentOnStick:   true
 });
 
 $("#sticky-header-3").stickOnScroll({
     footerElement:      $("#sticky-header-4"),
-    setWidthOnStick:    true
+    setWidthOnStick:    true,
+    setParentOnStick:   true
 });
 
 $("#sticky-header-4").stickOnScroll({
-    setWidthOnStick:    true
+    setWidthOnStick:    true,
+    setParentOnStick:   true
 });
 
 $('.expand-control').colorbox({maxHeight:'95%'});
