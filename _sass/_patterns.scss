@@ -879,6 +879,23 @@ ul.checklist {
   }
 }
 
+.content-slider {
+  position: relative;
+
+  .content-slide {
+    display: none;
+    text-align: center;
+    min-height: 0;
+    transition: all 1s;
+
+    &.on {
+      display: block;
+      min-height: inherit;
+      transition: all 1s;
+    }
+  }
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;

@@ -81,15 +81,42 @@ og-poster: ""
 
           <p>Mana Health, an EHR vendor, enables patients to sign up in a few simple steps. When a patient registers, Mana&rsquo;s system uses data (like demographics and the patient&rsquo;s medical record number) to match up the patient with her EHR. This automated verification system means an efficient, successful enrollment process for practices and patients. </p>
 
-          <ol>
-          <li>Select <strong>New User</strong>. <img src="{{ "/img/figure-1-1-1.png" | prepend: site.baseurl }}" alt=""></li>
-          <li>Type in the invite code (that your doctor&rsquo;s office gave you) and your date of birth. <img src="{{ "/img/figure-1-1-2.png" | prepend: site.baseurl }}" alt=""></li>
-          <li>Enter your email address and decide on a username and password. <img src="{{ "/img/figure-1-1-3.png" | prepend: site.baseurl }}" alt=""></li>
-          <li>Choose security questions and type in your answers. (If you ever forget your password, you can answer these questions to access your account.) <img src="{{ "/img/figure-1-1-4.png" | prepend: site.baseurl }}" alt=""></li>
-          <li>Read and agree to the Terms and Conditions. <img src="{{ "/img/figure-1-1-5.png" | prepend: site.baseurl }}" alt=""></li>
-          </ol>
-
-          <p><img src="{{ "/img/figure-1-1-6.png" | prepend: site.baseurl }}" alt=""> You&rsquo;re all done!</p>
+          <div class="content-slider">
+            <div class="content-slide on" id="content-slide-1">
+              <p><img src="{{ "/img/figure-1-1-1.png" | prepend: site.baseurl }}" alt=""><br>
+              1. Select <strong>New User</strong>.</p>
+              <a href="#content-slide-2" class="btn content-slide-next">Next step &rarr;</a>
+            </div>
+            <div class="content-slide" id="content-slide-2">
+              <p><img src="{{ "/img/figure-1-1-2.png" | prepend: site.baseurl }}" alt=""><br>
+              2. Type in the invite code (that your doctor&rsquo;s office gave you) and your date of birth.</p>
+              <a href="#content-slide-1" class="btn content-slide-previous">&larr; Previous step</a>
+              <a href="#content-slide-3" class="btn content-slide-next">Next step &rarr;</a>
+            </div>
+            <div class="content-slide" id="content-slide-3">
+              <p><img src="{{ "/img/figure-1-1-3.png" | prepend: site.baseurl }}" alt=""><br>
+              3. Enter your email address and decide on a username and password.</p>
+              <a href="#content-slide-2" class="btn content-slide-previous">&larr; Previous step</a>
+              <a href="#content-slide-4" class="btn content-slide-next">Next step &rarr;</a>
+            </div>
+            <div class="content-slide" id="content-slide-4">
+              <p><img src="{{ "/img/figure-1-1-4.png" | prepend: site.baseurl }}" alt=""><br>
+              4. Choose security questions and type in your answers. (If you ever forget your password, you can answer these questions to access your account.)</p>
+              <a href="#content-slide-3" class="btn content-slide-previous">&larr; Previous step</a>
+              <a href="#content-slide-5" class="btn content-slide-next">Next step &rarr;</a>
+            </div>
+            <div class="content-slide" id="content-slide-5">
+              <p><img src="{{ "/img/figure-1-1-5.png" | prepend: site.baseurl }}" alt=""><br>
+              5. Read and agree to the Terms and Conditions.</p>
+              <a href="#content-slide-4" class="btn content-slide-previous">&larr; Previous step</a>
+              <a href="#content-slide-6" class="btn content-slide-next">Next step &rarr;</a>
+            </div>
+            <div class="content-slide" id="content-slide-6">
+              <p><img src="{{ "/img/figure-1-1-6.png" | prepend: site.baseurl }}" alt=""><br>
+              You&rsquo;re all done!</p>
+              <a href="#content-slide-5" class="btn content-slide-previous">&larr; Previous step</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

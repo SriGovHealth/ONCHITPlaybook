@@ -33,6 +33,24 @@ $(document).scroll(function () {
   });
 });
 
+$(".content-slide-next").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var next = $(this).attr('href');
+  $(".content-slide").removeClass("on");
+  $(next).addClass("on");
+});
+
+$(".content-slide-previous").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var previous = $(this).attr('href');
+  $(".content-slide").removeClass("on");
+  $(previous).addClass("on");
+});
+
 $(".myth-block").addClass("myth-on");
 
 $(".myth-control button").click(function (event) {
