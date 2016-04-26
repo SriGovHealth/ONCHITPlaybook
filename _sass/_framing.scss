@@ -77,10 +77,12 @@
   position: fixed;
   height: 9.5em;
   left: 0;
+  top: $fixed-header-height;
   width: $sidebar-width;
 
   @include bp($sidebar-switch-point) {
     box-shadow: none;
+    top: inherit;
   }
 
   .closed & {
