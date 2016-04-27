@@ -256,6 +256,14 @@
     //padding: 0 .3em;
     width: 15%;
 
+    &:hover {
+      background-color: lighten($blue, 5%);
+
+      img {
+        background-color: lighten($blue, 5%);
+      }
+    }
+
     img {
       background-color: $blue;
       margin-top: -.15em;
