@@ -2,7 +2,7 @@
   permalink: "/introduction/"
   position: top-level
 - title: "Chapter 1"
-  subtitle: "Facilitate easy enrollment"
+  subtitle: "Facilitate Easy Enrollment"
   permalink: "/chapter-1/"
   position: top-level
   slug: "chapter-1"
@@ -16,7 +16,7 @@
     - title: "1.4 Market effectively"
       permalink: "/chapter-1/#section-4"
 - title: "Chapter 2"
-  subtitle: "Activate features that meet patient needs"
+  subtitle: "Activate Features that Meet Patient Needs"
   permalink: "/chapter-2/"
   position: top-level
   slug: "chapter-2"
@@ -28,7 +28,7 @@
     - title: "2.3 Share notes"
       permalink: "/chapter-2/#section-3"
 - title: "Chapter 3"
-  subtitle: "Enable proxy access"
+  subtitle: "Enable Proxy Access"
   permalink: "/chapter-3/"
   position: top-level
   slug: "chapter-3"
@@ -36,7 +36,7 @@
     - title: "3.1 Set up varying levels of access"
       permalink: "/chapter-3/#section-1"
 - title: "Chapter 4"
-  subtitle: "Integrate patient-generated data"
+  subtitle: "Integrate Patient-generated Data"
   permalink: "/chapter-4/"
   position: top-level
   slug: "chapter-4"
