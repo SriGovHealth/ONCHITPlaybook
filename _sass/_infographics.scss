@@ -5,9 +5,15 @@
 }
 
 .infographic-container {
+  @extend %clearfix;
   background-color: $white;
+  margin: 0 auto;
+  max-width: $content-max-width;
+  min-height: 31em;
+  overflow: hidden;
+  padding-left: 1em;
+  padding-right: 1em;
   position: relative;
-  min-height: 25em;
 }
 
 .slide {
@@ -18,98 +24,51 @@
   right: 0;
   top: 0;
   z-index: 11;
+
+  &.off {
+    z-index: 10;
+  }
 }
 
-.off {
-  z-index: 10;
-}
-
-.slide-content {
-  padding: 1em;
-}
-
-.hotspot {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slide-frame {
   bottom: 0;
-  right: 0;
-}
-
-.hotspot-title {
+  left: 0;
   position: absolute;
-  top: 1em;
-  left: 1em;
-  width: 50%;
-
-  p {
-    font-size: 1.5em;
-    line-height: 1.3;
-  }
-}
-
-.office {
-  background-image: url('../img/ig-1-office-bg.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.in-1 {
-  opacity: 1;
-  transition: opacity 1s;
-
-  .off & {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-}
-
-.in-2 {
-  opacity: 1;
-  transition: opacity 1s;
-  transition-delay: 1s;
-
-  .off & {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-}
-
-.heading-block {
-  background-color: $white;
-  margin-bottom: 1em;
-  margin-left: -1em;
-  margin-right: -2em;
-  margin-top: 2.5em;
-  padding: .5em 1em 2em;
-}
-
-.heading-inner {
-  border-bottom: 3px solid $gray;
-  margin-right: -1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
-
-   h1 {
-    font-size: 3em;
-   }
+  right: 0;
+  top: 0;
 }
 
 .slide-title {
-  padding: 3em 4em;
+  font-size: 150%;
+  margin: 0 auto;
+  max-width: 30em;
+  padding: 1em;
 
-  h2 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.5em;
+  @include bp($medium) {
+    top: 20%;
   }
 }
 
-.slide-narrow {
-  padding-left: 0;
+.first-third {
+  left: 0;
+  position: absolute;
+  width: 33%;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.middle {
+  @include bp($medium) {
+    top: 25%;
+  }
+}
+
+.second-twothirds {
+  left: 33%;
+  position: absolute;
+  width: 66%;
 }
 
 .slide-nav {
@@ -157,7 +116,157 @@
   margin: 1em auto .5em;
   text-align: center;
 
+  span {
+    color: $black;
+  }
+
   .slide-nav-dark & {
     color: $white;
+
+    span {
+      color: $gray;
+    }
+  }
+}
+
+.heading-block {
+  background-color: $white;
+  margin-bottom: 1em;
+  margin-left: -1em;
+  margin-right: -2em;
+  margin-top: 2.5em;
+  padding: .5em 1em 2em;
+}
+
+.heading-inner {
+  border-bottom: 3px solid $gray;
+  margin-right: -1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+
+   h1 {
+    font-size: 3em;
+   }
+}
+
+.hotspot {
+  position: absolute;
+
+  a {
+    background-color: red;
+    border-radius: .75em;
+    color: #fff;
+    display: block;
+    height: 1.5em;
+    line-height: 1.25;
+    text-decoration: none;
+    width: 1.5em;
+    font-size: 1em;
+    text-align: center;
+    transition: all .5s;
+
+    @include bp($medium) {
+      border-radius: .75em;
+      height: 1.25em;
+      line-height: 1;
+      font-size: 2em;
+      width: 1.25em;
+    }
+
+    &:hover {
+      background-color: blue;
+      transition: all .5s;
+    }
+  }
+}
+
+.hotspot-1 {
+  top: 50%;
+  left: 8%;
+}
+
+.hotspot-2 {
+  top: 33%;
+  left: 38%;
+}
+
+.hotspot-3 {
+  top: 51%;
+  left: 49%;
+}
+
+.hotspot-4 {
+  top: 46%;
+  left: 69%;
+}
+
+.hotspot-5 {
+  top: 46%;
+  left: 87%;
+}
+
+.hotspot-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+
+  @include bp($medium) {
+    width: 50%;
+  }
+
+  p {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
+}
+
+.office {
+  background-image: url('../img/ig-1-office-bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hotspot-container {
+  display: none;
+}
+
+.hotspot-content {
+  max-width: 30em;
+  padding: 1em;
+}
+
+
+// Animations
+.in-1 {
+  opacity: 1;
+  transition: opacity 1s;
+
+  .off & {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+
+.in-2 {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 1s;
+
+  .off & {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+}
+
+.in-3 {
+  opacity: 1;
+  transition: opacity 1s;
+  transition-delay: 2s;
+
+  .off & {
+    opacity: 0;
+    transition: opacity 1s;
   }
 }

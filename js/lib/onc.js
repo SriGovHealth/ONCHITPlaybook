@@ -86,5 +86,6 @@ $(".myth-control button").click(function (event) {
 
 $(".sticky-header").stick_in_parent();
 
-$('.expand-control').colorbox({maxHeight:'95%'});
-$('.expand-thumbnail').colorbox({maxHeight:'95%'});
+$('.hotspot-link').colorbox({inline:true, maxHeight:'95%', maxWidth:'95%'});
+$('.expand-control').colorbox({maxHeight:'95%', maxWidth:'95%'});
+$('.expand-thumbnail').colorbox({maxHeight:'95%', maxWidth:'95%'});
