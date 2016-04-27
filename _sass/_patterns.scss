@@ -231,6 +231,7 @@
   display: block;
   float: right;
   width: 75%;
+  position: relative;
 
   .search-text {
     background-color: transparent;
@@ -252,6 +253,8 @@
     border-bottom-right-radius: .25em;
     font-family: $font-header;
     height: 1.5em;
+    position: absolute;
+    right: 0;
     width: 15%;
 
     &:hover {
