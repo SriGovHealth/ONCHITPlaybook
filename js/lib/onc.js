@@ -24,7 +24,7 @@ $(document).scroll(function () {
       });
     }
 
-    else if (distance < -30 && currentHash === hash) {
+    else if (distance < -80 && currentHash === hash) {
       if (typeof prevHash !== 'undefined') {
         path = window.location.pathname + "#" + prevHash;
 
