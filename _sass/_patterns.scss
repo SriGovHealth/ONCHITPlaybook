@@ -605,6 +605,23 @@
   }
 }
 
+.btn-blue {
+  background-color: $white;
+  border: 1px solid $blue;
+  color: $blue;
+
+  &:visited {
+    color: $blue;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    border: 1px solid $white;
+    color: $white;
+  }
+}
+
 .btn-chapter {
   background-color: $blue;
   border: 1px solid $blue;
