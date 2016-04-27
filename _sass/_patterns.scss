@@ -247,13 +247,11 @@
 
   .search-button {
     background-color: $blue;
-    border: 0;
+    border: 1px solid $blue;
     border-top-right-radius: .25em;
     border-bottom-right-radius: .25em;
     font-family: $font-header;
     height: 1.5em;
-    margin-top: -.1em;
-    //padding: 0 .3em;
     width: 15%;
 
     &:hover {
