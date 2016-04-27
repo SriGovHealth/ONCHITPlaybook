@@ -24,7 +24,7 @@ $(document).scroll(function () {
       });
     }
 
-    else if (distance < -80 && currentHash === hash) {
+    /*else if (distance < -30 && currentHash === hash) {
       if (typeof prevHash !== 'undefined') {
         path = window.location.pathname + "#" + prevHash;
 
@@ -37,7 +37,7 @@ $(document).scroll(function () {
           }
         });
       }
-    }
+    }*/
 
     if (path.indexOf(topHash) > -1) {
       $('.has-subnav').each(function(){
@@ -84,28 +84,7 @@ $(".myth-control button").click(function (event) {
   }
 });
 
-$("#sticky-header-1").stickOnScroll({
-    footerElement:      $("#sticky-header-2"),
-    setWidthOnStick:    true,
-    setParentOnStick:   true
-});
-
-$("#sticky-header-2").stickOnScroll({
-    footerElement:      $("#sticky-header-3"),
-    setWidthOnStick:    true,
-    setParentOnStick:   true
-});
-
-$("#sticky-header-3").stickOnScroll({
-    footerElement:      $("#sticky-header-4"),
-    setWidthOnStick:    true,
-    setParentOnStick:   true
-});
-
-$("#sticky-header-4").stickOnScroll({
-    setWidthOnStick:    true,
-    setParentOnStick:   true
-});
+$(".sticky-header").stick_in_parent();
 
 $('.expand-control').colorbox({maxHeight:'95%'});
 $('.expand-thumbnail').colorbox({maxHeight:'95%'});

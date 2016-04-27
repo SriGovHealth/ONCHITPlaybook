@@ -177,7 +177,6 @@
   //padding-bottom: 0;
   padding-top: 2em;
   z-index: 1;
-  transition: all .5s;
 
   h2 {
     font-size: 2.5em;
@@ -211,11 +210,10 @@
   }
 }
 
-.stickOnScroll-on {
+.is_stuck {
   background-color: $green;
   color: $black;
   padding-top: 0;
-  transition: all .5s;
 
   @include bp-max($sidebar-switch-point) {
     margin-top: $fixed-header-height;
