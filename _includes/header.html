@@ -25,7 +25,7 @@
       {% else %}
         <li class="group has-subnav{% if page.permalink == section.permalink %} active current{% endif %}">
           <a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a>
-          <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.slug }}" aria-controls="subnav-{{ section.slug }}" aria-label="Toggle sub-section navigation" href="#subnav-{{ section.slug }}">&darr;</a>
+          <a class="subnav-toggle btn btn-arrow" id="subnav-toggle-{{ section.slug }}" aria-controls="subnav-{{ section.slug }}" aria-label="Toggle {{ section.slug }} sub-section navigation" href="#subnav-{{ section.slug }}">&darr;</a>
           <ul class="subnav closed" id="subnav-{{ section.slug }}" aria-hidden="true" aria-expanded="false">
           {% for subsection in section.subcategories %}
             <li{% if page.permalink == subsection.permalink %} class="active"{% endif %}><a href="{{ subsection.permalink | prepend: site.baseurl }}">{{ subsection.title }}</a></li>
