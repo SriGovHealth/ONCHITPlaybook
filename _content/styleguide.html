@@ -319,7 +319,7 @@ permalink: /styleguide/
 <h2>Search</h2>
 
 <form class="search" accept-charset="UTF-8" action="#" method="get">
-  <p class="search-label"><label for="query">Search</label></p>
+  <p class="search-label"><label for="search-query">Search</label></p>
   <p class="search-block"><input autocomplete="off" class="search-text" id="search-query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
 </form>
 
@@ -559,7 +559,7 @@ for (i = 0; i &lt; divs.length; ++i) {
   <caption>This is a table caption</caption>
   <thead>
     <tr>
-      <th>Table Header 1</th><th>Table Header 2</th><th>Table Header 3</th>
+      <th scope="col">Table Header 1</th><th scope="col">Table Header 2</th><th scope="col">Table Header 3</th>
     </tr>
   </thead>
   <tbody>
@@ -576,11 +576,6 @@ for (i = 0; i &lt; divs.length; ++i) {
       <td colspan="3">A row with a cell spanning all 3 columns</td>
     </tr>
   </tbody>
-  <tfoot>
-    <tr>
-      <th>Table Footer 1</th><th>Table Footer 2</th><th>Table Footer 3</th>
-    </tr>
-  </tfoot>
 </table>
 
 <h2>Responsive Table</h2>
