@@ -293,12 +293,50 @@
 }
 
 .chapter-intro {
-  background-image: url('../img/bg-chapter.jpg');
+  margin-bottom: 3em;
+  padding-top: 15em;
+}
+
+.bg-intro {
+  background-image: url('../img/bg-intro.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 3em;
-  padding-top: 15em;
+}
+
+.bg-chapter-1 {
+  background-image: url('../img/bg-chapter-1.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-chapter-2 {
+  background-image: url('../img/bg-chapter-2.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-chapter-3 {
+  background-image: url('../img/bg-chapter-3.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-chapter-4 {
+  background-image: url('../img/bg-chapter-4.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-references {
+  background-image: url('../img/bg-references.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .callout {
