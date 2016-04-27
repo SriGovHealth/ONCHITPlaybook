@@ -928,6 +928,10 @@ ul.checklist {
   }
 }
 
+.bordered {
+  border: 1px solid $gray;
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
