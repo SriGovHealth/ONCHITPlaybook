@@ -951,6 +951,7 @@ ul.checklist {
 
 .content-slider {
   position: relative;
+  margin-bottom: 1.5em;
 
   .content-slide {
     display: none;
@@ -966,7 +967,8 @@ ul.checklist {
   }
 
   .content-slider-caption {
-    min-height: 4em;
+    min-height: 3.5em;
+    margin-bottom: 0;
   }
 }
 
