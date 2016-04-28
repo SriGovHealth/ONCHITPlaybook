@@ -3,13 +3,24 @@
   background-color: transparent;
   margin: 0 auto;
   max-width: $content-max-width;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: .75em;
+  padding-right: .75em;
 
   @include bp($medium-2) {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+
+  .full-bleed & {
+    padding-left: .25em;
+    padding-right: .25em;
+
+    @include bp($medium-2) {
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
+  }
+
 }
 
 // 12 column, responsive grid system

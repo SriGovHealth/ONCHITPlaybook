@@ -29,7 +29,11 @@
 .ftf-block {
   background-color: $white;
   box-shadow: .15em .15em .25em rgba($gray, .25);
-  padding: 0 3em 1em;
+  padding: 0 1em 1em;
+
+  @include bp($medium-2) {
+    padding: 0 3em 1;
+  }
 
   .ftf-title {
     background-image: url('../img/icon-gear-small.png');
@@ -40,9 +44,14 @@
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 3.75em;
-    margin-left: -1em;
-    margin-right: -1em;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 1.5em;
+
+    @include bp($medium-2) {
+      margin-left: -1em;
+      margin-right: -1em;
+    }
 
     h3 {
       font-weight: 400;
