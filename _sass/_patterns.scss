@@ -1033,6 +1033,44 @@ ul.checklist {
   max-width: 9em
 }
 
+.icon-block {
+  @include bp($medium) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  p {
+    background-image: url('../img/icon-test-tube.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid $off-white;
+    padding-top: 1em;
+    padding-left: 4.5em;
+    padding-bottom: 1.5em;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &.icon-person {
+      background-image: url('../img/icon-person.png');
+    }
+
+    &.icon-medication {
+      background-image: url('../img/icon-medication.png');
+    }
+
+    &.icon-share {
+      background-image: url('../img/icon-share.png');
+    }
+
+    span {
+      color: $green-dark;
+    }
+
+  }
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
