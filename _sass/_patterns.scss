@@ -1027,6 +1027,12 @@ ul.checklist {
   border: 1px solid $gray;
 }
 
+.circle-graph {
+  display: block;
+  margin: 0 auto;
+  max-width: 9em
+}
+
 // Pattern library color blocks
 .colorblock {
   border: 1px solid $black;
