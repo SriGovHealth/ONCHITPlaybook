@@ -27,6 +27,7 @@
 }
 
 .ftf-block {
+  @extend %clearfix;
   background-color: $white;
   box-shadow: .15em .15em .25em rgba($gray, .25);
   padding: 0 3em 1em;
@@ -352,12 +353,32 @@
 }
 
 .callout {
-  background-image: url('../img/bg-callout.jpg');
+  background-image: url('../img/bg-callout-1.jpg');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 25em;
   padding-top: 15em;
+
+  .side-icon {
+    font-size: 90%;
+    background-image: url('../img/icon-check-gray-small.png');
+    background-position: left .25em;
+    background-repeat: no-repeat;
+    padding-left: 3em;
+  }
+
+  .icon-test-tube {
+    background-image: url('../img/icon-test-tube.png');
+  }
+
+  .icon-envelope {
+    background-image: url('../img/icon-envelope.png');
+  }
+}
+
+.callout-2 {
+  background-image: url('../img/bg-callout-2.jpg');
 }
 
 .chapter-intro-inner,
@@ -394,16 +415,24 @@
 
 .underlined {
   border-bottom: 3px solid $green;
-  font-size: 1.3em;
+  font-size: 1.125em;
   padding-bottom: .5em;
   padding-right: .8em;
+
+  p {
+    font-size: 90%;
+  }
+
+  strong {
+    color: $yellow;
+  }
 }
 
 .callout-icon {
   border: 1px solid $yellow;
   color: $yellow;
   display: inline-block;
-  font-size: 3em;
+  font-size: 2em;
   padding: 0;
   text-align: center;
 
@@ -429,6 +458,16 @@
     float: right;
     margin-bottom: 1em;
     margin-left: 1.5em;
+    width: 16em;
+  }
+}
+
+.callout-left {
+  @include bp($medium) {
+    clear: left;
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1.5em;
     width: 16em;
   }
 }
