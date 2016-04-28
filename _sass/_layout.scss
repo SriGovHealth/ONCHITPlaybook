@@ -410,6 +410,10 @@
     font-size: 1.5em;
     float: left;
     margin-top: .5em;
+
+    @include bp-max($medium-2) {
+      font-size: 1.25em;
+    }
   }
 
   .section-number {

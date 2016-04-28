@@ -74,7 +74,7 @@ h2,
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: .25em;
-  margin-top: 1.5em;
+  margin-top: 1.75em;
 }
 
 h3,
@@ -132,8 +132,12 @@ p {
 
 ul,
 ol {
-  margin: .25em 0 .75em 2.75em;
+  margin: .25em 0 .75em 2.25em;
   padding: 0;
+
+  @include bp-max($medium) {
+    margin-left: 2em;
+  }
 
   ul,
   ol {
