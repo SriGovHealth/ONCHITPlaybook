@@ -1071,10 +1071,51 @@ ul.checklist {
       background-image: url('../img/icon-share.png');
     }
 
+    &.icon-smartphone {
+      background-image: url('../img/icon-smartphone.png');
+    }
+
+    &.icon-glucose-meter {
+      background-image: url('../img/icon-glucose-meter.png');
+    }
+
     span {
       color: #44a485;
     }
+  }
+}
 
+.tech-first {
+  color: $black;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+}
+
+.tech-numbers {
+  font-size: 2em;
+  font-weight: 400;
+  color: $black;
+  line-height: 1;
+
+  strong {
+    color: $blue;
+    font-size: 2.5em;
+  }
+}
+
+.tech {
+  padding-left: 0;
+  padding-right: 0;
+
+  p {
+    span {
+      color: $blue;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
   }
 }
 
