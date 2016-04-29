@@ -1049,12 +1049,12 @@ ul.checklist {
 
   p {
     background-image: url('../img/icon-test-tube.png');
-    background-position: left center;
+    background-position: left .75em;
     background-repeat: no-repeat;
     border-bottom: 1px solid $off-white;
     padding-top: 1em;
     padding-left: 4.5em;
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
 
     &:last-child {
       border-bottom: 0;
@@ -1107,9 +1107,15 @@ ul.checklist {
   }
 }
 
+.tech-block {
+  border: 1px solid $gray-light;
+  margin-bottom: 1.5em;
+}
+
 .tech {
   padding-left: 0;
   padding-right: 0;
+  margin-bottom: 2em;
 
   @include bp($medium-2) {
     padding-left: 2em;
@@ -1117,10 +1123,13 @@ ul.checklist {
   }
 
   p {
+    background-position: left 1em;
     border-bottom: 0;
     border-top: 1px solid $off-white;
     padding-top: 1.5em;
     padding-left: 6em;
+    margin-bottom: 0;
+    margin-top: 0;
 
     span {
       color: $blue;
