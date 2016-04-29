@@ -265,7 +265,7 @@
     border-top-right-radius: .25em;
     border-bottom-right-radius: .25em;
     font-family: $font-header;
-    height: 1.5em;
+    height: 100%;
     position: absolute;
     right: 0;
     width: 15%;
@@ -283,7 +283,6 @@
     img {
       background-color: $blue;
       display: block;
-      height: 1.25em;
       width: 1.35em;
       margin: 0 auto;
       padding: 0;
