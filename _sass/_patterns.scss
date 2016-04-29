@@ -1035,6 +1035,11 @@ ul.checklist {
   max-width: 9em
 }
 
+.circle-graph-caption {
+  font-size: 1em;
+  text-align: center;
+}
+
 .icon-block {
   @include bp($medium) {
     padding-left: 2em;
