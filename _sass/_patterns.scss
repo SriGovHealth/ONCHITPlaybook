@@ -851,7 +851,8 @@
 }
 
 .btn-landing {
-  background-color: $blue-dark;
+  background-color: #001e35;
+  background-color: rgba(#001e35, .8);
   color: $white;
   display: block;
   font-size: 1.2em;
@@ -880,17 +881,18 @@
 
   &:hover,
   &:focus {
-    background-color: $black;
-    color: $white;
+    background-color: #175d90;
+    background-color: rgba(#175d90, .8);
+    color: $yellow;
 
     .section-title {
       color: $yellow;
     }
 
     .btn-arrow {
-      background-color: $green;
-      border-color: $white;
-      color: $white;
+      background-color: $white;
+      border-color: transparent;
+      color: #175d90;
 
     }
   }
