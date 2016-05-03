@@ -17,8 +17,8 @@
     </form>
   </div>
 
-  <div class="nav">
-    <ul role="navigation" id="navigation">
+  <div class="nav" role="navigation">
+    <ul id="navigation">
     {% for section in site.data.nav %}
       {% if section.subcategories == null %}
         <li class="group{% if page.permalink == section.permalink %} active current{% endif %}"><a href="{{ section.permalink | prepend: site.baseurl }}"><span class="section-title">{{ section.title }}</span>{% if section.subtitle %} <span class="section-subtitle">{{ section.subtitle }}</span>{% endif %}</a></li>
