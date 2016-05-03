@@ -954,6 +954,14 @@
   right: 1em;
   top: 0;
   z-index: 1;
+
+  .footer & {
+    top: -3.5em;
+  }
+
+  .home .footer & {
+    display: none;
+  }
 }
 
 .btn-sharing {
