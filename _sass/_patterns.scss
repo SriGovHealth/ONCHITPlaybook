@@ -1,3 +1,19 @@
+.skip {
+  @extend %visually-hidden;
+
+  &:focus {
+    position: static;
+    display: inline-block;
+    width: inherit;
+    clip: none;
+    height: inherit;
+    overflow: visible;
+    padding: .25em .5em;
+    margin: .5em;
+    top: 0;
+  }
+}
+
 .full-bleed {
   background-color: $code;
   padding-bottom: .5em;

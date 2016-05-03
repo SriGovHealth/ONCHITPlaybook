@@ -176,13 +176,14 @@
   }
 
   ul {
+    display: block;
     font-family: $font-header;
     list-style-type: none;
     margin-left: 0;
     margin-right: 0;
 
     &.closed {
-      @extend %visually-hidden;
+      display: none;
     }
   }
 
@@ -227,6 +228,8 @@
 }
 
 .subnav {
+  display: block;
+
   li {
     font-size: 1em;
   }
@@ -239,6 +242,10 @@
     &:focus {
       background-color: lighten($green-light, 10%);
     }
+  }
+
+  &.closed {
+    display: none;
   }
 }
 
