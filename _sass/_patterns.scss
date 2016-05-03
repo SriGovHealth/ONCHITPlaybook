@@ -1020,6 +1020,8 @@ ul.checklist {
 }
 
 .content-slider {
+  background-color: $gray-lightest;
+  padding: 1em;
   position: relative;
   margin-bottom: 1.5em;
 
@@ -1028,6 +1030,10 @@ ul.checklist {
     text-align: center;
     min-height: 0;
     transition: all 1s;
+
+    &:focus {
+      outline: 0;
+    }
 
     &.on {
       display: block;
