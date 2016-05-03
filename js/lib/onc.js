@@ -51,36 +51,38 @@ $(document).scroll(function () {
 });
 
 $(".content-slide-next").click(function (event) {
-  if (event.preventDefault) { event.preventDefault(); }
-  else { event.returnValue = false; } // IE
-
+  //if (event.preventDefault) { event.preventDefault(); }
+  //else { event.returnValue = false; } // IE
   var next = $(this).attr('href');
-  $(".content-slide").removeClass("on");
-  $(next).addClass("on");
+  $(".content-slide").removeClass("on").attr("aria-hidden", "true");
+  $(next).addClass("on").attr("aria-hidden", "false");
 });
 
 $(".content-slide-previous").click(function (event) {
-  if (event.preventDefault) { event.preventDefault(); }
-  else { event.returnValue = false; } // IE
-
+  //if (event.preventDefault) { event.preventDefault(); }
+  //else { event.returnValue = false; } // IE
   var previous = $(this).attr('href');
-  $(".content-slide").removeClass("on");
-  $(previous).addClass("on");
+  $(".content-slide").removeClass("on").attr("aria-hidden", "true");
+  $(previous).addClass("on").attr("aria-hidden", "false");
 });
 
 $(".myth-block").addClass("myth-on");
 
-$(".myth-control button").click(function (event) {
+$(".myth-control a").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
 
   if ($(this).parent().parent().parent().parent().find(".myth-block").hasClass("myth-on")) {
     $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-on");
     $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-off");
+    $(this).parent().parent().parent().parent().find(".myth-block").find(".myth-content").attr("aria-hidden", "true");
+    $(this).parent().parent().parent().parent().find(".myth-block").find(".reality-content").attr("aria-hidden", "false");
   }
   else {
     $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-off");
     $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-on");
+    $(this).parent().parent().parent().parent().find(".myth-block").find(".myth-content").attr("aria-hidden", "false");
+    $(this).parent().parent().parent().parent().find(".myth-block").find(".reality-content").attr("aria-hidden", "true");
   }
 });
 

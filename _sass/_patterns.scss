@@ -555,13 +555,14 @@
     margin-bottom: 0;
     text-align: center;
 
-    button {
+    a {
       background-color: $black;
       border: 1px solid $green;
       border-radius: .25em;
       color: $green;
-      padding: .25em .5em;
+      padding: .25em .5em .35em;
       transition: all .4s;
+      text-decoration: none;
 
       &:hover,
       &:focus {

@@ -85,33 +85,33 @@ next-url: "/chapter-3/"
           <p>Kaiser tells patients upfront when they can expect to get an appointment if they book online.<sup><a href="{{ '/references/#footnote-15' | prepend: site.baseurl }}" id="footnote-ref15">15</a></sup></p>
 
           <div class="content-slider">
-            <div class="content-slide on" id="content-slide-1">
+            <div class="content-slide on" id="content-slide-1" aria-hidden="false">
               <p><img src="{{ "/img/figure-2-1-1.jpg" | prepend: site.baseurl }}" alt="" class="bordered"></p>
               <p class="content-slider-caption">To book online, Kaiser patients go to the &ldquo;Schedule an appointment&rdquo; page.</p>
-              <a href="#content-slide-2" class="btn btn-blue content-slide-next">Next step &rarr;</a>
+              <a href="#content-slide-2" class="btn btn-blue content-slide-next">Next step <span aria-hidden="true">&rarr;</span></a>
             </div>
-            <div class="content-slide" id="content-slide-2">
+            <div class="content-slide" id="content-slide-2" aria-hidden="true">
               <p><img src="{{ "/img/figure-2-1-2.jpg" | prepend: site.baseurl }}" alt="" class="bordered"></p>
               <p class="content-slider-caption">They then choose a reason for the appointment &mdash; like a routine blood pressure check or eye exam.</p>
-              <a href="#content-slide-1" class="btn btn-blue content-slide-previous">&larr; Previous step</a>
-              <a href="#content-slide-3" class="btn btn-blue content-slide-next">Next step &rarr;</a>
+              <a href="#content-slide-1" class="btn btn-blue content-slide-previous"><span aria-hidden="true">&larr;</span> Previous step</a>
+              <a href="#content-slide-3" class="btn btn-blue content-slide-next">Next step <span aria-hidden="true">&rarr;</span></a>
             </div>
-            <div class="content-slide" id="content-slide-3">
+            <div class="content-slide" id="content-slide-3" aria-hidden="true">
               <p><img src="{{ "/img/figure-2-1-3.jpg" | prepend: site.baseurl }}" alt="" class="bordered"></p>
               <p class="content-slider-caption">Patients select a provider for the appointment &mdash; like their primary care doctor or a nurse practitioner.</p>
-              <a href="#content-slide-2" class="btn btn-blue content-slide-previous">&larr; Previous step</a>
-              <a href="#content-slide-4" class="btn btn-blue content-slide-next">Next step &rarr;</a>
+              <a href="#content-slide-2" class="btn btn-blue content-slide-previous"><span aria-hidden="true">&larr;</span> Previous step</a>
+              <a href="#content-slide-4" class="btn btn-blue content-slide-next">Next step <span aria-hidden="true">&rarr;</span></a>
             </div>
-            <div class="content-slide" id="content-slide-4">
+            <div class="content-slide" id="content-slide-4" aria-hidden="true">
               <p><img src="{{ "/img/figure-2-1-4.jpg" | prepend: site.baseurl }}" alt="" class="bordered"></p>
               <p class="content-slider-caption">They pick the date and time for the appointment.</p>
-              <a href="#content-slide-3" class="btn btn-blue content-slide-previous">&larr; Previous step</a>
-              <a href="#content-slide-5" class="btn btn-blue content-slide-next">Next step &rarr;</a>
+              <a href="#content-slide-3" class="btn btn-blue content-slide-previous"><span aria-hidden="true">&larr;</span> Previous step</a>
+              <a href="#content-slide-5" class="btn btn-blue content-slide-next">Next step <span aria-hidden="true">&rarr;</span></a>
             </div>
-            <div class="content-slide" id="content-slide-5">
+            <div class="content-slide" id="content-slide-5" aria-hidden="true">
               <p><img src="{{ "/img/figure-2-1-5.jpg" | prepend: site.baseurl }}" alt="" class="bordered"></p>
               <p class="content-slider-caption">Finally, they confirm the details and book the appointment.</p>
-              <a href="#content-slide-4" class="btn btn-blue content-slide-previous">&larr; Previous step</a>
+              <a href="#content-slide-4" class="btn btn-blue content-slide-previous"><span aria-hidden="true">&larr;</span> Previous step</a>
               <a href="#content-slide-1" class="btn btn-blue content-slide-next">Start over</a>
             </div>
           </div>
@@ -150,17 +150,17 @@ next-url: "/chapter-3/"
 
       <p>Patient portals offer an opportunity to improve and streamline patient-provider communication. The portal&rsquo;s secure email can reduce the need for face-to-face visits and phone calls by giving patients and providers a quick, convenient way to exchange information.</p>
 
-      <div class="myth-block myth-right">
+      <div class="myth-block myth-right" id="mythreality-1">
         <p class="myth-title"><span class="myth">Myth</span> <span class="versus">vs</span> <span class="reality">Reality</span></p>
-        <div class="myth-content">
-          <p class="myth-subhead"><strong>Myth:</strong></p>
+        <div class="myth-content" aria-hidden="false">
+          <p id="myth-1" class="myth-subhead"><strong>Myth:</strong></p>
           <p>Providers worry that activating email in the patient portal will lead to an email deluge that burdens their practice and impedes efficiency.</p>
-          <p class="myth-control"><button>Learn the reality &rarr;</button></p>
+          <p class="myth-control"><a href="#reality-1">Learn the reality <span aria-hidden="true">&rarr;</span></a></p>
         </div>
-        <div class="reality-content">
-          <p class="myth-subhead"><strong>Reality:</strong></p>
+        <div class="reality-content" aria-hidden="true">
+          <p id="reality-1" class="myth-subhead"><strong>Reality:</strong></p>
           <p>When practices integrate email into their workflow, providers often find communicating with patients more convenient and less time-consuming.</p>
-          <p class="myth-control"><button>&larr; View the myth</button></p>
+          <p class="myth-control"><a href="#myth-1"><span aria-hidden="true">&larr;</span> View the myth</a></p>
         </div>
       </div>
 
