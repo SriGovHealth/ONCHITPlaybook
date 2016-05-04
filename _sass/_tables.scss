@@ -78,6 +78,10 @@ caption {
       text-align: right;
       border-bottom: 1px dotted $off-white;
 
+      &:first-child {
+        background: #f0f6f9;
+      }
+
       &:last-child {
         border-bottom: 0;
       }
