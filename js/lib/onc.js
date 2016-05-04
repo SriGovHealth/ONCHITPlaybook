@@ -66,24 +66,30 @@ $(".content-slide-previous").click(function (event) {
   $(previous).addClass("on").attr("aria-hidden", "false");
 });
 
-$(".myth-block").addClass("myth-on");
-
-$(".myth-control a").click(function (event) {
+$(".reality-control").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
 
-  if ($(this).parent().parent().parent().parent().find(".myth-block").hasClass("myth-on")) {
-    $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-on");
-    $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-off");
-    $(this).parent().parent().parent().parent().find(".myth-block").find(".myth-content").attr("aria-hidden", "true");
-    $(this).parent().parent().parent().parent().find(".myth-block").find(".reality-content").attr("aria-hidden", "false");
-  }
-  else {
-    $(this).parent().parent().parent().parent().find(".myth-block").removeClass("myth-off");
-    $(this).parent().parent().parent().parent().find(".myth-block").addClass("myth-on");
-    $(this).parent().parent().parent().parent().find(".myth-block").find(".myth-content").attr("aria-hidden", "false");
-    $(this).parent().parent().parent().parent().find(".myth-block").find(".reality-content").attr("aria-hidden", "true");
-  }
+  var parentID = $(this).parent().parent().parent().attr("id");
+  $("#" + parentID + " .myth-control").attr("aria-expanded", "false");
+  $("#" + parentID + " .myth-content").attr("aria-hidden", "true").attr("tabindex", "");
+  $("#" + parentID + " .mythreality-footer .myth-control").attr("aria-hidden", "false");
+  $("#" + parentID + " .reality-control").attr("aria-expanded", "true");
+  $("#" + parentID + " .mythreality-footer .reality-control").attr("aria-hidden", "true");
+  $("#" + parentID + " .reality-content").attr("aria-hidden", "false").attr("tabindex", "-1");
+});
+
+$(".myth-control").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var parentID = $(this).parent().parent().parent().attr("id");
+  $("#" + parentID + " .reality-control").attr("aria-expanded", "false");
+  $("#" + parentID + " .reality-content").attr("aria-hidden", "true").attr("tabindex", "");
+  $("#" + parentID + " .mythreality-footer .reality-control").attr("aria-hidden", "false");
+  $("#" + parentID + " .myth-control").attr("aria-expanded", "true");
+  $("#" + parentID + " .mythreality-footer .myth-control").attr("aria-hidden", "true");
+  $("#" + parentID + " .myth-content").attr("aria-hidden", "false").attr("tabindex", "-1");
 });
 
 $(".sticky-header").stick_in_parent();
