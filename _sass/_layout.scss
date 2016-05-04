@@ -313,9 +313,10 @@
 
 .footer {
   border-top: 2px solid $gray-light;
-  margin-top: 2em;
+  margin-top: 4em;
   padding-bottom: 1em;
   padding-top: 2em;
+  position: relative;
 
   .home & {
     border-top: 0;
