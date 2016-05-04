@@ -89,25 +89,22 @@
     border-bottom: 2px solid $black;
   }
 
-  .myth-block {
-    color: $black;
-    float: none !important;
-    width: inherit !important;
-
-    .myth-content,
-    .reality-content {
-      max-height: inherit !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-    }
-
-    .myth-subhead {
-      display: block;
-    }
-  }
-
   .ftf-title {
     padding-left: 0 !important;
+  }
+
+  .checklist {
+    .check {
+      border: 1px solid $black;
+      display: block;
+      float: left;
+      height: 1em;
+      margin-right: .5em;
+      margin-top: .25em;
+      padding-right: 0;
+      text-indent: -999px;
+      width: 1em;
+    }
   }
 
   .is_stuck {

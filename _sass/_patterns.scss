@@ -538,24 +538,32 @@
   }
 }
 
-.myth-block {
+.mythreality {
   background-color: $black;
   border-radius: .25em;
   color: $white;
   margin-top: 1em;
   padding: .5em 1em;
 
-  .myth-title {
+  header {
     border-bottom: 2px solid $green;
-    padding-bottom: .5em;
-    text-align: center;
-    text-transform: uppercase;
-  }
 
-  .myth,
-  .reality {
-    padding: .25em .5em;
-    border-radius: .25em;
+    a {
+      border-radius: .25em;
+      color: $white;
+      padding: .25em .5em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .3s;
+
+      &[aria-expanded=true],
+      &:hover,
+      &:focus {
+        background-color: $gray-lightest;
+        color: $black;
+        transition: all .3s;
+      }
+    }
   }
 
   .versus {
@@ -568,85 +576,58 @@
     width: 2em;
   }
 
-  .myth-control {
-    font-family: $font-body;
-    margin-bottom: 0;
-    text-align: center;
-
-    a {
-      background-color: $black;
-      border: 1px solid $green;
-      border-radius: .25em;
-      color: $green;
-      padding: .25em .5em .35em;
-      transition: all .4s;
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        background-color: $white;
-        border-color: $black;
-        color: $black;
-        transition: all .4s;
-      }
-    }
-  }
-
-  .myth-content,
-  .reality-content {
+  .mythreality-content {
     font-family: $font-header-alt;
-    transition: all 1s;
+    font-size: .9em;
+    padding-top: .5em;
 
-    p {
-      font-size: 1em;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-bottom: 1em;
+    &[aria-hidden=true] {
+      display: none;
     }
   }
-}
 
-.myth-subhead {
-  display: none;
-}
-
-.myth-right {
-  @include bp($medium) {
-    float: right;
-    margin-bottom: 1em;
-    margin-left: 1.5em;
-    width: 16em;
-  }
-}
-
-.myth-on {
-  .myth {
-    background-color: $gray-light;
-    color: $black;
-    transition: all .75s;
+  .mythreality-subhead {
+    display: none;
+    font-weight: 700;
   }
 
-  .reality-content,
-  .reality-content .myth-control  {
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-.myth-off {
-  .reality {
-    background-color: $gray-light;
-    color: $black;
-    transition: all .75s;
+  .mythreality-footer p,
+  header p {
+    margin-bottom: .5em;
+    text-align: center;
   }
 
-  .myth-content,
-  .myth-content .myth-control {
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
+  .mythreality-toggle {
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: .25em;
+    color: $green;
+    font-size: .9em;
+    padding: .25em .5em .35em;
+    text-decoration: none;
+    transition: all .3s;
 
+    &[aria-hidden=true] {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $white;
+      border-color: transparent;
+      color: $black;
+      transition: all .3s;
+    }
+  }
+
+  &.mythreality-right {
+    @include bp($medium) {
+      clear: right;
+      float: right;
+      margin-bottom: 1em;
+      margin-left: 1.5em;
+      width: 16em;
+    }
   }
 }
 
