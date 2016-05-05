@@ -1,7 +1,7 @@
 ---
 ---
 {% include head.html %}
-<body>
+<body{% if page.bodyclass %} class="{{ page.bodyclass }}"{% endif %}>
   <a href="#top" class="skip">Skip to content</a>
   <a href="#navigation" class="skip">Skip to navigation</a>
   <div class="wrapper">

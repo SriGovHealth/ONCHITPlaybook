@@ -940,7 +940,8 @@
     top: -3.5em;
   }
 
-  .home .footer & {
+  .home .footer &,
+  .infographic-share .footer & {
     display: none;
   }
 }
