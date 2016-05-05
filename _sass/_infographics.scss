@@ -22,6 +22,12 @@
   position: relative;
 }
 
+.slide-top {
+  &:focus {
+    outline: 0;
+  }
+}
+
 .slide {
   background-color: $gray-light;
   bottom: 0;

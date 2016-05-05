@@ -4,7 +4,11 @@ $(".ig-nav").click(function (event) {
 
   var target = $(this).attr('href');
   if ($(target).hasClass("off")) {
-    $(".slide").addClass("off").attr("aria-hidden", "true").attr("tabindex", "");
+    $(".slide").addClass("off").attr("aria-hidden", "true");
     $(target).removeClass("off").attr("aria-hidden", "false");
+    setTimeout(function() {
+      $(target + " .slide-top").attr("tabindex", "-1").focus();
+    }, 100);
+
   }
 });
