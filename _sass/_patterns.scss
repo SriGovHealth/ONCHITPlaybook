@@ -545,8 +545,48 @@
   margin-top: 1em;
   padding: .5em 1em;
 
-  header {
+  .mythreality-header {
     border-bottom: 2px solid $green;
+    list-style-type: none;
+    margin: 0;
+    padding: .5em 0;
+    text-align: center;
+
+    li {
+      display: inline;
+      line-height: 1.5em;
+
+      &:first-child {
+
+        a {
+          background-color: $gray-lightest;
+          color: $black;
+          transition: all .3s;
+          &[aria-selected=false] {
+            background-color: transparent;
+            color: $white;
+          }
+          &[aria-selected=true],
+          &:hover,
+          &:focus {
+            background-color: $gray-lightest;
+            color: $black;
+            transition: all .3s;
+      }
+        }
+
+        &:after {
+          background-image: url('../img/icon-vs-small.png');
+          background-position: center center;
+          background-repeat: no-repeat;
+          content: 'versus';
+          display: inline-block;
+          height: 1.75em;
+          text-indent: -9999px;
+          width: 2em;
+        }
+      }
+    }
 
     a {
       border-radius: .25em;
@@ -556,7 +596,7 @@
       text-transform: uppercase;
       transition: all .3s;
 
-      &[aria-expanded=true],
+      &[aria-selected=true],
       &:hover,
       &:focus {
         background-color: $gray-lightest;
@@ -592,7 +632,9 @@
   }
 
   .mythreality-footer p,
-  header p {
+  .mythreality-header p {
+    font-family: $font-body;
+    font-size: 1.125em;
     margin-bottom: .5em;
     text-align: center;
   }
@@ -602,7 +644,6 @@
     border: 1px solid $green;
     border-radius: .25em;
     color: $green;
-    font-size: .9em;
     padding: .25em .5em .35em;
     text-decoration: none;
     transition: all .3s;
@@ -913,7 +954,7 @@
   &:focus {
     color: $white;
     text-decoration: none;
-    border: 2px solid $green;
+    border: 2px solid $white;
   }
 }
 
@@ -928,7 +969,7 @@
 
 .sharing {
   background-color: $black;
-  background-color: rgba($black, .5);
+  background-color: rgba($black, .65);
   border-top: 0;
   padding: .5em;
   position: absolute;
@@ -940,7 +981,8 @@
     top: -3.5em;
   }
 
-  .home .footer & {
+  .home .footer &,
+  .infographic-share .footer & {
     display: none;
   }
 }
@@ -954,7 +996,7 @@
   width: 1.75em;
 
   &:hover {
-    border: 2px solid $green;
+    border: 2px solid $white;
   }
 }
 
@@ -1008,7 +1050,7 @@ ul.checklist {
   }
 }
 
-.content-slider {
+.content-slider-block {
   background-color: $gray-lightest;
   padding: 1em;
   position: relative;
@@ -1031,8 +1073,12 @@ ul.checklist {
     }
   }
 
+  .limit {
+    display: none;
+  }
+
   .content-slider-caption {
-    color: $gray-darkest;
+    color: $black-light;
     min-height: 3.5em;
     margin-bottom: 0;
   }
@@ -1095,7 +1141,7 @@ ul.checklist {
     }
 
     span {
-      color: #44a485;
+      color: #337B64;
     }
   }
 }
