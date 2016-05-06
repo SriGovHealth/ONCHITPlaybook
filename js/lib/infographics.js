@@ -4,6 +4,8 @@ $(".ig-nav").click(function (event) {
 
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
+  $(".lightbox-container").removeClass("backdrop");
+  $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   var target = $(this).attr('href');
 
@@ -35,6 +37,8 @@ $("#ig-next").click(function (event) {
 
   $(".slide-control").removeClass("current").attr("aria-expanded", "false");
   $("#" + nextItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".lightbox-container").removeClass("backdrop");
+  $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").next('.slide').next('.slide').length) {
     $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
@@ -60,6 +64,8 @@ $("#ig-previous").click(function (event) {
 
   $(".slide-control").removeClass("current").attr("aria-expanded", "false");
   $("#" + prevItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".lightbox-container").removeClass("backdrop");
+  $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
     $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
