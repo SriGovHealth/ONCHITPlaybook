@@ -5,6 +5,7 @@ $(".ig-nav").click(function (event) {
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
   $(".lightbox-container").removeClass("backdrop");
+  $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   var target = $(this).attr('href');
@@ -39,6 +40,7 @@ $("#ig-next").click(function (event) {
   $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
   $("#" + nextItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
+  $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").next('.slide').next('.slide').length) {
@@ -67,6 +69,7 @@ $("#ig-previous").click(function (event) {
   $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
   $("#" + prevItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
+  $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
@@ -125,7 +128,9 @@ $('.infographic-container [role="tab"]').on('keydown', function(e) {
       // Hide panels
 
       $($container +' .slide')
-        .attr('aria-hidden', 'true').addClass('off').removeClass('on');
+        .attr('aria-hidden', 'true').addClass('off').removeClass('on').removeClass('backdrop-on');
+      $(".lightbox-content").addClass("lightbox-off").removeClass("lightbox-on").attr("aria-hidden", "true");
+      $(".lightbox-container").removeClass("backdrop");
 
       // Show panel which corresponds to target
 
@@ -146,6 +151,7 @@ $(".hotspot-link").click(function (event) {
   if ($(target).hasClass("lightbox-off")) {
     $(".lightbox-content").addClass("lightbox-off").removeClass("lightbox-on").attr("aria-hidden", "true");
     $(".lightbox-container").addClass("backdrop");
+    $(".slide.on").addClass("backdrop-on");
     $(target).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
   }
 
@@ -163,6 +169,7 @@ $(".lightbox-close").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
   $(".lightbox-container").removeClass("backdrop");
+  $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 });
 
