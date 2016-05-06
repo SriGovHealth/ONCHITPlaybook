@@ -41,6 +41,10 @@
 
   &.off {
     bottom: 4.25em;
+
+    .sharing {
+      display: none;
+    }
   }
 }
 
