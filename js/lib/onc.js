@@ -124,6 +124,6 @@ $(".myth-control").click(function (event) {
 
 $(".sticky-header").stick_in_parent();
 
-$('.hotspot-link').colorbox({inline:true, maxHeight:'95%', maxWidth:'95%'});
-$('.expand-control').colorbox({maxHeight:'95%', maxWidth:'95%'});
-$('.expand-thumbnail').colorbox({maxHeight:'95%', maxWidth:'95%'});
+//$('.hotspot-link').colorbox({inline:true, maxHeight:'95%', maxWidth:'95%'});
+//$('.expand-control').colorbox({maxHeight:'95%', maxWidth:'95%'});
+//$('.expand-thumbnail').colorbox({maxHeight:'95%', maxWidth:'95%'});

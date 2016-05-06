@@ -22,12 +22,6 @@
   position: relative;
 }
 
-.slide-top {
-  &:focus {
-    outline: 0;
-  }
-}
-
 .slide {
   background-color: $gray-light;
   bottom: 0;
@@ -186,12 +180,30 @@
 }
 
 .lightbox-container {
-  display: none;
+  &.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 5em;
+    left: 0;
+    right: 0;
+    background-color: rgba($black, .8);
+  }
 }
 
 .lightbox-content {
-  max-width: 30em;
+  background-color: $white;
   padding: 1em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 2em;
+  z-index: 13;
+}
+
+.lightbox-off {
+  display: none;
 }
 
 
