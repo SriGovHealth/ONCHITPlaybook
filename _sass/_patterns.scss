@@ -913,7 +913,7 @@
   &:focus {
     color: $white;
     text-decoration: none;
-    border: 2px solid $green;
+    border: 2px solid $white;
   }
 }
 
@@ -928,7 +928,7 @@
 
 .sharing {
   background-color: $black;
-  background-color: rgba($black, .5);
+  background-color: rgba($black, .65);
   border-top: 0;
   padding: .5em;
   position: absolute;
@@ -955,7 +955,7 @@
   width: 1.75em;
 
   &:hover {
-    border: 2px solid $green;
+    border: 2px solid $white;
   }
 }
 
