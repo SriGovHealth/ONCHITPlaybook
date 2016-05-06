@@ -97,20 +97,27 @@
       position: absolute;
 
       a {
-        background-color: red;
+        background-color: $white;
+        border: 1px solid $gray-light;
         border-radius: .75em;
-        color: #fff;
+        color: $green;
         display: block;
-        font-size: 2em;
+        font-size: 3em;
         height: 44px;
-        line-height: 1;
+        line-height: .5;
         text-decoration: none;
         width: 44px;
         text-align: center;
         transition: all .5s;
 
-        &:hover {
-          background-color: blue;
+        &:visited {
+          color: $green;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $green;
+          color: $white;
           transition: all .5s;
         }
 

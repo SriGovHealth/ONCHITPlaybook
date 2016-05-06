@@ -206,7 +206,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  margin: 2em;
+  margin: 2em 4em;
   z-index: 13;
 }
 
@@ -214,22 +214,41 @@
   display: none;
 }
 
+.lightbox-nav-control {
+  background-color: $yellow;
+  border-radius: .25em;
+  color: $black;
+  display: none;
+  font-size: 2em;
+  margin: .25em;
+  padding: .1em .25em;
+  position: absolute;
+  text-decoration: none;
+  top: 45%;
+  transition: all .3s;
 
-// --------------------------------------------------------
-// --------------------------------------------------------
+  &:visited {
+    color: $black;
+  }
 
-/*
-.slide-title {
-  font-size: 150%;
-  margin: 0 auto;
-  max-width: 30em;
-  padding: 1em;
+  &:hover,
+  &:focus {
+    background-color: $white;
+    transition: all .3s;
+  }
 
-  @include bp($medium) {
-    top: 20%;
+  .backdrop & {
+    display: block;
   }
 }
-*/
+
+#lightbox-nav-next {
+  right: 0;
+}
+
+#lightbox-nav-previous {
+  left: 0;
+}
 
 .first-third {
   left: 0;
