@@ -25,6 +25,7 @@ $(".ig-nav").click(function (event) {
   }
 });
 
+
 $("#ig-next").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
@@ -51,6 +52,7 @@ $("#ig-next").click(function (event) {
     $("#ig-next").removeClass("limit");
   }
 });
+
 
 $("#ig-previous").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
@@ -84,13 +86,25 @@ $(".hotspot-link").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
   else { event.returnValue = false; } // IE
 
+  $("#lightbox-nav-next").removeClass("limit");
+  $("#lightbox-nav-previous").removeClass("limit");
+
   var target = $(this).attr('href');
   if ($(target).hasClass("lightbox-off")) {
-    $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
+    $(".lightbox-content").addClass("lightbox-off").removeClass("lightbox-on").attr("aria-hidden", "true");
     $(".lightbox-container").addClass("backdrop");
-    $(target).removeClass("lightbox-off").attr("aria-hidden", "false");
+    $(target).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+  }
+
+  if(!$(".lightbox-content.lightbox-on").prev('.lightbox-content').length) {
+    $("#lightbox-nav-previous").addClass("limit");
+  }
+
+  if(!$(".lightbox-content.lightbox-on").next('.lightbox-content').length) {
+    $("#lightbox-nav-next").addClass("limit");
   }
 });
+
 
 $(".lightbox-close").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
@@ -98,3 +112,51 @@ $(".lightbox-close").click(function (event) {
   $(".lightbox-container").removeClass("backdrop");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 });
+
+
+$("#lightbox-nav-previous").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var prevLightbox = $(".lightbox-content.lightbox-on").prev();
+  var prevLightboxId = $(prevLightbox).attr("id");
+
+  $("#lightbox-nav-next").removeClass("limit");
+  $("#lightbox-nav-previous").removeClass("limit");
+
+  if(!$(".lightbox-content.lightbox-on").prev('.lightbox-content').prev('.lightbox-content').length) {
+    $(".lightbox-content.lightbox-on").removeClass("lightbox-on").addClass("lightbox-off").attr("aria-hidden", "true");
+    $(prevLightbox).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+    $("#lightbox-nav-previous").addClass("limit");
+  }
+  else {
+    $(".lightbox-content.lightbox-on").removeClass("lightbox-on").addClass("lightbox-off").attr("aria-hidden", "true");
+    $(prevLightbox).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+    $("#lightbox-nav-previous").removeClass("limit");
+  }
+});
+
+$("#lightbox-nav-next").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var nextLightbox = $(".lightbox-content.lightbox-on").next();
+  var nextLightboxId = $(nextLightbox).attr("id");
+
+  $("#lightbox-nav-next").removeClass("limit");
+  $("#lightbox-nav-previous").removeClass("limit");
+
+  if(!$(".lightbox-content.lightbox-on").next('.lightbox-content').next('.lightbox-content').length) {
+    $(".lightbox-content.lightbox-on").removeClass("lightbox-on").addClass("lightbox-off").attr("aria-hidden", "true");
+    $(nextLightbox).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+    $("#lightbox-nav-next").addClass("limit");
+  }
+  else {
+    $(".lightbox-content.lightbox-on").removeClass("lightbox-on").addClass("lightbox-off").attr("aria-hidden", "true");
+    $(nextLightbox).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+    $("#lightbox-nav-next").removeClass("limit");
+  }
+
+});
+
+

@@ -236,6 +236,10 @@
 
   .backdrop & {
     display: block;
+
+    &.limit {
+      display: none;
+    }
   }
 }
 
