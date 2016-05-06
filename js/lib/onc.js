@@ -136,7 +136,7 @@ $('[role="tab"]').on('keydown', function(e) {
   if ($target.length) {
       $original.attr({
         'tabindex' : '-1',
-        'aria-selected' : null
+        'aria-selected' : false
       });
       $target.attr({
         'tabindex' : '0',
@@ -166,7 +166,7 @@ $('[role="tab"]').on('click', function(e) {
 
   $('[role="tab"]').attr({
     'tabindex': '-1',
-    'aria-selected' : null
+    'aria-selected' : false
   });
 
   // replace above on clicked tab
@@ -197,14 +197,14 @@ $('.mythreality-toggle').on('keydown', function(e) {
 
     // remove focusability [sic] and aria-selected
 
-    $('.mythreality-toggle').attr({
-      'aria-selected' : true
+    $('[role="tab"]').attr({
+      'aria-selected' : false
     });
 
     // replace above on clicked tab
 
-    $(this).attr({
-      'aria-selected' : null
+    $('li' + ' [aria-controls="' + $(this).attr('href').substring(1) + '"]').attr({
+      'aria-selected' : true,
     });
 
     // Hide panels
@@ -228,14 +228,14 @@ $('.mythreality-toggle').on('click', function(e) {
 
   // remove focusability [sic] and aria-selected
 
-  $('.mythreality-toggle').attr({
-    'aria-selected' : true
-    });
+  $('[role="tab"]').attr({
+    'aria-selected' : false
+  });
 
   // replace above on clicked tab
 
-  $(this).attr({
-    'aria-selected' : null,
+  $('li' + ' [aria-controls="' + $(this).attr('href').substring(1) + '"]').attr({
+    'aria-selected' : true,
   });
 
   // Hide panels
