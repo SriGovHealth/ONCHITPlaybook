@@ -81,6 +81,59 @@ $("#ig-previous").click(function (event) {
   }
 });
 
+$('.infographic-container [role="tab"]').on('keydown', function(e) {
+  var $container = '.infographic-container';
+  var $original = $(this);
+  var $prev = $(this).parents('li').prev().children('[role="tab"]');
+  var $next = $(this).parents('li').next().children('[role="tab"]');
+  var $target;
+
+  $("#ig-next").removeClass("limit");
+  $("#ig-previous").removeClass("limit");
+
+
+  // find the direction (prev or next)
+
+  switch (e.keyCode) {
+    case 37:
+      $target = $prev;
+      if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
+        $("#ig-previous").addClass("limit");
+      }
+      break;
+    case 39:
+      $target = $next;
+      if(!$(".slide.on").next('.slide').next('.slide').length) {
+        $("#ig-next").addClass("limit");
+      }
+      break;
+    default:
+      $target = false;
+      break;
+  }
+
+  if ($target.length) {
+      $original.attr({
+        'tabindex' : '-1',
+        'aria-selected' : false
+      }).removeClass('current');
+      $target.attr({
+        'tabindex' : '0',
+        'aria-selected' : true
+      }).addClass('current').focus();
+
+      // Hide panels
+
+      $($container +' .slide')
+        .attr('aria-hidden', 'true').addClass('off').removeClass('on');
+
+      // Show panel which corresponds to target
+
+      $($($target).attr('href'))
+        .attr('aria-hidden', 'false').removeClass('off').addClass('on');
+  }
+});
+
 
 $(".hotspot-link").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }
