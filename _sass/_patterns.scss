@@ -545,8 +545,11 @@
   margin-top: 1em;
   padding: .5em 1em;
 
-  header {
+  .mythreality-header {
     border-bottom: 2px solid $green;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 
     a {
       border-radius: .25em;
@@ -592,7 +595,7 @@
   }
 
   .mythreality-footer p,
-  header p {
+  .mythreality-header p {
     margin-bottom: .5em;
     text-align: center;
   }
