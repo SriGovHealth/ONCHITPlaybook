@@ -94,30 +94,6 @@ $(".content-slide-next").click(function (event) {
   }
 });
 
-
-
-$(".reality-control").click(function (event) {
-  if (event.preventDefault) { event.preventDefault(); }
-  else { event.returnValue = false; } // IE
-
-  var parentID = $(this).parent().parent().parent().attr("id");
-  $("#" + parentID + " .myth-content").attr("aria-hidden", "true").attr("tabindex", "");
-  $("#" + parentID + " .mythreality-footer .myth-control").attr("aria-hidden", "false");
-  $("#" + parentID + " .mythreality-footer .reality-control").attr("aria-hidden", "true");
-  $("#" + parentID + " .reality-content").attr("aria-hidden", "false").attr("tabindex", "-1");
-});
-
-$(".myth-control").click(function (event) {
-  if (event.preventDefault) { event.preventDefault(); }
-  else { event.returnValue = false; } // IE
-
-  var parentID = $(this).parent().parent().parent().attr("id");
-  $("#" + parentID + " .reality-content").attr("aria-hidden", "true").attr("tabindex", "");
-  $("#" + parentID + " .mythreality-footer .reality-control").attr("aria-hidden", "false");
-  $("#" + parentID + " .mythreality-footer .myth-control").attr("aria-hidden", "true");
-  $("#" + parentID + " .myth-content").attr("aria-hidden", "false").attr("tabindex", "-1");
-});
-
 $(".sticky-header").stick_in_parent();
 
 //$('.hotspot-link').colorbox({inline:true, maxHeight:'95%', maxWidth:'95%'});
@@ -191,13 +167,75 @@ $('[role="tab"]').on('click', function(e) {
   $('[role="tab"]').attr({
     'tabindex': '-1',
     'aria-selected' : null
-    });
+  });
 
   // replace above on clicked tab
 
   $(this).attr({
     'aria-selected' : true,
     'tabindex' : '0'
+  });
+
+  // Hide panels
+
+  $($container +' [role="tabpanel"]').attr('aria-hidden', 'true');
+
+  // show corresponding panel
+
+  $('#' + $(this).attr('href').substring(1))
+    .attr('aria-hidden', null);
+
+});
+
+// Change focus between tabs with toggle-button
+
+$('.mythreality-toggle').on('keydown', function(e) {
+
+  if (event.keyCode == 13) {
+
+    e.preventDefault();
+
+    // remove focusability [sic] and aria-selected
+
+    $('.mythreality-toggle').attr({
+      'aria-selected' : true
+    });
+
+    // replace above on clicked tab
+
+    $(this).attr({
+      'aria-selected' : null
+    });
+
+    // Hide panels
+
+    $($container +' [role="tabpanel"]').attr('aria-hidden', 'true');
+
+    // show corresponding panel
+
+    $('#' + $(this).attr('href').substring(1))
+      .attr('aria-hidden', null);
+
+  }
+
+});
+
+// Handle click on tab to show + focus tabpanel
+
+$('.mythreality-toggle').on('click', function(e) {
+
+  e.preventDefault();
+
+  // remove focusability [sic] and aria-selected
+
+  $('.mythreality-toggle').attr({
+    'aria-selected' : true
+    });
+
+  // replace above on clicked tab
+
+  $(this).attr({
+    'aria-selected' : null,
   });
 
   // Hide panels
