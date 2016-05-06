@@ -153,7 +153,7 @@ $('[role="tab"]').on('keydown', function(e) {
       $target = $next;
       break;
     default:
-      $target = false
+      $target = false;
       break;
   }
 
