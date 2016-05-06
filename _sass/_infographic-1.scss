@@ -43,7 +43,7 @@
     }
 
     .bottom {
-      bottom: 2.5em;
+      bottom: 0;
     }
   }
 
@@ -52,7 +52,7 @@
     color: $white;
 
     .bottom {
-      bottom: 2.5em;
+      bottom: 0;
     }
 
     h2 {
@@ -171,9 +171,9 @@
 
     .office {
       background-image: url('../img/ig-1-waitingroom-bg.png');
-      background-position: center -2em;
+      background-position: center center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
     }
   }
 
