@@ -12,8 +12,8 @@ $(".ig-nav").click(function (event) {
   if ($(target).hasClass("off")) {
     $(".slide").addClass("off").removeClass("on").attr("aria-hidden", "true");
     $(target).removeClass("off").addClass("on").attr("aria-hidden", "false");
-    $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-    $(target + "-control").addClass("current").attr("aria-expanded", "true");
+    $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+    $(target + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   }
 
   if(!$(".slide.on").next('.slide').length) {
@@ -36,8 +36,8 @@ $("#ig-next").click(function (event) {
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
 
-  $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-  $("#" + nextItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+  $("#" + nextItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
@@ -64,8 +64,8 @@ $("#ig-previous").click(function (event) {
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
 
-  $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-  $("#" + prevItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+  $("#" + prevItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
@@ -78,6 +78,59 @@ $("#ig-previous").click(function (event) {
     $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
     $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-previous").removeClass("limit");
+  }
+});
+
+$('.infographic-container [role="tab"]').on('keydown', function(e) {
+  var $container = '.infographic-container';
+  var $original = $(this);
+  var $prev = $(this).parents('li').prev().children('[role="tab"]');
+  var $next = $(this).parents('li').next().children('[role="tab"]');
+  var $target;
+
+  $("#ig-next").removeClass("limit");
+  $("#ig-previous").removeClass("limit");
+
+
+  // find the direction (prev or next)
+
+  switch (e.keyCode) {
+    case 37:
+      $target = $prev;
+      if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
+        $("#ig-previous").addClass("limit");
+      }
+      break;
+    case 39:
+      $target = $next;
+      if(!$(".slide.on").next('.slide').next('.slide').length) {
+        $("#ig-next").addClass("limit");
+      }
+      break;
+    default:
+      $target = false;
+      break;
+  }
+
+  if ($target.length) {
+      $original.attr({
+        'tabindex' : '-1',
+        'aria-selected' : false
+      }).removeClass('current');
+      $target.attr({
+        'tabindex' : '0',
+        'aria-selected' : true
+      }).addClass('current').focus();
+
+      // Hide panels
+
+      $($container +' .slide')
+        .attr('aria-hidden', 'true').addClass('off').removeClass('on');
+
+      // Show panel which corresponds to target
+
+      $($($target).attr('href'))
+        .attr('aria-hidden', 'false').removeClass('off').addClass('on');
   }
 });
 
