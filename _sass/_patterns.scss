@@ -1009,7 +1009,7 @@ ul.checklist {
   }
 }
 
-.content-slider {
+.content-slider-block {
   background-color: $gray-lightest;
   padding: 1em;
   position: relative;
@@ -1030,6 +1030,10 @@ ul.checklist {
       min-height: inherit;
       transition: all 1s;
     }
+  }
+
+  .limit {
+    display: none;
   }
 
   .content-slider-caption {
