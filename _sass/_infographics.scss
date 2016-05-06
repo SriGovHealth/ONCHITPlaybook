@@ -155,9 +155,14 @@
 
 .dot-nav {
   display: block;
+  list-style-type: none;
   margin: 1em auto .5em;
   max-width: 15em;
   text-align: center;
+
+  li {
+    display: inline;
+  }
 
   a {
     background-color: $white;

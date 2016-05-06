@@ -12,8 +12,8 @@ $(".ig-nav").click(function (event) {
   if ($(target).hasClass("off")) {
     $(".slide").addClass("off").removeClass("on").attr("aria-hidden", "true");
     $(target).removeClass("off").addClass("on").attr("aria-hidden", "false");
-    $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-    $(target + "-control").addClass("current").attr("aria-expanded", "true");
+    $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+    $(target + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   }
 
   if(!$(".slide.on").next('.slide').length) {
@@ -36,8 +36,8 @@ $("#ig-next").click(function (event) {
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
 
-  $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-  $("#" + nextItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+  $("#" + nextItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
@@ -64,8 +64,8 @@ $("#ig-previous").click(function (event) {
   $("#ig-next").removeClass("limit");
   $("#ig-previous").removeClass("limit");
 
-  $(".slide-control").removeClass("current").attr("aria-expanded", "false");
-  $("#" + prevItemId + "-control").addClass("current").attr("aria-expanded", "true");
+  $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
+  $("#" + prevItemId + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   $(".lightbox-container").removeClass("backdrop");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
