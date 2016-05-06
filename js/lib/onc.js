@@ -129,7 +129,7 @@ $('[role="tab"]').on('keydown', function(e) {
       $target = $next;
       break;
     default:
-      $target = false
+      $target = false;
       break;
   }
 
@@ -191,7 +191,7 @@ $('[role="tab"]').on('click', function(e) {
 
 $('.mythreality-toggle').on('keydown', function(e) {
 
-  if (event.keyCode == 13) {
+  if (event.keyCode === 13) {
 
     e.preventDefault();
 
