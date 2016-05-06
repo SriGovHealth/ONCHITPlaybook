@@ -111,8 +111,8 @@
   right: 0;
   position: absolute;
 
-  &.slide-nav-dark {
-    background-color: $black-light;
+  .limit {
+    display: none;
   }
 }
 
