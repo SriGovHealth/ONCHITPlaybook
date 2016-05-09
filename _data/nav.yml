@@ -49,3 +49,7 @@
   permalink: "/references/"
   position: top-level
   slug: "references"
+- title: "Give us feedback"
+  permalink: "/feedback/"
+  position: top-level
+  slug: "feedback"
