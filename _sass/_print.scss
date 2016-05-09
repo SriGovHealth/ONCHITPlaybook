@@ -107,6 +107,11 @@
     }
   }
 
+  .recap .section-number:before {
+    font-family: $font-body;
+    content: "\2713";
+  }
+
   .is_stuck {
     position: relative !important;
     width: inherit !important;
