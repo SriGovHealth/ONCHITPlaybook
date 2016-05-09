@@ -9,6 +9,10 @@
     text-shadow: none !important;
   }
 
+  body {
+    font-size: 100% !important;
+  }
+
   a,
   a:visited {
     text-decoration: underline;
@@ -79,6 +83,12 @@
     position: relative;
   }
 
+  .content {
+    max-width: inherit;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .chapter-intro {
     margin-bottom: 0 !important;
     margin-top: 0 !important;
@@ -86,7 +96,39 @@
   }
 
   .chapter-title {
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $gray;
+    font-size: 2em;
+  }
+
+  .case-block {
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  }
+
+  .section-block {
+    padding-top: 3em;
+  }
+
+  .icon-block {
+    p {
+      padding: 0 0 .75em;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .tech {
+    padding: 1em 3em;
+    margin-bottom: 0;
+  }
+
+  .ftf-block {
+    border: 1px solid $gray;
+    padding-left: 1em;
+    padding-right: 1em;
+
   }
 
   .ftf-title {
@@ -107,6 +149,18 @@
     }
   }
 
+  .quote-block {
+    border: 1px solid $gray;
+
+    .quote-content {
+      margin-left: 0;
+    }
+
+    .quote-icon {
+      display: none;
+    }
+  }
+
   .recap .section-number:before {
     font-family: $font-body;
     color: $green;
@@ -117,19 +171,92 @@
     position: relative !important;
     width: inherit !important;
     top: inherit !important;
+
+    + div {
+      position: relative !important;
+      height: inherit !important;
+      width: inherit !important;
+      top: inherit !important;
+    }
+
+    h2 {
+      padding-top: .25em;
+    }
+
+    .section-number {
+      border: 1px solid $black;
+      border-radius: 3em;
+      display: block;
+      float: left;
+      font-size: .8em;
+      height: 2.25em;
+      padding: .35em .5em;
+      margin-right: .5em;
+      margin-top:-.15em;
+      text-align: center;
+      width: 2.25em;
+    }
   }
 
-  .sticky-header {
-    h2 {
-      font-size: 2em !important;
-    }
-    .section-number {
-      display: none !important;
-    }
+  .sticky-header h2,
+  .recap {
+    float: none !important;
+    font-size: 2em !important;
+  }
+
+  .content-slide {
+    display: block !important;
+    min-height: inherit !important;
   }
 
   .page {
     margin-top: 0 !important;
+  }
+
+  .circle-graph {
+    max-width: 9em !important;
+  }
+
+  .mythreality {
+    border: 1px solid $gray;
+    margin: 1.5em 0;
+
+    .mythreality-header,
+    .mythreality-footer {
+      display: none;
+    }
+
+    .mythreality-content,
+    .mythreality-subhead {
+      display: block !important;
+    }
+  }
+
+  .callout {
+    max-width: inherit;
+    padding: 0;
+
+    .callout-inner {
+      padding: 0;
+    }
+
+    .callout-icon {
+      display: none;
+    }
+
+    .side-icon {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+
+      &:before {
+        content: '\2605\00a0';
+      }
+    }
+
+    .underlined {
+      border: none;
+    }
   }
 
   nav,
@@ -139,9 +266,9 @@
   .next,
   .comments,
   .footer,
-  .myth-control,
   .btn-print,
-  .sidebar {
+  .sidebar,
+  .content-slider-control {
     display: none !important;
   }
 }
