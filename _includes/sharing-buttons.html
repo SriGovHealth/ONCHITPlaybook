@@ -1,4 +1,7 @@
-<div class="sharing{% if include.placement %} sharing-{{ include.placement }}{% endif %}">
+{% if page.og-url %}
+  {% if page.og-title %}
+    {% if page.og-description %}
+<div class="sharing">
   <!--
   <a href="https://www.facebook.com/sharer/sharer.php?u=*** page.og-url ***" class="btn-sharing btn-facebook">Facebook</a>
   <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=*** page.og-url ***&amp;title=*** page.og-title | uri_escape ***&amp;summary=*** page.og-description | uri_escape ***" class="btn-sharing btn-linkedin">LinkedIn</a>
@@ -10,3 +13,6 @@
   <!--<a href="mailto:?subject=Patient%20Engagement%20Playbook&amp;body=Check%20out%20the%20Patient%20Engagement%20Playbook%20-%20https%3A%2F%2Fcommunicatehealth.github.io%2Fonc-playbook%2F" class="btn-sharing btn-email" aria-label="Email this page">Email</a>-->
   <a href="javascript:window.print()" class="btn-print" aria-label="Print this page">Print</a>
 </div>
+    {% endif %}
+  {% endif %}
+{% endif %}
