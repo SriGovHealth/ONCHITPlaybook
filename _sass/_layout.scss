@@ -496,3 +496,11 @@
     text-align: right;
   }
 }
+
+.yes { color: $green-dark; }
+.no { color: $red; }
+.exception { color: $blue; }
+.example {
+  display: block;
+  padding-left: 1em;
+}
