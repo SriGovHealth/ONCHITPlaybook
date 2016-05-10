@@ -47,7 +47,7 @@
 .ftf-block {
   @extend %clearfix;
   background-color: $white;
-  box-shadow: .15em .15em .25em rgba($gray, .25);
+  box-shadow: .15em .15em .25em $gray-trans-25;
   padding: 0 3em 1em;
 
   @include bp-max($medium-2) {
@@ -257,7 +257,7 @@
 
 .search-block {
   background-color: $white;
-  border: 1px solid #e4e4e5;
+  border: 1px solid $off-white-3;
   border-radius: .25em;
   display: block;
   float: right;
@@ -291,10 +291,10 @@
     margin: 0;
 
     &:hover {
-      background-color: lighten($blue, 5%);
+      background-color: $blue-light-2;
 
       img {
-        background-color: lighten($blue, 5%);
+        background-color: $blue-light-2;
       }
     }
 
@@ -404,7 +404,7 @@
 .chapter-intro-inner,
 .callout-inner {
   background-color: $black;
-  background-color: rgba($black, .85);
+  background-color: $black-trans-80;
   color: $white;
   padding: 1em 0 1em 1em;
 
@@ -565,17 +565,19 @@
           background-color: $gray-lightest;
           color: $black;
           transition: all .3s;
+
           &[aria-selected=false] {
             background-color: transparent;
             color: $white;
           }
+
           &[aria-selected=true],
           &:hover,
           &:focus {
             background-color: $gray-lightest;
             color: $black;
             transition: all .3s;
-      }
+          }
         }
 
         &:after {
@@ -894,8 +896,8 @@
 }
 
 .btn-landing {
-  background-color: #001d5f;
-  background-color: rgba(#001d5f, .8);
+  background-color: $navy;
+  background-color: $navy-trans-80;
   color: $white;
   display: block;
   font-size: 1.2em;
@@ -924,7 +926,7 @@
 
   &:hover,
   &:focus {
-    background-color: #004b82;
+    background-color: $navy-light;
     color: $yellow;
 
     .section-title {
@@ -934,7 +936,7 @@
     .btn-arrow {
       background-color: $white;
       border-color: transparent;
-      color: #175d90;
+      color: $navy-light;
 
     }
   }
@@ -972,7 +974,7 @@
 
 .sharing {
   background-color: $black;
-  background-color: rgba($black, .65);
+  background-color: $black-trans-80;
   border-top: 0;
   padding: .5em;
   position: absolute;
@@ -1100,7 +1102,7 @@ ul.checklist {
 .circle-graph {
   display: block;
   margin: 0 auto;
-  max-width: 9em
+  max-width: 9em;
 }
 
 .circle-graph-caption {
@@ -1149,7 +1151,7 @@ ul.checklist {
     }
 
     span {
-      color: #337B64;
+      color: $green-2;
     }
   }
 }
@@ -1215,17 +1217,13 @@ ul.checklist {
 .colorblock {
   border: 1px solid $black;
   margin-bottom: 1.5em;
-  padding: .5em 1em;
 
   @include bp($medium) {
-    float: left;
-    margin-right: 1%;
     min-height: 10em;
-    width: 15%;
   }
 }
 
 .color {
   height: 4em;
-  margin: -.5em -1em 0;
+  margin: 0 -1em;
 }

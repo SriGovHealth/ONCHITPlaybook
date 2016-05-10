@@ -1,70 +1,780 @@
 ---
-layout: default
+layout: chapter
 title: Style Guide
 permalink: /styleguide/
 
 ---
 
 <div class="content">
+</div> <!-- /content -->
 
-<h1>{{ page.title }}</h1>
-
-<p>HTML skeleton document borrowed from <a href="https://github.com/bryanbraun/poor-mans-styleguide">Poor Man&rsquo;s Styleguide</a></p>
-
-<ul>
-  <li><a href="#look">Look &amp; Feel</a></li>
-  <li><a href="#colors">Colors</a></li>
-  <li><a href="#grids">Grid System</a></li>
-  <li><a href="#patterns">Patterns</a></li>
-  <li><a href="#responsive">Responsive</a></li>
-  <li><a href="#fonts">Fonts</a></li>
-  <li><a href="#headings">Headings</a></li>
-  <li><a href="#text-block">Block Elements</a></li>
-  <li><a href="#text-elements">Text Elements</a></li>
-  <li><a href="#monospace">Monospace / Preformatted</a></li>
-  <li><a href="#list-types">Lists</a></li>
-  <li><a href="#tables">Tables</a></li>
-  <li><a href="#buttons">Buttons</a></li>
-  <li><a href="#form-elements">Form Elements</a></li>
-</ul>
-
-<hr>
-
-<h1 id="look">Look &amp; Feel</h1>
-
-<div class="row">
-  <div class="grid-7">
-    <h1>Headline</h1>
-    <h2 class="subhead">Subhead</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Fusce nec tellus sed augue semper porta.</p>
-    <h3 class="h6">Buttons</h3>
-    <p><a class="btn btn-arrow" href="#" role="button">&darr;</a>
-    <a class="btn btn-arrow" href="#" role="button">&uarr;</a>
-    <a class="btn btn-arrow" href="#" role="button">&larr;</a>
-    <a class="btn btn-arrow" href="#" role="button">&rarr;</a>
-    <a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
-    <a class="btn btn-search" href="#" role="button">Search</a></p>
-    <h3 class="h6">Icons</h3>
-    <div class="icon icon-computer">Computer</div>
-    <div class="icon icon-rx">Prescription</div>
-    <div class="icon icon-portal">Patient Portal</div>
-
+<div class="full-bleed chapter-intro bg-references">
+  <div class="chapter-intro-inner">
+    <h1 class="chapter-title">Visual Style Guide</h1>
   </div>
-  <div class="grid-5 space-top-4">
-    <div class="callout">
-      <div class="callout-inner">
-        <div class="callout-icon" aria-hidden="true"><span>*</span></div>
-        <p class="underlined">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
+</div>
+
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
+
+      <p>This style guide is a resource for designers and developers. It supports clear and consistent layout and design of the Patient Engagement Playbook, leading to more efficient website maintenance and a better user experience.</p>
+
+      <p>HTML skeleton document borrowed from <a href="https://github.com/bryanbraun/poor-mans-styleguide">Poor Man&rsquo;s Styleguide</a></p>
+
+      <ul>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#fonts">Fonts</a></li>
+        <li><a href="#grids">Grid System</a></li>
+        <li><a href="#responsive">Responsive/Breakpoints</a></li>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#text-block">Block Elements</a></li>
+        <li><a href="#text-elements">Text Elements</a></li>
+        <li><a href="#monospace">Monospace / Preformatted</a></li>
+        <li><a href="#list-types">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#form-elements">Form Elements</a></li>
+        <li><a href="#patterns">Patterns</a></li>
+        <li><a href="{{ '/styleguide/content/' | prepend: site.baseurl }}">Content Style Guide &rarr;</a></li>
+      </ul>
+
+      <h2 id="colors">Colors</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#323232;"></div>
+      <p>#323232<br>
+      $black</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#000;"></div>
+      <p>#000<br>
+      $black-print</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#505050;"></div>
+      <p>#505050<br>
+      $black-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#181818;"></div>
+      <p>#181818<br>
+      $black-dark</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#61dab3;"></div>
+      <p>#61dab3<br>
+      $green</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#337b64;"></div>
+      <p>#337b64<br>
+      $green-2</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#9fe9d1;"></div>
+      <p>#9fe9d1<br>
+      $green-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#38d09f;"></div>
+      <p>#38d09f<br>
+      $green-dark</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#f0f6f9;"></div>
+      <p>#f0f6f9<br>
+      $off-white</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#f0f5fa;"></div>
+      <p>#f0f5fa<br>
+      $off-white-2</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#e4e4e5;"></div>
+      <p>#e4e4e5<br>
+      $off-white-3</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#f8f9fa;"></div>
+      <p>#f8f9fa<br>
+      $off-white-light</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#e3e4e4;"></div>
+      <p>#e3e4e4<br>
+      $off-white-dark</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#1479bd;"></div>
+      <p>#1479bd<br>
+      $blue</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#72aedc;"></div>
+      <p>#72aedc<br>
+      $blue-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#1688d4;"></div>
+      <p>#1688d4<br>
+      $blue-light-2</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#125d93;"></div>
+      <p>#125d93<br>
+      $blue-dark</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#001d5f;"></div>
+      <p>#001d5f<br>
+      $navy</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#004b82;"></div>
+      <p>#004b82<br>
+      $navy-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#fecf00;"></div>
+      <p>#fecf00<br>
+      $yellow</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#fddc47;"></div>
+      <p>#fddc47<br>
+      $yellow-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#fec609;"></div>
+      <p>#fec609<br>
+      $yellow-dark</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#737373;"></div>
+      <p>#737373<br>
+      $gray-darkest</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#a39f99;"></div>
+      <p>#a39f99<br>
+      $gray-dark</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#b2ada7;"></div>
+      <p>#b2ada7<br>
+      $gray</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#d1cec9;"></div>
+      <p>#d1cec9<br>
+      $gray-light</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#f5f5f5;"></div>
+      <p>#f5f5f5<br>
+      $gray-lightest</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#77008d;"></div>
+      <p>#77008d<br>
+      $purple</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#ff4136;"></div>
+      <p>#ff4136<br>
+      $red</p>
+    </div>
+    <div class="grid-2 colorblock">
+      <div class="color" style="background-color:#fff;"></div>
+      <p>#fff<br>
+      $white</p>
     </div>
   </div>
 </div>
 
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="fonts">Fonts</h2>
+      <p>Via <a href="http://typekit.com/">Typekit</a></p>
+      <ul>
+        <li><span class="font-header">Heading font: Raleway, sans-serif; <span class="font-weight-400">400</span>, <span class="font-weight-700">700</span></span></li>
+        <li><span class="font-header-alt">Heading font alternative: Museo-slab, serif; <span class="font-weight-300">300</span></span></li>
+        <li><span class="font-body">Body font: Sofia Pro, sans-serif; <span class="font-weight-400">400</span>, <span class="font-weight-700">700</span></span></li>
+      </ul>
+    </div>
+  </div>
 
-<h2>Chapter Intro</h2>
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="grids">Grid System</h2>
+    </div>
+  </div>
 
+  <div class="row demo">
+    <div class="grid-12">.grid-12</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-1">.grid-1</div>
+    <div class="grid-11">.grid-11</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-2">.grid-2</div>
+    <div class="grid-10">.grid-10</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-3">.grid-3</div>
+    <div class="grid-9">.grid-9</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-4">.grid-4</div>
+    <div class="grid-8">.grid-8</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-5">.grid-5</div>
+    <div class="grid-7">.grid-7</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-6">.grid-6</div>
+    <div class="grid-6">.grid-6</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-7">.grid-7</div>
+    <div class="grid-5">.grid-5</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-8">.grid-8</div>
+    <div class="grid-4">.grid-4</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-9">.grid-9</div>
+    <div class="grid-3">.grid-3</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-10">.grid-10</div>
+    <div class="grid-2">.grid-2</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-11">.grid-11</div>
+    <div class="grid-1">.grid-1</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-4">.grid-4</div>
+    <div class="grid-4">.grid-4</div>
+    <div class="grid-4">.grid-4</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-3">.grid-3</div>
+    <div class="grid-3">.grid-3</div>
+    <div class="grid-3">.grid-3</div>
+    <div class="grid-3">.grid-3</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-10 offset-2">.grid-10 .offset-2</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-5 offset-3">.grid-5 .offset-3</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-3">.grid-3</div>
+    <div class="grid-3 offset-1">.grid-3 .offset-1</div>
+    <div class="grid-3 offset-1">.grid-3 .offset-1</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-9 push-3">.grid-9 .push-3 (first element)</div>
+    <div class="grid-3 pull-9">.grid-3 .pull-9 (second element)</div>
+  </div>
+  <div class="row demo">
+    <div class="grid-6 push-6">.grid-6 .push-6 (first element)</div>
+    <div class="grid-6 pull-6">.grid-6 .pull-6 (second element)</div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="responsive">Responsive/Breakpoints</h2>
+      <p class="hide-small">This text is hidden on smaller screens</p>
+      <p class="hide-medium hide-large"><strong>This text is only visible on smaller screens</strong></p>
+      <p class="hide-medium">This text is hidden on medium screens</p>
+      <p class="hide-small hide-large"><strong>This text is only visible on medium screens</strong></p>
+      <p class="hide-large">This text is hidden on large screens</p>
+      <p class="hide-small hide-medium"><strong>This text is only visible on large screens</strong></p>
+
+      <table>
+        <tr><th scope="col">Name</th><th scope="col">Width</th></tr>
+        <tr><td>$small</td><td>24em (~384px)</td></tr>
+        <tr><td>$small-2</td><td>29.75em (~476px)</td></tr>
+        <tr><td>$small-3</td><td>39.8em (~637px)</td></tr>
+        <tr><td>$medium</td><td>46.8em (~749px)</td></tr>
+        <tr><td>$medium-2</td><td>48.125em (~770px)</td></tr>
+        <tr><td>$large</td><td>50em (~800px)</td></tr>
+        <tr><td>$large-2</td><td>60em (~960px)</td></tr>
+        <tr><td>$large-3</td><td>66em (~1056px)</td></tr>
+        <tr><td>$xlarge</td><td>73em (~1168px)</td></tr>
+        <tr><td>$xxlarge</td><td>89em (~1424px)</td></tr>
+        <tr><td>$xxxlarge</td><td>93em (~1488px)</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="headings">Headings</h2>
+
+      <section>
+        <h1>Heading 1 - 2.125em (34px)</h1>
+        <h2>Heading 2 - 1.75em (28px)</h2>
+        <h3>Heading 3 - 1.35em (22px)</h3>
+        <h4>Heading 4 - 1.3em (21px)</h4>
+        <h5>Heading 5 - 1.25em (20px)</h5>
+        <h6>Heading 6 - 1.125em (18px)</h6>
+      </section>
+
+      <h2 id="headings-with-text">Headings with Text</h2>
+
+      <section>
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h2>Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h3>Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h4>Heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h5>Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+        <h6>Heading 6</h6>
+        <p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="text-block">Block Elements</h2>
+
+      <h3 id="paragraph">Paragraphs and Images</h3>
+
+      <p class="lead">First paragraph with <code>.lead</code> class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+      <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
+        <li>Nullam dignissim convallis est</li>
+      </ul>
+      <p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
+
+      <p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
+
+      <h3>Blockquote</h3>
+
+      <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      <blockquote>
+        "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
+      </blockquote>
+      <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+      <h3>Figure-Caption</h3>
+
+      <figure>
+        <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
+        <figcaption>The figcaption element example</figcaption>
+      </figure>
+
+      <h3>Horizontal Rule</h3>
+
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+
+      <h2 id="text-elements">Text Elements</h2>
+
+      <p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
+      <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+      <p>The <b>b element</b> example</p>
+      <p>The <cite>cite element</cite> example</p>
+      <p>The <code>code element</code> example</p>
+      <p>The <data value="3967381398">data element</data> example</p>
+      <p>The <del>del element</del> example</p>
+      <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+      <p>The <em>em element</em> example</p>
+      <p>The <i>i element</i> example</p>
+      <p>The <ins>ins element</ins> example</p>
+      <p>The <kbd>kbd element</kbd> example</p>
+      <p>The <mark>mark element</mark> example</p>
+      <p>The <q>q element</q> example</p>
+      <p>The <q>q element <q>inside</q> a q element</q> example</p>
+      <p>The <s>s element</s> example</p>
+      <p>The <samp>samp element</samp> example</p>
+      <p>The <small>small element</small> example</p>
+      <p>The <span>span element</span> example</p>
+      <p>The <strong>strong element</strong> example</p>
+      <p>The <sub>sub element</sub> example</p>
+      <p>The <sup>sup element</sup> example</p>
+      <p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
+      <p>The <u>u element</u> example</p>
+      <p>The <var>var element</var> example</p>
+      <p>The <span class="footnote">footnote class</span> example</p>
+      <p>The <span class="text-lowercase">lowercase class</span> example</p>
+      <p>The <span class="text-uppercase">uppercase class</span> example</p>
+      <p>The <span class="text-capitalize">capitalize class</span> example</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="monospace">Monospace / Preformatted</h2>
+      <p>Code block wrapped in "pre" and "code" tags</p>
+      <pre><code>// Loop through Divs using Javascript.
+      var divs = document.querySelectorAll('div'), i;
+
+      for (i = 0; i &lt; divs.length; ++i) {
+        divs[i].style.color = "green";
+      }</code></pre>
+      <p>Monospace Text wrapped in "pre" tags</p>
+      <pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;</pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+      <h2 id="list-types">List Types</h2>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3
+          <ol>
+            <li>List Item 3.1</li>
+            <li>List Item 3.2
+              <ol>
+                <li>List Item 3.2.1</li>
+                <li>List Item 3.2.2</li>
+              </ol>
+            </li>
+            <li>List Item 3.3</li>
+          </ol>
+        </li>
+        <li>List Item 4</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3
+          <ul>
+            <li>List Item 3.1</li>
+            <li>List Item 3.2
+              <ul>
+                <li>List Item 3.2.1</li>
+                <li>List Item 3.2.2</li>
+              </ul>
+            </li>
+            <li>List Item 3.3</li>
+          </ul>
+        </li>
+        <li>List Item 4</li>
+      </ul>
+
+      <h3>Unstyled List</h3>
+      <ul class="unstyled">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3
+          <ul>
+            <li>List Item 3.1</li>
+            <li>List Item 3.2
+              <ul>
+                <li>List Item 3.2.1</li>
+                <li>List Item 3.2.2</li>
+              </ul>
+            </li>
+            <li>List Item 3.3</li>
+          </ul>
+        </li>
+        <li>List Item 4</li>
+      </ul>
+
+      <h3>Inline List</h3>
+      <ul class="inline">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+      </ul>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>Definition Term 1</dt>
+        <dd>Definition Description 1</dd>
+        <dt>Definition Term 2</dt>
+        <dd>Definition Description 2</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+
+      <h2 id="tables">Tables</h2>
+
+      <h3>Normal Table</h3>
+
+      <table>
+        <caption>This is a table caption</caption>
+        <thead>
+          <tr>
+            <th scope="col">Table Header 1</th><th scope="col">Table Header 2</th><th scope="col">Table Header 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+          </tr>
+          <tr>
+            <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+          </tr>
+          <tr>
+            <td>Division 1</td><td>Division 2</td><td>Division 3</td>
+          </tr>
+          <tr>
+            <td colspan="3">A row with a cell spanning all 3 columns</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Responsive Table</h3>
+
+      <table class="responsive">
+        <caption>This is a table caption</caption>
+        <thead>
+          <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Title</th>
+            <th scope="col">Office</th>
+            <th scope="col">Birthday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="First Name">Jane</td>
+            <td data-label="Last Name">Smith</td>
+            <td data-label="Title">Creative Director</td>
+            <td data-label="Office">New York</td>
+            <td data-label="Birthday">June 1</td>
+          </tr>
+          <tr>
+            <td data-label="First Name">Wesley</td>
+            <td data-label="Last Name">Hall</td>
+            <td data-label="Title">Designer</td>
+            <td data-label="Office">San Francisco</td>
+            <td data-label="Birthday">February 29</td>
+          </tr>
+          <tr>
+            <td data-label="First Name">Penelope</td>
+            <td data-label="Last Name">Adams</td>
+            <td data-label="Title">Developer</td>
+            <td data-label="Office">Washington, DC</td>
+            <td data-label="Birthday">September 14</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+
+      <h2 id="buttons">Buttons</h2>
+
+      <p><a class="btn btn-arrow" href="#" role="button">&darr;</a>
+      <a class="btn btn-arrow" href="#" role="button">&uarr;</a>
+      <a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
+      <a class="btn btn-search" href="#" role="button">Search</a></p>
+
+      <h3>Button Variants</h3>
+
+      <p><a class="btn" href="#" role="button">Link</a>
+      <button class="btn" type="submit">Button</button>
+      <input class="btn" type="button" value="Input">
+      <input class="btn" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-chapter" href="#" role="button">Link</a>
+      <button class="btn btn-chapter" type="submit">Button</button>
+      <input class="btn btn-chapter" type="button" value="Input">
+      <input class="btn btn-chapter" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-search" href="#" role="button">Link</a>
+      <button class="btn btn-search" type="submit">Button</button>
+      <input class="btn btn-search" type="button" value="Input">
+      <input class="btn btn-search" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-dark" href="#" role="button">Link</a>
+      <button class="btn btn-dark" type="submit">Button</button>
+      <input class="btn btn-dark" type="button" value="Input">
+      <input class="btn btn-dark" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-large" href="#" role="button">Link</a>
+      <button class="btn btn-large" type="submit">Button</button>
+      <input class="btn btn-large" type="button" value="Input">
+      <input class="btn btn-large" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-small" href="#" role="button">Link</a>
+      <button class="btn btn-small" type="submit">Button</button>
+      <input class="btn btn-small" type="button" value="Input">
+      <input class="btn btn-small" type="submit" value="Submit"></p>
+
+      <p><a class="btn btn-block" href="#" role="button">Link</a>
+      <button class="btn btn-block" type="submit">Button</button>
+      <input class="btn btn-block" type="button" value="Input">
+      <input class="btn btn-block" type="submit" value="Submit"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+
+      <h2 id="form-elements">Form Elements</h2>
+
+      <p>The Fieldset:</p>
+      <fieldset>
+        <legend>Legend</legend>
+
+        <p>The Form:</p>
+
+        <form>
+          <p><label for="text_field">Text Field:</label><br>
+            <input type="text" id="text_field" />
+          </p>
+
+          <p><label for="text_field_disabled">Disabled Text Field:</label><br>
+            <input type="text" id="text_field_disabled" disabled value="Disabled text field" />
+          </p>
+
+          <p><label for="text_field_readonly">Readonly Text Field:</label><br>
+            <input type="text" id="text_field_readonly" readonly value="Readonly text field" />
+          </p>
+
+          <p><label for="text_area">Text Area:</label><br>
+            <textarea id="text_area"></textarea>
+          </p>
+
+          <p><label for="text_area_disabled">Disabled Text Area:</label><br>
+            <textarea id="text_area_disabled" disabled>Disabled text area</textarea>
+          </p>
+
+          <p><label for="text_area_readonly">Readonly Text Area:</label><br>
+            <textarea id="text_area_readonly" readonly>Readonly text area</textarea>
+          </p>
+
+          <p><label for="select_element">Select Element:</label><br>
+            <select id="select_element">
+              <optgroup label="Option Group 1">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+              </optgroup>
+              <optgroup label="Option Group 2">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3" disabled>Disabled Option</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
+            <select id="select_element_disabled" disabled>
+              <option value="1">Unselectable Option</option>
+              <option value="2">This option should not even be seen</option>
+            </select>
+          </p>
+
+          <p>Radio Buttons:<br>
+            <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
+            <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
+            <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
+            <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
+          </p>
+
+          <p>Checkboxes:<br>
+            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
+            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
+            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
+            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
+          </p>
+
+          <p><label for="password">Password:</label><br>
+            <input type="password" class="password" id="password" />
+          </p>
+
+          <p><label for="file">File Input:</label><br>
+            <input type="file" class="file" id="file" />
+          </p>
+
+          <h3>HTML5-specific Form Elements</h3>
+
+          <p><label for="email">Email:</label><br>
+            <input type="email" id="email" />
+          </p>
+
+          <p><label for="url">URL:</label><br>
+            <input type="url" id="url" />
+          </p>
+
+          <p><label for="tel">Telephone:</label><br>
+            <input type="tel" id="tel" />
+          </p>
+
+          <p><label for="number">Number:</label><br>
+            <input type="number" id="number" min="0" max="10" step="1" value="5" />
+          </p>
+
+          <p><label for="search">Search:</label><br>
+            <input type="search" id="search" />
+          </p>
+
+          <p>
+            <button class="button">Button Element</button>
+            <input class="button" type="reset" value="Clear" />
+            <input class="button" type="submit" value="Submit" />
+          </p>
+        </form>
+
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid-12">
+
+      <h2 id="patterns">Patterns</h2>
+
+      <h3>Chapter Intro</h3>
+
+    </div>
+  </div>
 </div> <!-- /content -->
-<div class="full-bleed chapter-intro">
+
+<div class="full-bleed chapter-intro bg-chapter-2">
   <div class="chapter-intro-inner">
     <p class="chapter-number">Chapter 2</p>
     <h1 class="chapter-title">Meet patient needs</h1>
@@ -76,710 +786,276 @@ permalink: /styleguide/
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
-
-<hr>
-
-<h1 id="colors">Colors</h1>
-
-<div class="clearfix">
-  <div class="colorblock">
-    <div class="color" style="background-color:#303133;"></div>
-    <p>#303133<br>
-    $black</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#505050;"></div>
-    <p>#505050<br>
-    $black-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#181818;"></div>
-    <p>#181818<br>
-    $black-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#61dab3;"></div>
-    <p>#61dab3<br>
-    $green</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#a0e9d1;"></div>
-    <p>#a0e9d1<br>
-    $green-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#35d09e;"></div>
-    <p>#35d09e<br>
-    $green-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#f0f6f9;"></div>
-    <p>#f0f6f9<br>
-    $off-white</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#f8f9fa;"></div>
-    <p>#f8f9fa<br>
-    $off-white-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#e3e4e4;"></div>
-    <p>#e3e4e4<br>
-    $off-white-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#1479bd;"></div>
-    <p>#1479bd<br>
-    $blue</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#72aedc;"></div>
-    <p>#72aedc<br>
-    $blue-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#125d93;"></div>
-    <p>#125d93<br>
-    $blue-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#fecf00;"></div>
-    <p>#fecf00<br>
-    $yellow</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#fddc47;"></div>
-    <p>#fddc47<br>
-    $yellow-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#fec609;"></div>
-    <p>#fec609<br>
-    $yellow-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#a39f99;"></div>
-    <p>#a39f99<br>
-    $gray-dark</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#666;"></div>
-    <p>#666<br>
-    $gray</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#ddd;"></div>
-    <p>#ddd<br>
-    $gray-light</p>
-  </div>
-  <div class="colorblock">
-    <div class="color" style="background-color:#77008d;"></div>
-    <p>#77008d<br>
-    $purple</p>
-  </div>
-</div>
-
-<hr>
-
-<h1 id="grids">Grid System</h1>
-
-
-<div class="row demo">
-  <div class="grid-12">grid-12</div>
-</div>
-<div class="row demo">
-  <div class="grid-1">grid-1</div>
-  <div class="grid-11">grid-11</div>
-</div>
-<div class="row demo">
-  <div class="grid-2">grid-2</div>
-  <div class="grid-10">grid-10</div>
-</div>
-<div class="row demo">
-  <div class="grid-3">grid-3</div>
-  <div class="grid-9">grid-9</div>
-</div>
-<div class="row demo">
-  <div class="grid-4">grid-4</div>
-  <div class="grid-8">grid-8</div>
-</div>
-<div class="row demo">
-  <div class="grid-5">grid-5</div>
-  <div class="grid-7">grid-7</div>
-</div>
-<div class="row demo">
-  <div class="grid-6">grid-6</div>
-  <div class="grid-6">grid-6</div>
-</div>
-<div class="row demo">
-  <div class="grid-7">grid-7</div>
-  <div class="grid-5">grid-5</div>
-</div>
-<div class="row demo">
-  <div class="grid-8">grid-8</div>
-  <div class="grid-4">grid-4</div>
-</div>
-<div class="row demo">
-  <div class="grid-9">grid-9</div>
-  <div class="grid-3">grid-3</div>
-</div>
-<div class="row demo">
-  <div class="grid-10">grid-10</div>
-  <div class="grid-2">grid-2</div>
-</div>
-<div class="row demo">
-  <div class="grid-11">grid-11</div>
-  <div class="grid-1">grid-1</div>
-</div>
-<div class="row demo">
-  <div class="grid-4">grid-4</div>
-  <div class="grid-4">grid-4</div>
-  <div class="grid-4">grid-4</div>
-</div>
-<div class="row demo">
-  <div class="grid-3">grid-3</div>
-  <div class="grid-3">grid-3</div>
-  <div class="grid-3">grid-3</div>
-  <div class="grid-3">grid-3</div>
-</div>
-<div class="row demo">
-  <div class="grid-10 offset-2">.grid-10 .offset-2</div>
-</div>
-<div class="row demo">
-  <div class="grid-5 offset-3">.grid-5 .offset-3</div>
-</div>
-<div class="row demo">
-  <div class="grid-3">.grid-3</div>
-  <div class="grid-3 offset-1">.grid-3 .offset-1</div>
-  <div class="grid-3 offset-1">.grid-3 .offset-1</div>
-</div>
-<div class="row demo">
-  <div class="grid-9 push-3">.grid-9 .push-3 (first element)</div>
-  <div class="grid-3 pull-9">.grid-3 .pull-9 (second element)</div>
-</div>
-<div class="row demo">
-  <div class="grid-6 push-6">.grid-6 .push-6 (first element)</div>
-  <div class="grid-6 pull-6">.grid-6 .pull-6 (second element)</div>
-</div>
-
-<hr>
-
-<h1 id="patterns">Patterns</h1>
-
-<h2>Full-bleed</h2>
-
 </div> <!-- /content -->
+
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
+
+      <h3>Full-bleed</h3>
+    </div>
+  </div>
+</div> <!-- /content -->
+
 <div class="full-bleed">
   <div class="content">
-    <p>This is a full-bleed block.</p>
+    <div class="row">
+      <div class="grid-12">
+        <p>This is a full-bleed block.</p>
+      </div>
+    </div>
   </div>
 </div>
+
 <div class="content">
+  <div class="row">
+    <div class="grid-12">
+
+      <h3>Callout</h3>
+
+      <div class="callout">
+        <div class="callout-inner">
+          <div class="callout-icon" aria-hidden="true"><span>*</span></div>
+          <p class="underlined">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+
+      <h3>Callout (right)</h3>
+
+      <div class="clearfix">
+        <div class="callout callout-right clearfix">
+          <div class="callout-inner">
+            <div class="callout-icon" aria-hidden="true"><span>*</span></div>
+            <p class="underlined">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Myth vs. Reality</h3>
+      <div class="clearfix">
+        <div class="mythreality mythreality-right" id="mythreality-1">
+          <ul class="mythreality-header" role="tablist">
+            <li role="presentation">
+              <a href="#myth-1" class="myth-control" role="tab" aria-controls="myth-1">Myth</a>
+            </li>
+            <li role="presentation">
+              <a href="#reality-1" class="reality-control" role="tab" aria-controls="reality-1">Reality</a>
+            </li>
+          </ul>
+          <div class="mythreality-content myth-content" role="tabpanel" aria-hidden="false" id="myth-1">
+            <p class="mythreality-subhead" aria-hidden="true">Myth:</p>
+            <p>Providers worry that activating email in the patient portal will lead to an email deluge that burdens their practice and impedes efficiency.</p>
+            <div class="mythreality-footer">
+              <p><a href="#reality-1" class="mythreality-toggle reality-control myth-1-toggle" aria-controls="reality-1">Learn the reality <span aria-hidden="true">&rarr;</span></a></p>
+            </div>
+          </div>
+          <div class="mythreality-content reality-content" role="tabpanel" aria-hidden="true" id="reality-1">
+            <p class="mythreality-subhead" aria-hidden="true">Reality:</p>
+            <p>When practices integrate email into their workflow, providers often find communicating with patients more convenient and less time-consuming.</p>
+            <div class="mythreality-footer">
+              <p><a href="#myth-1" class="mythreality-toggle myth-control reality-1-toggle" aria-controls="myth-1"><span aria-hidden="true">&larr;</span> View the myth</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Slideshow slider</h3>
+      <div class="content-slider-block">
+        <div class="content-slides">
+          <div class="content-slide on" id="content-slide-1" aria-hidden="false">
+            <p><img src="{{ "/img/figure-2-1-1.jpg" | prepend: site.baseurl }}" alt=""></p>
+            <p class="content-slider-caption">To book online, Kaiser patients go to the &ldquo;Schedule an appointment&rdquo; page.</p>
+          </div>
+          <div class="content-slide" id="content-slide-2" aria-hidden="true">
+            <p><img src="{{ "/img/figure-2-1-2.jpg" | prepend: site.baseurl }}" alt=""></p>
+            <p class="content-slider-caption">They then choose a reason for the appointment &mdash; like a routine blood pressure check or eye exam.</p>
+          </div>
+          <div class="content-slide" id="content-slide-3" aria-hidden="true">
+            <p><img src="{{ "/img/figure-2-1-3.jpg" | prepend: site.baseurl }}" alt=""></p>
+            <p class="content-slider-caption">Patients select a provider for the appointment &mdash; like their primary care doctor or a nurse practitioner.</p>
+          </div>
+          <div class="content-slide" id="content-slide-4" aria-hidden="true">
+            <p><img src="{{ "/img/figure-2-1-4.jpg" | prepend: site.baseurl }}" alt=""></p>
+            <p class="content-slider-caption">They pick the date and time for the appointment.</p>
+          </div>
+          <div class="content-slide" id="content-slide-5" aria-hidden="true">
+            <p><img src="{{ "/img/figure-2-1-5.jpg" | prepend: site.baseurl }}" alt=""></p>
+            <p class="content-slider-caption">Finally, they confirm the details and book the appointment.</p>
+          </div>
+        </div>
+        <div class="content-slider-control">
+          <p class="text-center">
+            <a href="#content-slide-prev" class="btn btn-blue content-slide-prev limit" id="content-slide-prev"><span aria-hidden="true">&larr; </span>Previous step</a>
+            <a href="#content-slide-next" class="btn btn-blue content-slide-next" id="content-slide-next">Next step<span aria-hidden="true"> &rarr;</span></a>
+            <a href="#content-slide-restart" class="btn btn-blue content-slide-restart limit" id="content-slide-restart">Start over</a>
+          </p>
+        </div>
+      </div>
 
 
-<h2>Callout</h2>
+      <h3>Quote (vertical, left)</h3>
+      <div class="clearfix">
+        <div class="quote-block quote-left">
+          <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
+          <div class="quote-content">
+            <p>“In the past, we relied on patients to log information, bring it to us, and then we would input the data and decide a course of action. Now we can share information seamlessly between patient and physician to allow real-time, accurate analysis of a patient&rsquo;s health status.”</p>
+            <p class="quote-source">&mdash; Robert Bober, MD, Director of Cardiac Molecular Imaging, Ochsner Medical Center</p>
+          </div>
+        </div>
+      </div>
 
-<div class="callout">
-  <div class="callout-inner">
-    <div class="callout-icon" aria-hidden="true"><span>*</span></div>
-    <p class="underlined">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Quote (vertical, right)</h3>
+      <div class="clearfix">
+        <div class="quote-block quote-right">
+          <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
+          <div class="quote-content">
+            <p>“In the past, we relied on patients to log information, bring it to us, and then we would input the data and decide a course of action. Now we can share information seamlessly between patient and physician to allow real-time, accurate analysis of a patient&rsquo;s health status.”</p>
+            <p class="quote-source">&mdash; Robert Bober, MD, Director of Cardiac Molecular Imaging, Ochsner Medical Center</p>
+          </div>
+        </div>
+      </div>
+
+      <h3>Quote (wide)</h3>
+      <div class="quote-block quote-wide">
+        <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
+        <div class="quote-content">
+          <p>“Making visit notes available online is a <strong>good idea</strong>.” </p>
+          <p class="quote-source">&mdash; 85% to 88% of providers in the study agreed</p>
+        </div>
+      </div>
+
+      <h3>Intro buttons</h3>
+      <a href="{{ "/introduction/" | prepend: site.baseurl }}" class="btn-landing"><span class="section-title">Introduction</span> Patient Engagement Playbook <span class="btn btn-arrow" aria-hidden="true">&rarr;</span></a>
+
+      <h3>Footer</h3>
+    </div>
+  </div>
+</div> <!-- /content -->
+
+<div class="content footer">
+  <p class="footer-links">
+    <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
+    <a href="http://www.healthit.gov/newsroom/web-site-disclaimers">Website Disclaimers</a>
+    <a href="http://www.hhs.gov/plugins.html">Videos/Players</a>
+  </p>
+  <p class="footer-logos">
+    <a href="https://www.usa.gov/"><img src="{{ "/img/logo-usagov.png" | prepend: site.baseurl }}" alt="USA.gov"></a>
+    <a href="https://www.whitehouse.gov/"><img src="{{ "/img/logo-whitehouse.png" | prepend: site.baseurl }}" alt="whitehouse.gov"></a>
+    <a href="http://www.hhs.gov/"><img src="{{ "/img/logo-hhs.png" | prepend: site.baseurl }}" alt="HHS.gov"></a>
+    <a href="https://www.healthit.gov/"><img src="{{ "/img/logo-healthit.png" | prepend: site.baseurl }}" alt="HealthIT.gov"></a>
+  </p>
+</div>
+
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
+      <h3>Section header (stick on scroll)</h3>
+    </div>
+  </div>
+</div> <!-- /content -->
+
+<div class="full-bleed section-block sticky-header" id="sticky-header-2">
+  <div class="content">
+    <div class="row">
+      <div class="grid-12">
+        <h2><span class="section-number">4.2</span> Collect family histories</h2>
+      </div>
+    </div>
   </div>
 </div>
 
-<h2>Pagination</h2>
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
+      <h3>Recap header</h3>
 
-<div class="pagination">
-  <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  <a href="#">1</a>
-  <a href="#">2</a>
-  <a href="#" class="current">3</a>
-  <a href="#">4</a>
-  <a href="#">5</a>
-  <span>&hellip;</span>
-  <a href="#">10</a>
-  <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+      <h2 class="recap"><span class="section-number"></span>Chapter 4 Recap</h2>
+
+      <h3>Checkbox list (displays empty checkboxes on print)</h3>
+      <ul class="checklist">
+        <li><span class="check" aria-hidden="true"></span> <span class="check-item">Track patient-generated data</span></li>
+        <li><span class="check" aria-hidden="true"></span> <span class="check-item">Collect family histories</span></li>
+      </ul>
+
+      <h3>Icon block</h3>
+
+      <div class="icon-block">
+        <p class="icon-person"><span>77% to 87%</span> across the 3 sites reported that open notes helped them feel more in control of their care.</p>
+        <p class="icon-medication"><span>60% to 78%</span> of those taking medications reported increased medication adherence.</p>
+        <p class="icon-share"><span>20% to 42%</span> reported sharing notes with others.</p>
+      </div>
+
+      <h3>From the Field block</h3>
+    </div>
+  </div>
+</div> <!-- /content -->
+
+<div class="full-bleed case-block">
+  <div class="content">
+    <div class="row">
+      <div class="grid-12">
+        <div class="ftf-block">
+          <div class="ftf-title">
+            <h3>An Evaluation of OpenNotes<sup><a href="{{ '/references/#footnote-28' | prepend: site.baseurl }}" id="footnote-ref28" aria-label="Footnote 28">28</a></sup> <span>| From the field</span></h3>
+          </div>
+
+          <p>A study across these 3 sites &mdash; Beth Israel Deaconess Medical Center (BIDMC) in Massachusetts, Geisinger Health System (GHS) in Pennsylvania, and Harborview Medical Center (HMC) in Washington &mdash; found that most providers had positive or neutral experiences with OpenNotes (a national initiative that promotes sharing notes with patients. When asked about the most difficult aspect of open notes, 3 out of 4 providers commented that nothing was difficult and that they experienced no changes in their practice. Several doctors acknowledged fears about an additional time burden and offending or worrying patients &mdash; but said that these concerns didn&rsquo;t materialize.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h2>Panel</h2>
+<div class="content">
+  <div class="row">
+    <div class="grid-12">
 
-<div class="panel">
-  <p>This is a panel.</p>
-</div>
+      <h3>Pagination</h3>
 
-<h2>Breadcrumb</h2>
+      <div class="pagination">
+        <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="current">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <span>&hellip;</span>
+        <a href="#">10</a>
+        <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+      </div>
 
-<div class="breadcrumb">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Project Page</a></li>
-    <li>Project Detail</li>
-  </ul>
-</div>
+      <h3>Panel</h3>
 
-<h2>Search</h2>
+      <div class="panel">
+        <p>This is a panel.</p>
+      </div>
 
-<form class="search" accept-charset="UTF-8" action="#" method="get">
-  <p class="search-label"><label for="search-query">Search</label></p>
-  <p class="search-block"><input autocomplete="off" class="search-text" id="search-query" name="query" type="text" /> <input type="submit" class="search-button" value="Search" /></p>
-</form>
+      <h3>Breadcrumb</h3>
 
-<h2>Icons</h2>
-
-<div class="icon icon-computer">Computer</div>
-<div class="icon icon-rx">Prescription</div>
-<div class="icon icon-portal">Patient Portal</div>
-
-<hr>
-
-<h1 id="responsive">Responsive</h1>
-
-<p class="hide-small">This text is hidden on smaller screens</p>
-<p class="hide-medium hide-large"><strong>This text is only visible on smaller screens</strong></p>
-<p class="hide-medium">This text is hidden on medium screens</p>
-<p class="hide-small hide-large"><strong>This text is only visible on medium screens</strong></p>
-<p class="hide-large">This text is hidden on large screens</p>
-<p class="hide-small hide-medium"><strong>This text is only visible on large screens</strong></p>
-
-<h2>Breakpoints</h2>
-
-<table>
-  <tr><th scope="col">Name</th><th scope="col">Width</th></tr>
-  <tr><td>$small</td><td>24em (~384px)</td></tr>
-  <tr><td>$small-2</td><td>29.75em (~476px)</td></tr>
-  <tr><td>$small-3</td><td>39.8em (~637px)</td></tr>
-  <tr><td>$medium</td><td>46.8em (~749px)</td></tr>
-  <tr><td>$medium-2</td><td>48em (~768px)</td></tr>
-  <tr><td>$large</td><td>50em (~800px)</td></tr>
-  <tr><td>$large-2</td><td>60em (~960px)</td></tr>
-  <tr><td>$large-3</td><td>66em (~1056px)</td></tr>
-  <tr><td>$xlarge</td><td>73em (~1168px)</td></tr>
-  <tr><td>$xxlarge</td><td>89em (~1424px)</td></tr>
-  <tr><td>$xxxlarge</td><td>93em (~1488px)</td></tr>
-</table>
-
-<hr>
-
-<h1 id="fonts">Fonts</h1>
-
-<p class="font-header">Heading font: Raleway, sans-serif; <span class="font-weight-400">400</span>, <span class="font-weight-700">700</span></p>
-<p class="font-header-alt">Heading font alternative: Museo-slab, serif; <span class="font-weight-300">300</span></p>
-<p class="font-body">Body font: Futura PT, sans-serif; <span class="font-weight-400">400</span>, <span class="font-weight-700">700</span></p>
-
-<hr>
-
-<h1 id="headings">Headings</h1>
-
-<h1>Heading 1 (34px)</h1>
-<h2>Heading 2 (28px)</h2>
-<h3>Heading 3 (22px)</h3>
-<h4>Heading 4 (21px)</h4>
-<h5>Heading 5 (20px)</h5>
-<h6>Heading 6 (18px)</h6>
-
-<hr>
-
-<h1 id="headings-with-text">Headings with Text</h1>
-
-<h1>Heading 1</h1>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h2>Heading 2</h2>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h3>Heading 3</h3>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h4>Heading 4</h4>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h5>Heading 5</h5>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-<h6>Heading 6</h6>
-<p>Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.</p>
-
-<hr>
-
-<h1 id="text-block">Block Elements</h1>
-
-<h2 id="paragraph">Paragraphs and Images</h2>
-
-<p class="lead">First paragraph with <code>.lead</code> class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-<p>Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.</p>
-
-<p><img alt="Placeholder Image and Some Alt Text" src="http://placehold.it/350x150" title="A title element for this placeholder image."></p>
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
-
-<h2>Blockquote</h2>
-
-<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-<blockquote>
-  "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
-</blockquote>
-<p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-<h2>Figure-Caption</h2>
-
-<figure>
-  <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
-  <figcaption>The figcaption element example</figcaption>
-</figure>
-
-<h2>Horizontal Rule</h2>
-
-<hr>
-
-
-<h1 id="text-elements">Text Elements</h1>
-
-<p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
-<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
-<p>The <b>b element</b> example</p>
-<p>The <cite>cite element</cite> example</p>
-<p>The <code>code element</code> example</p>
-<p>The <data value="3967381398">data element</data> example</p>
-<p>The <del>del element</del> example</p>
-<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
-<p>The <em>em element</em> example</p>
-<p>The <i>i element</i> example</p>
-<p>The <ins>ins element</ins> example</p>
-<p>The <kbd>kbd element</kbd> example</p>
-<p>The <mark>mark element</mark> example</p>
-<p>The <q>q element</q> example</p>
-<p>The <q>q element <q>inside</q> a q element</q> example</p>
-<p>The <s>s element</s> example</p>
-<p>The <samp>samp element</samp> example</p>
-<p>The <small>small element</small> example</p>
-<p>The <span>span element</span> example</p>
-<p>The <strong>strong element</strong> example</p>
-<p>The <sub>sub element</sub> example</p>
-<p>The <sup>sup element</sup> example</p>
-<p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
-<p>The <u>u element</u> example</p>
-<p>The <var>var element</var> example</p>
-<p>The <span class="footnote">footnote class</span> example</p>
-<p>The <span class="text-lowercase">lowercase class</span> example</p>
-<p>The <span class="text-uppercase">uppercase class</span> example</p>
-<p>The <span class="text-capitalize">capitalize class</span> example</p>
-
-<hr>
-
-<h1 id="monospace">Monospace / Preformatted</h1>
-<p>Code block wrapped in "pre" and "code" tags</p>
-<pre><code>// Loop through Divs using Javascript.
-var divs = document.querySelectorAll('div'), i;
-
-for (i = 0; i &lt; divs.length; ++i) {
-  divs[i].style.color = "green";
-}</code></pre>
-<p>Monospace Text wrapped in "pre" tags</p>
-<pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;</pre>
-
-<hr>
-
-<h1 id="list-types">List Types</h1>
-
-<h2>Ordered List</h2>
-<ol>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3
-    <ol>
-      <li>List Item 3.1</li>
-      <li>List Item 3.2
-        <ol>
-          <li>List Item 3.2.1</li>
-          <li>List Item 3.2.2</li>
-        </ol>
-      </li>
-      <li>List Item 3.3</li>
-    </ol>
-  </li>
-  <li>List Item 4</li>
-</ol>
-
-<h2>Unordered List</h2>
-<ul>
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3
-    <ul>
-      <li>List Item 3.1</li>
-      <li>List Item 3.2
+      <div class="breadcrumb">
         <ul>
-          <li>List Item 3.2.1</li>
-          <li>List Item 3.2.2</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Project Page</a></li>
+          <li>Project Detail</li>
         </ul>
-      </li>
-      <li>List Item 3.3</li>
-    </ul>
-  </li>
-  <li>List Item 4</li>
-</ul>
+      </div>
 
-<h2>Unstyled List</h2>
-<ul class="unstyled">
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3
-    <ul>
-      <li>List Item 3.1</li>
-      <li>List Item 3.2
-        <ul>
-          <li>List Item 3.2.1</li>
-          <li>List Item 3.2.2</li>
-        </ul>
-      </li>
-      <li>List Item 3.3</li>
-    </ul>
-  </li>
-  <li>List Item 4</li>
-</ul>
+      <h3>Search</h3>
 
-<h2>Inline List</h2>
-<ul class="inline">
-  <li>List Item 1</li>
-  <li>List Item 2</li>
-  <li>List Item 3</li>
-  <li>List Item 4</li>
-</ul>
+      <form class="search" accept-charset="UTF-8" action="#" method="get">
+        <label for="query" class="search-label">Search</label>
+        <div class="search-block">
+          <input autocomplete="off" class="search-text" id="query" name="query" type="text" /><button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
+        </div>
+      </form>
 
-<h2>Definition List</h2>
-<dl>
-  <dt>Definition Term 1</dt>
-  <dd>Definition Description 1</dd>
-  <dt>Definition Term 2</dt>
-  <dd>Definition Description 2</dd>
-</dl>
+      <h3>Icons</h3>
 
-<hr>
+      <div class="icon icon-computer">Computer</div>
+      <div class="icon icon-rx">Prescription</div>
+      <div class="icon icon-portal">Patient Portal</div>
 
-<h1 id="tables">Tables</h1>
+    </div>
+  </div>
+</div> <!-- /content -->
 
-<h2>Normal Table</h2>
-
-<table>
-  <caption>This is a table caption</caption>
-  <thead>
-    <tr>
-      <th scope="col">Table Header 1</th><th scope="col">Table Header 2</th><th scope="col">Table Header 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-    </tr>
-    <tr>
-      <td>Division 1</td><td>Division 2</td><td>Division 3</td>
-    </tr>
-    <tr>
-      <td colspan="3">A row with a cell spanning all 3 columns</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>Responsive Table</h2>
-
-<table class="responsive">
-  <caption>This is a table caption</caption>
-  <thead>
-    <tr>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
-      <th scope="col">Title</th>
-      <th scope="col">Office</th>
-      <th scope="col">Birthday</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="First Name">Jane</td>
-      <td data-label="Last Name">Smith</td>
-      <td data-label="Title">Creative Director</td>
-      <td data-label="Office">New York</td>
-      <td data-label="Birthday">June 1</td>
-    </tr>
-    <tr>
-      <td data-label="First Name">Wesley</td>
-      <td data-label="Last Name">Hall</td>
-      <td data-label="Title">Designer</td>
-      <td data-label="Office">San Francisco</td>
-      <td data-label="Birthday">February 29</td>
-    </tr>
-    <tr>
-      <td data-label="First Name">Penelope</td>
-      <td data-label="Last Name">Adams</td>
-      <td data-label="Title">Developer</td>
-      <td data-label="Office">Washington, DC</td>
-      <td data-label="Birthday">September 14</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h1 id="buttons">Buttons</h1>
-
-<p><a class="btn btn-arrow" href="#" role="button">&darr;</a>
-<a class="btn btn-arrow" href="#" role="button">&uarr;</a>
-<a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
-<a class="btn btn-search" href="#" role="button">Search</a></p>
-
-<h2>Button Variants</h2>
-
-<p><a class="btn" href="#" role="button">Link</a>
-<button class="btn" type="submit">Button</button>
-<input class="btn" type="button" value="Input">
-<input class="btn" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-chapter" href="#" role="button">Link</a>
-<button class="btn btn-chapter" type="submit">Button</button>
-<input class="btn btn-chapter" type="button" value="Input">
-<input class="btn btn-chapter" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-search" href="#" role="button">Link</a>
-<button class="btn btn-search" type="submit">Button</button>
-<input class="btn btn-search" type="button" value="Input">
-<input class="btn btn-search" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-dark" href="#" role="button">Link</a>
-<button class="btn btn-dark" type="submit">Button</button>
-<input class="btn btn-dark" type="button" value="Input">
-<input class="btn btn-dark" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-large" href="#" role="button">Link</a>
-<button class="btn btn-large" type="submit">Button</button>
-<input class="btn btn-large" type="button" value="Input">
-<input class="btn btn-large" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-small" href="#" role="button">Link</a>
-<button class="btn btn-small" type="submit">Button</button>
-<input class="btn btn-small" type="button" value="Input">
-<input class="btn btn-small" type="submit" value="Submit"></p>
-
-<p><a class="btn btn-block" href="#" role="button">Link</a>
-<button class="btn btn-block" type="submit">Button</button>
-<input class="btn btn-block" type="button" value="Input">
-<input class="btn btn-block" type="submit" value="Submit"></p>
-
-<hr>
-
-<!--
-<h1 id="media">Media</h1>
-
-<h2>Embedded content:</h2>
-
-<p>YouTube video (iframe):</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/l4f9QF0SGuQ" frameborder="0" allowfullscreen></iframe>
-
-<hr>
--->
-
-<h1 id="form-elements">Form Elements</h1>
-
-<p>The Fieldset:</p>
-<fieldset>
-  <legend>Legend</legend>
-
-  <p>The Form:</p>
-
-  <form>
-    <p><label for="text_field">Text Field:</label><br>
-      <input type="text" id="text_field" />
-    </p>
-
-    <p><label for="text_field_disabled">Disabled Text Field:</label><br>
-      <input type="text" id="text_field_disabled" disabled value="Disabled text field" />
-    </p>
-
-    <p><label for="text_field_readonly">Readonly Text Field:</label><br>
-      <input type="text" id="text_field_readonly" readonly value="Readonly text field" />
-    </p>
-
-    <p><label for="text_area">Text Area:</label><br>
-      <textarea id="text_area"></textarea>
-    </p>
-
-    <p><label for="text_area_disabled">Disabled Text Area:</label><br>
-      <textarea id="text_area_disabled" disabled>Disabled text area</textarea>
-    </p>
-
-    <p><label for="text_area_readonly">Readonly Text Area:</label><br>
-      <textarea id="text_area_readonly" readonly>Readonly text area</textarea>
-    </p>
-
-    <p><label for="select_element">Select Element:</label><br>
-      <select id="select_element">
-        <optgroup label="Option Group 1">
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-        </optgroup>
-        <optgroup label="Option Group 2">
-          <option value="1">Option 1</option>
-          <option value="2">Option 2</option>
-          <option value="3" disabled>Disabled Option</option>
-        </optgroup>
-      </select>
-    </p>
-
-    <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
-      <select id="select_element_disabled" disabled>
-        <option value="1">Unselectable Option</option>
-        <option value="2">This option should not even be seen</option>
-      </select>
-    </p>
-
-    <p>Radio Buttons:<br>
-      <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
-      <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
-      <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
-      <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
-    </p>
-
-    <p>Checkboxes:<br>
-      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
-      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
-      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
-      <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
-    </p>
-
-    <p><label for="password">Password:</label><br>
-      <input type="password" class="password" id="password" />
-    </p>
-
-    <p><label for="file">File Input:</label><br>
-      <input type="file" class="file" id="file" />
-    </p>
-
-    <h3>HTML5-specific Form Elements</h3>
-
-    <p><label for="email">Email:</label><br>
-      <input type="email" id="email" />
-    </p>
-
-    <p><label for="url">URL:</label><br>
-      <input type="url" id="url" />
-    </p>
-
-    <p><label for="tel">Telephone:</label><br>
-      <input type="tel" id="tel" />
-    </p>
-
-    <p><label for="number">Number:</label><br>
-      <input type="number" id="number" min="0" max="10" step="1" value="5" />
-    </p>
-
-    <p><label for="search">Search:</label><br>
-      <input type="search" id="search" />
-    </p>
-
-    <p>
-      <button class="button">Button Element</button>
-      <input class="button" type="reset" value="Clear" />
-      <input class="button" type="submit" value="Submit" />
-    </p>
-  </form>
-
-</fieldset>
-</div>
