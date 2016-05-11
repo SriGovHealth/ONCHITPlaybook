@@ -542,44 +542,6 @@
   }
 
   #slide-06 {
-    .hotspot {
-      position: absolute;
-
-      @include bp-max($medium-2) {
-        display: none;
-      }
-
-      a {
-        background-color: $white;
-        border: 1px solid $gray-light;
-        border-radius: .75em;
-        color: $green;
-        display: block;
-        font-size: 3em;
-        height: 44px;
-        line-height: .5;
-        text-decoration: none;
-        width: 44px;
-        text-align: center;
-        transition: all .5s;
-
-        &:visited {
-          color: $green;
-        }
-
-        &:hover,
-        &:focus {
-          background-color: $green;
-          color: $white;
-          transition: all .5s;
-        }
-
-        .desc {
-          display: block;
-          text-indent: -9999px;
-        }
-      }
-    }
 
     .hotspot-1 {
       top: 62%;
@@ -629,14 +591,6 @@
       }
     }
 
-    .small-lightbox-toggle {
-      margin-top: 1em;
-
-      @include bp($medium-2) {
-        display: none;
-      }
-    }
-
     .office {
       background-color: $off-white-3;
       background-image: url('../img/ig-1-waitingroom-bg.png');
@@ -650,40 +604,241 @@
       }
     }
   }
+}
 
-  #slide-07 {
-    background-color: $off-white;
-    color: $black;
+
+// Infographic 4
+// -----------------------------------
+
+#infographic-4 {
+  #slide-01 {
+    background-color: $black;
+    background-image: url('../img/ig4-introbg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-02 {
+    background-color: $blue;
+    color: $white;
 
     h2 {
-      font-size: 2em;
-      margin-bottom: 0;
-      margin-top: 3em;
-      text-align: center;
-
-      @include bp-max($medium-2) {
-        margin-top: 1em;
-      }
-    }
-
-    h3 {
-      color: $blue;
-      font-size: 2em;
-      margin-bottom: .5em;
-      margin-top: 0;
-      text-align: center;
+      color: $white;
+      padding: .5em 1em;
+      border-bottom: 2px solid $white;
+      margin: .5em 3em 0;
+      font-size: 2.2em;
     }
 
     p {
-      text-align: center;
+      max-width: 23em;
+      margin: 0 auto;
     }
   }
 
-  .slide.off .btn-sharing,
-  .slide.off .btn-start,
-  .slide.off .hotspot,
-  .backdrop-on .hotspot, {
+  #slide-03 {
+    background-color: $black;
+    color: $white;
+    padding: 5em 2em 2em;
+
+    p {
+      font-size: 1.35em;
+      margin-bottom: 2em;
+    }
+
+    strong {
+      color: $yellow;
+      font-weight: 400;
+    }
+  }
+  #slide-04 {
+    background-color: $blue;
+    color: $white;
+    padding: 6em 2em 2em;
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 2em;
+    }
+  }
+
+  #slide-05 {
+    background-color: $blue;
+    color: $white;
+
+    h2 {
+      color: $white;
+      padding: .5em 1em;
+      margin: .5em 2em 0;
+      font-size: 2.2em;
+    }
+  }
+
+  .ig-checklist {
+    max-width: 40em;
+    margin: 1em auto;
+  }
+
+  #slide-06 {
+    .hotspot-1 {
+      top: 68%;
+      left: 53%;
+    }
+
+    .hotspot-2 {
+      top: 48%;
+      left: 65%;
+    }
+
+    .hotspot-3 {
+      top: 6%;
+      left: 77%;
+    }
+
+    .hotspot-4 {
+      top: 78%;
+      left: 78%;
+    }
+
+    .hotspot-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: .5em 1em;
+
+      @include bp($medium) {
+        left: 1em;
+        top: 5em;
+        width: 40%;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        line-height: 1.5;
+      }
+    }
+
+    .ehr {
+      background-color: $off-white-3;
+      background-image: url('../img/ig4-hotspotbg.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include bp-max($medium-2) {
+        background-position: center bottom;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+// Global use
+// --------------------------
+
+ul.ig-checklist {
+  list-style-type: none;
+  margin-left: 1em;
+
+  .check {
+    background-image: url('../img/ig-check.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: $black;
+    display: block;
+    float: left;
+    height: 2em;
+    margin-top: .15em;
+    width: 2em;
+  }
+
+  .check-item {
+    display: block;
+    font-size: 1.1em;
+    margin-left: 2.25em;
+    margin-bottom: 1em;
+  }
+}
+
+#slide-07 {
+  background-color: $off-white;
+  color: $black;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 3em;
+    text-align: center;
+
+    @include bp-max($medium-2) {
+      margin-top: 1em;
+    }
+  }
+
+  h3 {
+    color: $blue;
+    font-size: 2em;
+    margin-bottom: .5em;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.hotspot {
+  position: absolute;
+
+  @include bp-max($medium-2) {
+    display: none;
+  }
+
+  a {
+    background-color: $white;
+    border: 1px solid $gray-light;
+    border-radius: .75em;
+    color: $green;
+    display: block;
+    font-size: 3em;
+    height: 44px;
+    line-height: .5;
+    text-decoration: none;
+    width: 44px;
+    text-align: center;
+    transition: all .5s;
+
+    &:visited {
+      color: $green;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $green;
+      color: $white;
+      transition: all .5s;
+    }
+
+    .desc {
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+}
+
+.small-lightbox-toggle {
+  margin-top: 1em;
+
+  @include bp($medium-2) {
     display: none;
   }
 }
 
+.slide.off .btn-sharing,
+.slide.off .btn-start,
+.slide.off .hotspot,
+.backdrop-on .hotspot, {
+  display: none;
+}

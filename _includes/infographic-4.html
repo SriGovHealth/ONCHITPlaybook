@@ -1,15 +1,15 @@
-<div class="infographic-block">
+<div class="infographic-block" id="infographic-4">
   <div class="infographic-container">
 
-    <div class="slide" id="slide-01">
+    <div class="slide on" id="slide-01" aria-hidden="false">
       <div class="row">
-        <div class="grid-9 offset-3 space-top-8">
+        <div class="grid-9 offset-3 space-top-6">
           <div class="heading-block">
             <div class="heading-inner">
-              <h1>Use Patient-Generated Data</h1>
+              <h1>Use Patient-Generated Health Data</h1>
             </div>
           </div>
-          <a href="#slide-02" class="btn btn-start js-btn-next">Get Started</a>
+          <a href="#slide-02" class="btn btn-start ig-nav" aria-controls="slide-02" aria-expanded="false">Get Started</a>
         </div>
       </div>
       <div class="sharing">
@@ -19,150 +19,162 @@
       </div>
     </div>
 
-    <div class="slide off" id="slide-02">
+    <div class="slide off" id="slide-02" role="tabpanel" aria-hidden="true">
       <div class="row">
         <div class="grid-12">
           <h2 class="in-1">Technology has changed how patients monitor their own health.</h2>
         </div>
       </div>
       <div class="row">
-        <div class="grid-6">
-          <p class="in-2">1 in 5 people use technology to track their health — from fitness monitors to home medical devices.</p>
-        </div>
-        <div class="grid-6"><p class="in-3"><img src="{{ "/img/ig-4-1-in-5.png" | prepend: site.baseurl }}" alt=""></p></div>
-      </div>
-
-      <div class="slide-nav">
-        <a href="#slide-01" class="btn btn-previous js-btn-previous">Previous</a>
-        <a href="#slide-03" class="btn btn-next js-btn-next">Next</a>
-        <div class="dot-nav" aria-hidden="true">
-          <span>&bull;</span> &bull; &bull; &bull; &bull; &bull;
-        </div>
-      </div>
-    </div>
-
-
-    <div class="slide off" id="slide-03">
-      <div class="row">
         <div class="grid-12">
-          <p class="in-1">[Image: question mark]</p>
-          <p class="in-1">But the potential medical benefits of collecting that data are often lost — because clinicians aren’t able to use it to improve their patients’ care.</p>
-          <p class="in-2">Clinicians usually can’t access that data. And even if they could, they just don’t have the time to sort through it all on their own.</p>
-        </div>
-      </div>
-
-      <div class="slide-nav">
-        <a href="#slide-02" class="btn btn-previous js-btn-previous">Previous</a>
-        <a href="#slide-04" class="btn btn-next js-btn-next">Next</a>
-        <div class="dot-nav" aria-hidden="true">
-          <span>&bull; &bull;</span> &bull; &bull; &bull; &bull;
-        </div>
-      </div>
-    </div>
-
-    <div class="slide off" id="slide-04">
-      <div class="row">
-        <div class="grid-12">
-          <p>But some clinics are finding innovative ways to make this data genuinely useful. They’re pulling it into their EHRs, where it can be organized and visualized.</p>
-          <p>[Image: Screen showing medical info in an EHR]</p>
-        </div>
-      </div>
-      <div class="slide-nav">
-        <a href="#slide-03" class="btn btn-previous js-btn-previous">Previous</a>
-        <a href="#slide-05" class="btn btn-next js-btn-next">Next</a>
-        <div class="dot-nav" aria-hidden="true">
-          <span>&bull; &bull; &bull;</span> &bull; &bull; &bull;
-        </div>
-      </div>
-    </div>
-
-    <div class="slide off" id="slide-05">
-      <div class="row">
-        <div class="grid-12">
-          <p>Using patient-generated health data has big advantages. Studies show it:</p>
-          <ul>
-            <li>Improves patient engagement and self-management skills</li>
-            <li>Lowers hospital readmission rates</li>
-            <li>Improves outcomes</li>
-            <li>Is more accurate than patient reporting</li>
-          </ul>
-        </div>
-      </div>
-      <div class="slide-nav">
-        <a href="#slide-04" class="btn btn-previous js-btn-previous">Previous</a>
-        <a href="#slide-06" class="btn btn-next js-btn-next">Next</a>
-        <div class="dot-nav" aria-hidden="true">
-          <span>&bull; &bull; &bull; &bull;</span> &bull; &bull;
-        </div>
-      </div>
-    </div>
-
-    <div class="slide off" id="slide-06">
-      <div class="slide-frame office in-1">
-        <div class="hotspot hotspot-1 in-3"><a href="#hotspot-content-1" class="hotspot-link">+</a></div>
-        <div class="hotspot hotspot-2 in-3"><a href="#hotspot-content-2" class="hotspot-link">+</a></div>
-        <div class="hotspot hotspot-3 in-3"><a href="#hotspot-content-3" class="hotspot-link">+</a></div>
-        <div class="hotspot hotspot-4 in-3"><a href="#hotspot-content-4" class="hotspot-link">+</a></div>
-        <div class="hotspot-title in-2">
-          <p>As EHRs become capable of integrating more patient-generated health data, the potential benefits are huge.</p>
-          <p>[Image: Silhouette of patient with clickable hotspots. Clicking one brings up a light box with the copy below.]</p>
-        </div>
-      </div>
-
-      <div class="slide-nav slide-nav-dark">
-        <a href="#slide-05" class="btn btn-previous js-btn-previous">Previous</a>
-        <a href="#slide-07" class="btn btn-next js-btn-next">Next</a>
-        <div class="dot-nav">
-          <span>&bull; &bull; &bull; &bull; &bull;</span> &bull;
-        </div>
-      </div>
-    </div>
-
-    <div class="hotspot-container">
-      <div class="hotspot-content" id="hotspot-content-1">
-        <p>[Image: Activity tracker on patient’s wrist]</p>
-        <p>Activity trackers don’t just count steps. You could use the data to assess sleep quality or make sure a patient is getting up and moving around after surgery.</p>
-      </div>
-
-      <div class="hotspot-content" id="hotspot-content-2">
-        <p>[Image: Home blood pressure monitor on a nearby table]</p>
-        <p>Home blood pressure monitors let you track the effects of a new medication remotely — or rule out white coat hypertension.</p>
-      </div>
-
-      <div class="hotspot-content" id="hotspot-content-3">
-        <p>[Image: Phone in patient’s hand]</p>
-        <p>Food and symptom diaries can help you manage chronic diseases and identify triggers.</p>
-      </div>
-
-      <div class="hotspot-content" id="hotspot-content-4">
-        <p>[Image: Glucometer on a nearby table]</p>
-        <p>Home glucometers that send automated updates avoid the hassle of typing in blood sugar readings — and offer access to a deeper level of data.</p>
-      </div>
-    </div>
-
-    <div class="slide off" id="slide-07">
-      <div class="slide-content">
-        <div class="slide-title">
-          <h2 class="text-center space-top-3 in-1">Find this information helpful?</h2>
           <div class="in-2">
-            <h3 class="text-center">Share it with others.</h3>
-            <p class="text-center">
-              <a href="#" class="btn-sharing btn-facebook">Facebook</a>
-              <a href="#" class="btn-sharing btn-linkedin">LinkedIn</a>
-              <a href="#" class="btn-sharing btn-twitter">Twitter</a>
-            </p>
-          </div>
-          <div class="text-center in-3">
-            <a href="#slide-01" class="btn btn-blue js-btn-previous">Start over</a>
+            <p><img src="{{ "/img/ig-4-1-in-5-2.png" | prepend: site.baseurl }}" alt="One in five"></p>
+            <p>people use technology to track their health — from fitness monitors to home medical devices.</p>
           </div>
         </div>
       </div>
-      <div class="slide-nav">
-        <a href="#slide-06" class="btn btn-previous js-btn-previous">Previous</a>
-        <div class="dot-nav">
-          <span>&bull; &bull; &bull; &bull; &bull; &bull;</span>
+    </div>
+
+    <div class="slide off" id="slide-03" role="tabpanel" aria-hidden="true">
+      <div class="row">
+        <div class="grid-8">
+          <div class="in-1">
+            <p>But the potential medical benefits of collecting that data are often lost &mdash; because clinicians aren&rsquo;t able to use it to improve their patients&rsquo; care.</p>
+            <p><strong>Clinicians usually can&rsquo;t access that data.</strong> And even if they could, they just don&rsquo;t have the time to sort through it all on their own.</p>
+          </div>
+        </div>
+        <div class="grid-4">
+          <p class="in-2"><img src="{{ "/img/ig4-data.png" | prepend: site.baseurl }}" alt=""></p>
         </div>
       </div>
+    </div>
+
+    <div class="slide off" id="slide-04" role="tabpanel" aria-hidden="true">
+      <div class="row">
+        <div class="grid-7">
+          <div class="in-1">
+            <p>But some clinics are finding innovative ways to make this data genuinely useful.</p>
+            <p>They&rsquo;re pulling it into their EHRs, where it can be <strong>organized and visualized</strong>.</p>
+          </div>
+        </div>
+        <div class="grid-5">
+          <p class="in-2"><img src="{{ "/img/ig4-laptop.png" | prepend: site.baseurl }}" alt=""></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide off" id="slide-05" role="tabpanel" aria-hidden="true">
+      <div class="row">
+        <div class="grid-12">
+          <h2 class="in-1">Using patient-generated health data has big advantages. <strong>Studies show it:</strong></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="grid-12">
+          <div class="in-2">
+            <ul class="ig-checklist">
+              <li><span class="check" aria-hidden="true"></span> <span class="check-item">Improves patient engagement and self-management skills</span></li>
+              <li><span class="check" aria-hidden="true"></span> <span class="check-item">Lowers hospital readmission rates</span></li>
+              <li><span class="check" aria-hidden="true"></span> <span class="check-item">Improves outcomes</span></li>
+              <li><span class="check" aria-hidden="true"></span> <span class="check-item">Is more accurate than patient reporting</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide off" id="slide-06" role="tabpanel" aria-hidden="true">
+      <div class="slide-frame ehr in-1">
+        <div class="hotspot-title in-2">
+          <h2>As EHRs become capable of integrating more patient-generated health data, <strong>the potential benefits are huge</strong>.</h2>
+          <p class="text-center in-3 small-lightbox-toggle"><a href="#lightbox-content-1" class="btn btn-blue">See examples</a></p>
+        </div>
+        <div class="hotspot hotspot-1 in-3"><a href="#lightbox-content-1" class="hotspot-link"><span aria-hidden="true">+</span><span class="desc"> Nurses</span></a></div>
+        <div class="hotspot hotspot-2 in-3"><a href="#lightbox-content-2" class="hotspot-link"><span aria-hidden="true">+</span><span class="desc"> TVs</span></a></div>
+        <div class="hotspot hotspot-3 in-3"><a href="#lightbox-content-3" class="hotspot-link"><span aria-hidden="true">+</span><span class="desc"> Printed material</span></a></div>
+        <div class="hotspot hotspot-4 in-3"><a href="#lightbox-content-4" class="hotspot-link"><span aria-hidden="true">+</span><span class="desc"> Receptionists</span></a></div>
+      </div>
+
+      <div class="lightbox-container">
+        <div class="lightbox-content lightbox-off" aria-hidden="true" id="lightbox-content-1">
+          <div class="row">
+            <div class="grid-3 small-hide">
+              <p><img src="{{ "/img/ig4-activitytracker.png" | prepend: site.baseurl }}" alt="Activity tracker"></p>
+            </div>
+            <div class="grid-9 space-top-6">
+              <p><strong>Activity trackers</strong> don’t just count steps. You could use the data to assess sleep quality or make sure a patient is getting up and moving around after surgery.</p>
+              <a href="#slide-06" class="lightbox-close btn btn-blue">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox-content lightbox-off" aria-hidden="true" id="lightbox-content-2">
+          <div class="row">
+            <div class="grid-3 small-hide">
+              <p><img src="{{ "/img/ig4-bpm.png" | prepend: site.baseurl }}" alt="Blood pressure monitor"></p>
+            </div>
+            <div class="grid-9 space-top-6">
+              <p><strong>Home blood pressure monitors</strong> let you track the effects of a new medication remotely — or rule out white coat hypertension.</p>
+              <a href="#slide-06" class="lightbox-close btn btn-blue">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox-content lightbox-off" aria-hidden="true" id="lightbox-content-3">
+          <div class="row">
+            <div class="grid-3 small-hide">
+              <p><img src="{{ "/img/ig4-phone.png" | prepend: site.baseurl }}" alt="Smartphone"></p>
+            </div>
+            <div class="grid-9 space-top-6">
+              <p><strong>Food and symptom diaries</strong> can help you manage chronic diseases and identify triggers.</p>
+              <a href="#slide-06" class="lightbox-close btn btn-blue">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox-content lightbox-off" aria-hidden="true" id="lightbox-content-4">
+          <div class="row">
+            <div class="grid-3 small-hide">
+              <p><img src="{{ "/img/ig4-bgm.png" | prepend: site.baseurl }}" alt="Glucometer"></p>
+            </div>
+            <div class="grid-9 space-top-6">
+              <p><strong>Home glucometers</strong> that send automated updates avoid the hassle of typing in blood sugar readings &mdash; and offer access to a deeper level of data.</p>
+              <a href="#slide-06" class="lightbox-close btn btn-blue">Close</a>
+            </div>
+          </div>
+        </div>
+        <div class="lightbox-nav">
+          <a href="#lightbox-nav-previous" class="lightbox-nav-control" id="lightbox-nav-previous">&larr;</a>
+          <a href="#lightbox-nav-next" class="lightbox-nav-control" id="lightbox-nav-next">&rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide off" id="slide-07" role="tabpanel" aria-hidden="true">
+      <div class="slide-content">
+        <h2 class="in-1">Find this information helpful?</h2>
+        <div class="in-2">
+          <h3>Share it with others.</h3>
+          <p>
+            <a href="#" class="btn-sharing btn-facebook">Facebook</a>
+            <a href="#" class="btn-sharing btn-linkedin">LinkedIn</a>
+            <a href="#" class="btn-sharing btn-twitter">Twitter</a>
+          </p>
+        </div>
+        <div class="text-center in-3">
+          <a href="#slide-01" class="btn btn-start ig-nav">Start over</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-nav">
+      <ul class="dot-nav" role="tablist">
+        <li role="presentation"><a href="#slide-02" role="tab" id="slide-02-control" class="ig-nav slide-control" aria-controls="slide-02">1</a></li>
+        <li role="presentation"><a href="#slide-03" role="tab" id="slide-03-control" class="ig-nav slide-control" aria-controls="slide-03">2</a></li>
+        <li role="presentation"><a href="#slide-04" role="tab" id="slide-04-control" class="ig-nav slide-control" aria-controls="slide-04">3</a></li>
+        <li role="presentation"><a href="#slide-05" role="tab" id="slide-05-control" class="ig-nav slide-control" aria-controls="slide-05">4</a></li>
+        <li role="presentation"><a href="#slide-06" role="tab" id="slide-06-control" class="ig-nav slide-control" aria-controls="slide-06">5</a></li>
+        <li role="presentation"><a href="#slide-07" role="tab" id="slide-07-control" class="ig-nav slide-control" aria-controls="slide-07">6</a></li>
+      </ul>
+      <a href="#ig-next" id="ig-next" class="btn btn-next">Next<span aria-hidden="true"> &rarr;</span></a>
+      <a href="#ig-previous" id="ig-previous" class="btn btn-previous"><span aria-hidden="true">&larr; </span>Previous</a>
     </div>
 
   </div>
