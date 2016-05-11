@@ -834,8 +834,8 @@
 }
 
 .btn-arrow {
-  border-color: $green-dark;
-  color: $green-dark;
+  border-color: $green-2;
+  color: $green-2;
   font-size: 90%;
   font-weight: 700;
   line-height: 1;
@@ -845,12 +845,13 @@
 }
 
 .sidebar .btn-arrow {
+
   background-color: $white;
 
   &:visited {
     background-color: $white;
-    border-color: $green-dark;
-    color: $green-dark;
+    border-color: $green-2;
+    color: $green-2;
   }
 
   &:hover,
