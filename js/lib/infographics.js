@@ -164,6 +164,30 @@ $(".hotspot-link").click(function (event) {
   }
 });
 
+$(".small-lightbox-toggle a").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  $("#lightbox-nav-next").removeClass("limit");
+  $("#lightbox-nav-previous").removeClass("limit");
+
+  var target = $(this).attr('href');
+  if ($(target).hasClass("lightbox-off")) {
+    $(".lightbox-content").addClass("lightbox-off").removeClass("lightbox-on").attr("aria-hidden", "true");
+    $(".lightbox-container").addClass("backdrop");
+    $(".slide.on").addClass("backdrop-on");
+    $(target).removeClass("lightbox-off").addClass("lightbox-on").attr("aria-hidden", "false");
+  }
+
+  if(!$(".lightbox-content.lightbox-on").prev('.lightbox-content').length) {
+    $("#lightbox-nav-previous").addClass("limit");
+  }
+
+  if(!$(".lightbox-content.lightbox-on").next('.lightbox-content').length) {
+    $("#lightbox-nav-next").addClass("limit");
+  }
+});
+
 
 $(".lightbox-close").click(function (event) {
   if (event.preventDefault) { event.preventDefault(); }

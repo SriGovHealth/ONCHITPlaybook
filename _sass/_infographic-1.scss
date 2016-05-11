@@ -20,6 +20,10 @@
       margin: 2em auto;
       padding-bottom: .5em;
 
+      @include bp-max($medium-2) {
+        font-size: 2em;
+      }
+
       strong {
         color: $yellow;
       }
@@ -35,11 +39,23 @@
       font-size: 2.25em;
       font-weight: 700;
       color: #f04e24;
+
+      @include bp-max($medium-2) {
+        font-size: 1.75em;
+      }
     }
 
     p {
       font-size: 1.75em;
       margin-top: 0;
+
+      @include bp-max($medium-2) {
+        font-size: 1.25em;
+      }
+    }
+
+    img {
+      max-height: 100%;
     }
 
     .bottom {
@@ -65,11 +81,19 @@
       padding-bottom: .75em;
       padding-right: 1em;
 
+      @include bp-max($medium-2) {
+        font-size: 1.25em;
+      }
+
       span {
         color: $yellow;
         display: block;
         font-size: 1.1em;
         font-weight: 700;
+
+        @include bp-max($medium-2) {
+          font-size: 1.1em;
+        }
       }
 
       strong {
@@ -78,7 +102,15 @@
         padding-bottom: 0;
         padding-top: 0;
         text-transform: uppercase;
+
+        @include bp-max($medium-2) {
+          font-size: 2.5em;
+        }
       }
+    }
+
+    img {
+      max-height: 100%;
     }
   }
 
@@ -90,11 +122,21 @@
       color: $white;
       font-size: 2.25em;
     }
+
+    img {
+      @include bp-max($medium-2) {
+        max-width: 5em;
+      }
+    }
   }
 
   #slide-06 {
     .hotspot {
       position: absolute;
+
+      @include bp-max($medium-2) {
+        display: none;
+      }
 
       a {
         background-color: $white;
@@ -165,8 +207,8 @@
       padding: .5em 1em;
 
       @include bp($medium) {
-        left: 25%;
-        width: 50%;
+        left: 13%;
+        width: 75%;
       }
 
       h2 {
@@ -176,11 +218,25 @@
       }
     }
 
+    .small-lightbox-toggle {
+      margin-top: 1em;
+
+      @include bp($medium-2) {
+        display: none;
+      }
+    }
+
     .office {
+      background-color: $off-white-3;
       background-image: url('../img/ig-1-waitingroom-bg.png');
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
+
+      @include bp-max($medium-2) {
+        background-position: center bottom;
+        background-size: contain;
+      }
     }
   }
 
@@ -193,6 +249,10 @@
       margin-bottom: 0;
       margin-top: 3em;
       text-align: center;
+
+      @include bp-max($medium-2) {
+        margin-top: 1em;
+      }
     }
 
     h3 {
