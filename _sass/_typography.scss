@@ -118,6 +118,10 @@ p {
   margin-top: .5em;
 }
 
+h3 + p {
+  margin-top: 0;
+}
+
 .subhead {
   margin-top: 0;
 }
