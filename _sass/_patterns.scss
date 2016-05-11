@@ -1079,7 +1079,8 @@ ul.checklist {
 }
 
 .content-slider-block {
-  background-color: $off-white;
+  background-color: $white;
+  border: 1px solid $gray-light;
   padding: 1em;
   position: relative;
   margin-bottom: 1.5em;
