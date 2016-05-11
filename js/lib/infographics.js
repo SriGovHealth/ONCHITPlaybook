@@ -243,4 +243,18 @@ $("#lightbox-nav-next").click(function (event) {
 
 });
 
+$("#screen-view-toggle").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  if($("#screen-view").hasClass("patient")) {
+    $("#screen-view").removeClass("patient");
+    $("#screen-view").addClass("caregiver");
+  }
+  else {
+    $("#screen-view").removeClass("caregiver");
+    $("#screen-view").addClass("patient");
+  }
+});
+
 

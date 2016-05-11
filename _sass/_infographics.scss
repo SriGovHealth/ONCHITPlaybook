@@ -606,6 +606,92 @@
   }
 }
 
+// Infographic 3
+// -----------------------------------
+
+#infographic-3 {
+  #slide-01 {
+    background-color: $black;
+    background-image: url('../img/ig3-intro.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-02 {
+    background-color: $white;
+    background-image: url('../img/ig3-parkbg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-03 {
+    background-color: $white;
+    background-image: url('../img/ig3-parkbg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-04 {
+    background-color: $blue;
+    color: $white;
+
+    h2 {
+      color: $white;
+      padding: .5em 1em;
+      margin: .5em 2em 0;
+      font-size: 2em;
+    }
+  }
+
+  .ig-checklist {
+    max-width: 40em;
+    margin: 1em auto;
+  }
+
+  #slide-05 {
+    background-color: $white;
+
+    .slide-header {
+      background-color: $white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .75em 1em;
+
+      p {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+    #screen-view {
+      position: absolute;
+      top: 5em;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: $white;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: background-image .3s;
+
+      &.patient {
+        background-image: url('../img/ig3-patientslider.png');
+        transition: background-image .3s;
+      }
+
+      &.caregiver {
+        background-image: url('../img/ig3-proxyslider.png');
+        transition: background-image .3s;
+      }
+    }
+  }
+}
+
 
 // Infographic 4
 // -----------------------------------
@@ -761,7 +847,7 @@ ul.ig-checklist {
   }
 }
 
-#slide-07 {
+.slide-final {
   background-color: $off-white;
   color: $black;
 
@@ -834,6 +920,10 @@ ul.ig-checklist {
   @include bp($medium-2) {
     display: none;
   }
+}
+
+.bottom {
+  bottom: 0;
 }
 
 .slide.off .btn-sharing,
