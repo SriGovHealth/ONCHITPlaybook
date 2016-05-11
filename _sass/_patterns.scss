@@ -834,19 +834,41 @@
 }
 
 .btn-arrow {
-  border-color: $green-2;
-  color: $green-2;
+  border-color: $green-dark;
+  color: $green-dark;
   font-size: 90%;
   font-weight: 700;
   line-height: 1;
   padding: .4em .4em .35em;
   text-align: center;
   //width: 1.8em;
+
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
 }
 
 .sidebar .btn-arrow {
-
   background-color: $white;
+  border-color: $green-2;
+  color: $green-2;
 
   &:visited {
     background-color: $white;
