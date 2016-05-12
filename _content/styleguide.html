@@ -2,7 +2,7 @@
 layout: default
 title: Style Guide
 permalink: /styleguide/
-
+bodyclass: styleguide
 ---
 
 <div class="content">
@@ -25,11 +25,9 @@ permalink: /styleguide/
         <li><a href="#headings">Headings</a></li>
         <li><a href="#text-block">Block Elements</a></li>
         <li><a href="#text-elements">Text Elements</a></li>
-        <li><a href="#monospace">Monospace / Preformatted</a></li>
         <li><a href="#list-types">Lists</a></li>
         <li><a href="#tables">Tables</a></li>
         <li><a href="#buttons">Buttons</a></li>
-        <li><a href="#form-elements">Form Elements</a></li>
         <li><a href="#patterns">Patterns</a></li>
         <li><a href="{{ '/styleguide/content/' | prepend: site.baseurl }}">Content Style Guide &rarr;</a></li>
       </ul>
@@ -360,7 +358,7 @@ permalink: /styleguide/
     <div class="grid-12">
       <h2 id="text-block">Block Elements</h2>
 
-      <h3 id="paragraph">Paragraphs and Images</h3>
+      <h3 class="styleguide" id="paragraph">Paragraphs and Images</h3>
 
       <p class="lead">First paragraph with <code>.lead</code> class. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
@@ -375,24 +373,6 @@ permalink: /styleguide/
 
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.</p>
 
-      <h3>Blockquote</h3>
-
-      <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-      <blockquote>
-        "<strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
-      </blockquote>
-      <p>This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-
-      <h3>Figure-Caption</h3>
-
-      <figure>
-        <img src="http://placehold.it/350x150" alt="A placeholder figure image." />
-        <figcaption>The figcaption element example</figcaption>
-      </figure>
-
-      <h3>Horizontal Rule</h3>
-
-      <hr>
     </div>
   </div>
 
@@ -402,57 +382,20 @@ permalink: /styleguide/
       <h2 id="text-elements">Text Elements</h2>
 
       <p>The <a href="#">a element</a> and <a href="http://example.com" target="_blank">external a element</a> examples</p>
-      <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
-      <p>The <b>b element</b> example</p>
-      <p>The <cite>cite element</cite> example</p>
       <p>The <code>code element</code> example</p>
-      <p>The <data value="3967381398">data element</data> example</p>
-      <p>The <del>del element</del> example</p>
-      <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
       <p>The <em>em element</em> example</p>
-      <p>The <i>i element</i> example</p>
-      <p>The <ins>ins element</ins> example</p>
-      <p>The <kbd>kbd element</kbd> example</p>
-      <p>The <mark>mark element</mark> example</p>
-      <p>The <q>q element</q> example</p>
-      <p>The <q>q element <q>inside</q> a q element</q> example</p>
-      <p>The <s>s element</s> example</p>
-      <p>The <samp>samp element</samp> example</p>
-      <p>The <small>small element</small> example</p>
       <p>The <span>span element</span> example</p>
       <p>The <strong>strong element</strong> example</p>
       <p>The <sub>sub element</sub> example</p>
       <p>The <sup>sup element</sup> example</p>
-      <p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
-      <p>The <u>u element</u> example</p>
-      <p>The <var>var element</var> example</p>
       <p>The <span class="footnote">footnote class</span> example</p>
       <p>The <span class="text-lowercase">lowercase class</span> example</p>
       <p>The <span class="text-uppercase">uppercase class</span> example</p>
       <p>The <span class="text-capitalize">capitalize class</span> example</p>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="grid-12">
-      <h2 id="monospace">Monospace / Preformatted</h2>
-      <p>Code block wrapped in "pre" and "code" tags</p>
-      <pre><code>// Loop through Divs using Javascript.
-      var divs = document.querySelectorAll('div'), i;
-
-      for (i = 0; i &lt; divs.length; ++i) {
-        divs[i].style.color = "green";
-      }</code></pre>
-      <p>Monospace Text wrapped in "pre" tags</p>
-      <pre>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.&lt;/p&gt;</pre>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="grid-12">
       <h2 id="list-types">List Types</h2>
 
-      <h3>Ordered List</h3>
+      <h3 class="styleguide">Ordered List</h3>
       <ol>
         <li>List Item 1</li>
         <li>List Item 2</li>
@@ -471,7 +414,7 @@ permalink: /styleguide/
         <li>List Item 4</li>
       </ol>
 
-      <h3>Unordered List</h3>
+      <h3 class="styleguide">Unordered List</h3>
       <ul>
         <li>List Item 1</li>
         <li>List Item 2</li>
@@ -490,7 +433,7 @@ permalink: /styleguide/
         <li>List Item 4</li>
       </ul>
 
-      <h3>Unstyled List</h3>
+      <h3 class="styleguide">Unstyled List</h3>
       <ul class="unstyled">
         <li>List Item 1</li>
         <li>List Item 2</li>
@@ -509,7 +452,7 @@ permalink: /styleguide/
         <li>List Item 4</li>
       </ul>
 
-      <h3>Inline List</h3>
+      <h3 class="styleguide">Inline List</h3>
       <ul class="inline">
         <li>List Item 1</li>
         <li>List Item 2</li>
@@ -532,7 +475,7 @@ permalink: /styleguide/
 
       <h2 id="tables">Tables</h2>
 
-      <h3>Normal Table</h3>
+      <h3 class="styleguide">Normal Table</h3>
 
       <table>
         <caption>This is a table caption</caption>
@@ -557,7 +500,7 @@ permalink: /styleguide/
         </tbody>
       </table>
 
-      <h3>Responsive Table</h3>
+      <h3 class="styleguide">Responsive Table</h3>
 
       <table class="responsive">
         <caption>This is a table caption</caption>
@@ -607,7 +550,7 @@ permalink: /styleguide/
       <a class="btn btn-chapter" href="#" role="button">Go to Chapter 2</a>
       <a class="btn btn-search" href="#" role="button">Search</a></p>
 
-      <h3>Button Variants</h3>
+      <h3 class="styleguide">Button Variants</h3>
 
       <p><a class="btn" href="#" role="button">Link</a>
       <button class="btn" type="submit">Button</button>
@@ -649,121 +592,9 @@ permalink: /styleguide/
   <div class="row">
     <div class="grid-12">
 
-      <h2 id="form-elements">Form Elements</h2>
-
-      <p>The Fieldset:</p>
-      <fieldset>
-        <legend>Legend</legend>
-
-        <p>The Form:</p>
-
-        <form>
-          <p><label for="text_field">Text Field:</label><br>
-            <input type="text" id="text_field" />
-          </p>
-
-          <p><label for="text_field_disabled">Disabled Text Field:</label><br>
-            <input type="text" id="text_field_disabled" disabled value="Disabled text field" />
-          </p>
-
-          <p><label for="text_field_readonly">Readonly Text Field:</label><br>
-            <input type="text" id="text_field_readonly" readonly value="Readonly text field" />
-          </p>
-
-          <p><label for="text_area">Text Area:</label><br>
-            <textarea id="text_area"></textarea>
-          </p>
-
-          <p><label for="text_area_disabled">Disabled Text Area:</label><br>
-            <textarea id="text_area_disabled" disabled>Disabled text area</textarea>
-          </p>
-
-          <p><label for="text_area_readonly">Readonly Text Area:</label><br>
-            <textarea id="text_area_readonly" readonly>Readonly text area</textarea>
-          </p>
-
-          <p><label for="select_element">Select Element:</label><br>
-            <select id="select_element">
-              <optgroup label="Option Group 1">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-              </optgroup>
-              <optgroup label="Option Group 2">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3" disabled>Disabled Option</option>
-              </optgroup>
-            </select>
-          </p>
-
-          <p><label for="select_element_disabled">Disabled Select Element:</label><br/>
-            <select id="select_element_disabled" disabled>
-              <option value="1">Unselectable Option</option>
-              <option value="2">This option should not even be seen</option>
-            </select>
-          </p>
-
-          <p>Radio Buttons:<br>
-            <label><input type="radio" class="radio" name="radio_button" value="radio_1" /> Radio 1</label><br/>
-            <label><input type="radio" class="radio" name="radio_button" value="radio_2" /> Radio 2</label><br/>
-            <label><input type="radio" class="radio" name="radio_button" value="radio_3" /> Radio 3</label><br/>
-            <label><input type="radio" class="radio" name="radio_button" value="radio_4" disabled /> Radio Disabled</label><br/>
-          </p>
-
-          <p>Checkboxes:<br>
-            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_1" /> Checkbox 1</label><br/>
-            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_2" /> Checkbox 2</label><br/>
-            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_3" /> Checkbox 3</label><br/>
-            <label><input type="checkbox" class="checkbox" name="checkboxes" value="check_4" disabled /> Checkbox Disabled</label><br/>
-          </p>
-
-          <p><label for="password">Password:</label><br>
-            <input type="password" class="password" id="password" />
-          </p>
-
-          <p><label for="file">File Input:</label><br>
-            <input type="file" class="file" id="file" />
-          </p>
-
-          <h3>HTML5-specific Form Elements</h3>
-
-          <p><label for="email">Email:</label><br>
-            <input type="email" id="email" />
-          </p>
-
-          <p><label for="url">URL:</label><br>
-            <input type="url" id="url" />
-          </p>
-
-          <p><label for="tel">Telephone:</label><br>
-            <input type="tel" id="tel" />
-          </p>
-
-          <p><label for="number">Number:</label><br>
-            <input type="number" id="number" min="0" max="10" step="1" value="5" />
-          </p>
-
-          <p><label for="search">Search:</label><br>
-            <input type="search" id="search" />
-          </p>
-
-          <p>
-            <button class="button">Button Element</button>
-            <input class="button" type="reset" value="Clear" />
-            <input class="button" type="submit" value="Submit" />
-          </p>
-        </form>
-
-      </fieldset>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="grid-12">
-
       <h2 id="patterns">Patterns</h2>
 
-      <h3>Chapter Intro</h3>
+      <h3 class="styleguide">Chapter Intro</h3>
 
     </div>
   </div>
@@ -787,7 +618,7 @@ permalink: /styleguide/
   <div class="row">
     <div class="grid-12">
 
-      <h3>Full-bleed</h3>
+      <h3 class="styleguide">Full-bleed</h3>
     </div>
   </div>
 </div> <!-- /content -->
@@ -806,7 +637,7 @@ permalink: /styleguide/
   <div class="row">
     <div class="grid-12">
 
-      <h3>Callout</h3>
+      <h3 class="styleguide">Callout</h3>
 
       <div class="callout">
         <div class="callout-inner">
@@ -815,7 +646,7 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Callout (right)</h3>
+      <h3 class="styleguide">Callout (right)</h3>
 
       <div class="clearfix">
         <div class="callout callout-right clearfix">
@@ -826,7 +657,7 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Myth vs. Reality</h3>
+      <h3 class="styleguide">Myth vs. Reality</h3>
       <div class="clearfix">
         <div class="mythreality mythreality-right" id="mythreality-1">
           <ul class="mythreality-header" role="tablist">
@@ -854,7 +685,7 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Slideshow slider</h3>
+      <h3 class="styleguide">Slideshow slider</h3>
       <div class="content-slider-block">
         <div class="content-slides">
           <div class="content-slide on" id="content-slide-1" aria-hidden="false">
@@ -888,7 +719,7 @@ permalink: /styleguide/
       </div>
 
 
-      <h3>Quote (vertical, left)</h3>
+      <h3 class="styleguide">Quote (vertical, left)</h3>
       <div class="clearfix">
         <div class="quote-block quote-left">
           <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
@@ -899,7 +730,7 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Quote (vertical, right)</h3>
+      <h3 class="styleguide">Quote (vertical, right)</h3>
       <div class="clearfix">
         <div class="quote-block quote-right">
           <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
@@ -910,7 +741,7 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Quote (wide)</h3>
+      <h3 class="styleguide">Quote (wide)</h3>
       <div class="quote-block quote-wide">
         <img src="{{ "/img/icon-quote.png" | prepend: site.baseurl }}" alt="" class="quote-icon">
         <div class="quote-content">
@@ -919,10 +750,10 @@ permalink: /styleguide/
         </div>
       </div>
 
-      <h3>Intro buttons</h3>
+      <h3 class="styleguide">Intro buttons</h3>
       <a href="{{ "/introduction/" | prepend: site.baseurl }}" class="btn-landing"><span class="section-title">Introduction</span> Patient Engagement Playbook <span class="btn btn-arrow" aria-hidden="true">&rarr;</span></a>
 
-      <h3>Footer</h3>
+      <h3 class="styleguide">Footer</h3>
     </div>
   </div>
 </div> <!-- /content -->
@@ -944,7 +775,7 @@ permalink: /styleguide/
 <div class="content">
   <div class="row">
     <div class="grid-12">
-      <h3>Section header (stick on scroll)</h3>
+      <h3 class="styleguide">Section header (stick on scroll)</h3>
     </div>
   </div>
 </div> <!-- /content -->
@@ -962,17 +793,17 @@ permalink: /styleguide/
 <div class="content">
   <div class="row">
     <div class="grid-12">
-      <h3>Recap header</h3>
+      <h3 class="styleguide">Recap header</h3>
 
       <h2 class="recap"><span class="section-number"></span>Chapter 4 Recap</h2>
 
-      <h3>Checkbox list (displays empty checkboxes on print)</h3>
+      <h3 class="styleguide">Checkbox list (displays empty checkboxes on print)</h3>
       <ul class="checklist">
         <li><span class="check" aria-hidden="true"></span> <span class="check-item">Track patient-generated data</span></li>
         <li><span class="check" aria-hidden="true"></span> <span class="check-item">Collect family histories</span></li>
       </ul>
 
-      <h3>Icon block</h3>
+      <h3 class="styleguide">Icon block</h3>
 
       <div class="icon-block">
         <p class="icon-person"><span>77% to 87%</span> across the 3 sites reported that open notes helped them feel more in control of their care.</p>
@@ -980,7 +811,7 @@ permalink: /styleguide/
         <p class="icon-share"><span>20% to 42%</span> reported sharing notes with others.</p>
       </div>
 
-      <h3>From the Field block</h3>
+      <h3 class="styleguide">From the Field block</h3>
     </div>
   </div>
 </div> <!-- /content -->
@@ -1005,7 +836,7 @@ permalink: /styleguide/
   <div class="row">
     <div class="grid-12">
 
-      <h3>Pagination</h3>
+      <h3 class="styleguide">Pagination</h3>
 
       <div class="pagination">
         <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
@@ -1019,13 +850,13 @@ permalink: /styleguide/
         <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
       </div>
 
-      <h3>Panel</h3>
+      <h3 class="styleguide">Panel</h3>
 
       <div class="panel">
         <p>This is a panel.</p>
       </div>
 
-      <h3>Breadcrumb</h3>
+      <h3 class="styleguide">Breadcrumb</h3>
 
       <div class="breadcrumb">
         <ul>
@@ -1035,7 +866,7 @@ permalink: /styleguide/
         </ul>
       </div>
 
-      <h3>Search</h3>
+      <h3 class="styleguide">Search</h3>
 
       <form class="search" accept-charset="UTF-8" action="#" method="get">
         <label for="query-demo" class="search-label">Search</label>
@@ -1043,12 +874,6 @@ permalink: /styleguide/
           <input autocomplete="off" class="search-text" id="query-demo" name="query" type="text" /><button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
         </div>
       </form>
-
-      <h3>Icons</h3>
-
-      <div class="icon icon-computer">Computer</div>
-      <div class="icon icon-rx">Prescription</div>
-      <div class="icon icon-portal">Patient Portal</div>
 
     </div>
   </div>

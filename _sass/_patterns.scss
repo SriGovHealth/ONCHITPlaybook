@@ -195,7 +195,7 @@
   }
 
   span {
-    color: $gray;
+    color: $gray-darkest;
   }
 }
 
@@ -706,9 +706,9 @@
 .btn {
   background-color: $white;
   background-image: none;
-  border: 1px solid $green-dark;
+  border: 1px solid $green-2;
   border-radius: .25em;
-  color: $green-dark;
+  color: $green-2;
   cursor: pointer;
   display: inline-block;
   font-family: $font-header;
@@ -834,8 +834,8 @@
 }
 
 .btn-arrow {
-  border-color: $green-dark;
-  color: $green-dark;
+  border-color: $green-2;
+  color: $green-2;
   font-size: 90%;
   font-weight: 700;
   line-height: 1;
@@ -845,8 +845,8 @@
 
   &:visited {
     background-color: $white;
-    border-color: $green-dark;
-    color: $green-dark;
+    border-color: $green-2;
+    color: $green-2;
   }
 
   &:hover,
@@ -865,15 +865,15 @@
   }
 }
 
-.sidebar .btn-arrow {
+.btn-landing .btn-arrow {
   background-color: $white;
-  border-color: $green-2;
-  color: $green-2;
+  border-color: $green-dark;
+  color: $green-dark;
 
   &:visited {
     background-color: $white;
-    border-color: $green-2;
-    color: $green-2;
+    border-color: $green-dark;
+    color: $green-dark;
   }
 
   &:hover,
@@ -1237,7 +1237,8 @@ ul.checklist {
   max-width: 95%;
 }
 
-// Pattern library color blocks
+
+// Styleguide
 .colorblock {
   border: 1px solid $black;
   margin-bottom: 1.5em;
@@ -1250,4 +1251,12 @@ ul.checklist {
 .color {
   height: 4em;
   margin: 0 -1em;
+}
+
+h3.styleguide {
+  margin-bottom: .5em;
+}
+
+.styleguide .page {
+  margin-bottom: 5em;
 }
