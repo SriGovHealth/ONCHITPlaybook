@@ -966,6 +966,16 @@
   background-size: contain;
 }
 
+.btn-facebook-large {
+  background-image: url('../img/icon-facebook-large.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.875em;
+  height: 3.75em;
+  width: 3.75em;
+}
+
 .btn-twitter {
   background-image: url('../img/icon-twitter.png');
   background-position: center center;
@@ -973,11 +983,31 @@
   background-size: contain;
 }
 
+.btn-twitter-large {
+  background-image: url('../img/icon-twitter-large.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.875em;
+  height: 3.75em;
+  width: 3.75em;
+}
+
 .btn-linkedin {
   background-image: url('../img/icon-linkedin.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.btn-linkedin-large {
+  background-image: url('../img/icon-linkedin-large.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 1.875em;
+  height: 3.75em;
+  width: 3.75em;
 }
 
 .btn-email {
