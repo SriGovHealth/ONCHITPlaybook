@@ -731,31 +731,6 @@
   }
 }
 
-.btn-search {
-  background-image: url('../img/icon-search.png');
-  background-position: 85% center;
-  background-repeat: no-repeat;
-  background-size: 1em;
-  border: 1px solid $blue-dark;
-  color: $blue-dark;
-  padding-right: 2em;
-
-  &:hover,
-  &:focus {
-    background-color: $blue-dark;
-    background-image: url('../img/icon-search-hover.png');
-    border-color: $blue-dark;
-    color: $white;
-  }
-
-  &:active {
-    background-color: $blue-dark;
-    background-image: url('../img/icon-search-hover.png');
-    border-color: $blue-dark;
-    color: $white;
-  }
-}
-
 .btn-large {
   font-size: 1.25em;
   padding: .35em 1.5em;
@@ -766,34 +741,17 @@
   padding: .25em .75em;
 }
 
-.btn-dark {
-  background-color: $black;
-  border-color: $black;
-  color: $white;
-
-  &:hover,
-  &:focus {
-    background-color: $gray;
-    border-color: $gray;
-    color: $white;
-  }
-
-  &:active {
-    background-color: $black;
-    border-color: $gray;
-    color: $white;
-  }
-}
-
 .btn-arrow {
   border-color: $green-dark;
   color: $green-dark;
-  font-size: 90%;
-  font-weight: 700;
+  font-family: $font-header-alt;
+  font-size: 1em;
+  font-weight: 300;
+  height: 2em;
   line-height: 1;
-  padding: .4em .4em .35em;
+  padding: .5em;
   text-align: center;
-  //width: 1.8em;
+  width: 2em;
 
   &:visited {
     background-color: $white;
