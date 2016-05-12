@@ -313,11 +313,11 @@
 }
 
 .footer {
+  @extend %clearfix;
+  margin-top: 3em;
   border-top: 2px solid $gray;
-  margin-top: 4em;
-  padding-bottom: 1em;
   padding-top: 2em;
-  position: relative;
+  padding-bottom: 1em;
 
   .home & {
     border-top: 0;
