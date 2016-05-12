@@ -23,7 +23,7 @@
 }
 
 .slide {
-  background-color: $gray-light;
+  background-color: $gray;
   bottom: 4.25em;
   left: 0;
   position: absolute;
@@ -592,7 +592,7 @@
     }
 
     .office {
-      background-color: $off-white-3;
+      background-color: $gray-lighter;
       background-image: url('../img/ig-1-waitingroom-bg.png');
       background-position: center center;
       background-repeat: no-repeat;
@@ -806,7 +806,7 @@
     }
 
     .ehr {
-      background-color: $off-white-3;
+      background-color: $gray-lighter;
       background-image: url('../img/ig4-hotspotbg.png');
       background-position: center center;
       background-repeat: no-repeat;
@@ -884,7 +884,7 @@ ul.ig-checklist {
 
   a {
     background-color: $white;
-    border: 1px solid $gray-light;
+    border: 1px solid $gray;
     border-radius: .75em;
     color: $green;
     display: block;

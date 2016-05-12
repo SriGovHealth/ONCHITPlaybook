@@ -172,7 +172,7 @@
   //margin-bottom: 1em;
   margin-top: 0;
 
-  @include bp-max($large) {
+  @include bp-max($medium-3) {
     padding-bottom: 1em;
   }
 
@@ -189,7 +189,7 @@
   }
 
   li {
-    border-bottom: 1px solid $off-white-2;
+    border-bottom: 1px solid $gray-lighter;
     position: relative;
 
     a {
@@ -313,7 +313,7 @@
 }
 
 .footer {
-  border-top: 2px solid $gray-light;
+  border-top: 2px solid $gray;
   margin-top: 4em;
   padding-bottom: 1em;
   padding-top: 2em;
@@ -349,7 +349,7 @@
     float: left;
     margin-top: 0;
 
-    @include bp($large-2) {
+    @include bp($large) {
       clear: none;
       float: right;
       text-align: right;
@@ -358,7 +358,7 @@
     a {
       margin-right: .5em;
 
-      @include bp($large-2) {
+      @include bp($large) {
         margin-left: .5em;
         margin-right: 0;
       }
@@ -496,12 +496,4 @@
     margin-top: 1em;
     text-align: right;
   }
-}
-
-.yes { color: $green-dark; }
-.no { color: $red; }
-.exception { color: $blue; }
-.example {
-  display: block;
-  padding-left: 1em;
 }

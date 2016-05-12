@@ -57,11 +57,11 @@ $(".subnav-toggle").click(function (event) {
 
 // Display:none updates aria-hidden (JAWS bug)
 if (window.matchMedia) {
-  if (window.matchMedia("(min-width: 56.25em)").matches) {
+  if (window.matchMedia("(min-width: 60em)").matches) {
     $(".mobile-menu").attr("aria-hidden", "true");
     $(".sidebar").attr("aria-hidden", "false");
   }
-  if (window.matchMedia("(max-width: 56.25em)").matches) {
+  if (window.matchMedia("(max-width: 60em)").matches) {
     $(".mobile-menu").attr("aria-hidden", "false");
     $(".sidebar").attr("aria-hidden", "true");
   }

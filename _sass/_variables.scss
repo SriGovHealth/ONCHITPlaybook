@@ -10,41 +10,28 @@ $black:                 #323232;
 $black-print:           #000;
 $black-trans-80:        rgba($black, .8);
 $black-trans-15:        rgba($black, .15);
-$black-light:           #505050;
-$black-dark:            #181818;
 $green:                 #61dab3;
-$green-2:               #337b64;
+$green-dark:            #337b64;
 $green-light:           #9fe9d1;
 $green-lightest:        #c8f3e5;
-$green-dark:            #38d09f;
 $off-white:             #f0f6f9;
-$off-white-2:           #f0f5fa;
-$off-white-3:           #e4e4e5;
-$off-white-light:       #f8f9fa;
-$off-white-dark:        #e3e4e4;
+$gray-lighter:          #e4e4e5;
 $blue:                  #1479bd;
-$blue-light:            #72aedc;
-$blue-light-2:          #1688d4;
-$blue-dark:             #125d93;
+$blue-light:            #1688d4;
+$blue-dark:             #004b82;
 $blue-dark-trans-80:    rgba($blue-dark, .8);
-$navy:                  #001d5f;
-$navy-trans-80:         rgba($navy, .8);
-$navy-light:            #004b82;
+$blue-darker:           #001d5f;
+$blue-darker-trans-80:  rgba($blue-darker, .8);
 $yellow:                #fecf00;
 $yellow-light:          #fddc47;
-$yellow-dark:           #fec609;
 $gray:                  #b2ada7;
 $gray-trans-25:         rgba($gray, .25);
-$gray-light:            #d1cec9;
 $gray-lightest:         #f5f5f5;
-$gray-dark:             #a39f99;
-$gray-darkest:          #737373;
+$gray-dark:             #737373;
 $purple:                #77008d;
 $red:                   #ff4136;
 
 $code:                  $off-white;
-
-
 $link:                  $blue;
 $link-visited:          $purple;
 $link-hover:            darken($link, 5%);
@@ -56,13 +43,13 @@ $small-2:               29.75em; // 476px
 $small-3:               39.8em; // 637px
 $medium:                46.8em; // 749px
 $medium-2:              48.125em; // 770px
-$large:                 50em; // 800px
-$large-2:               60em; // 960px
-$large-3:               66em; // 1056px
-$xlarge:                73em; // 1168px
-$xxlarge:               89em; // 1424px
-$xxxlarge:              93em; // 1488px
+$medium-3:              50em; // 800px
+$large:                 60em; // 960px
+$large-2:               66em; // 1056px
+$large-3:               73em; // 1168px
+$xlarge:                89em; // 1424px
+$xxlarge:               93em; // 1488px
 
-$sidebar-switch-point:  $large-2;
+$sidebar-switch-point:  $large;
 $fixed-header-height:   3em; // 48px
 $sidebar-width:         20.5em; // 328px

@@ -60,7 +60,7 @@
     background-position: left center;
     background-repeat: no-repeat;
 
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $gray;
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 3.75em;
@@ -82,7 +82,7 @@
     }
 
     span {
-      color: $gray-darkest;
+      color: $gray-dark;
       font-weight: 400;
     }
   }
@@ -195,7 +195,7 @@
   }
 
   span {
-    color: $gray-darkest;
+    color: $gray-dark;
   }
 }
 
@@ -237,11 +237,8 @@
 }
 
 .search {
-  background-color: $off-white;
-}
-
-.search-nav {
   @extend %clearfix;
+  background-color: $off-white;
   padding: .75em 1.25em;
 }
 
@@ -257,7 +254,7 @@
 
 .search-block {
   background-color: $white;
-  border: 1px solid $off-white-3;
+  border: 1px solid $gray-lighter;
   border-radius: .25em;
   display: block;
   float: right;
@@ -291,10 +288,10 @@
     margin: 0;
 
     &:hover {
-      background-color: $blue-light-2;
+      background-color: $blue-light;
 
       img {
-        background-color: $blue-light-2;
+        background-color: $blue-light;
       }
     }
 
@@ -492,55 +489,6 @@
   }
 }
 
-.expand-block {
-  @include bp($sidebar-switch-point) {
-    float: right;
-    margin-bottom: 1em;
-    margin-left: 1.5em;
-    width: 16em;
-  }
-
-  .expand-image {
-    position: relative;
-
-    img {
-      border: 1px solid $gray-light;
-    }
-  }
-
-  .expand-control {
-    background-color: $black-light;
-    background-image: url('../img/icon-expand-small.png');
-    background-position: 5% center;
-    background-repeat: no-repeat;
-    color: $white;
-    font-size: .9em;
-    padding: .25em .5em .25em 2em;
-    position: absolute;
-    bottom: 0;
-    right: 1px;
-    text-decoration: none;
-    transition: all .4s;
-
-    @include bp-max($sidebar-switch-point) {
-      display: none;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: $white;
-      color: $black;
-      transition: all .4s;
-    }
-  }
-
-  .caption {
-    border-bottom: 3px solid $green;
-    font-size: .9em;
-    padding-bottom: .25em;
-  }
-}
-
 .mythreality {
   background-color: $black;
   border-radius: .25em;
@@ -706,9 +654,9 @@
 .btn {
   background-color: $white;
   background-image: none;
-  border: 1px solid $green-2;
+  border: 1px solid $green-dark;
   border-radius: .25em;
-  color: $green-2;
+  color: $green-dark;
   cursor: pointer;
   display: inline-block;
   font-family: $font-header;
@@ -834,8 +782,8 @@
 }
 
 .btn-arrow {
-  border-color: $green-2;
-  color: $green-2;
+  border-color: $green-dark;
+  color: $green-dark;
   font-size: 90%;
   font-weight: 700;
   line-height: 1;
@@ -845,8 +793,8 @@
 
   &:visited {
     background-color: $white;
-    border-color: $green-2;
-    color: $green-2;
+    border-color: $green-dark;
+    color: $green-dark;
   }
 
   &:hover,
@@ -865,15 +813,27 @@
   }
 }
 
+.sidebar .current .btn-arrow {
+  background-color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
 .btn-landing .btn-arrow {
   background-color: $white;
-  border-color: $green-dark;
-  color: $green-dark;
+  border-color: $green;
+  color: $green;
 
   &:visited {
     background-color: $white;
-    border-color: $green-dark;
-    color: $green-dark;
+    border-color: $green;
+    color: $green;
   }
 
   &:hover,
@@ -919,8 +879,8 @@
 }
 
 .btn-landing {
-  background-color: $navy;
-  background-color: $navy-trans-80;
+  background-color: $blue-darker;
+  background-color: $blue-darker-trans-80;
   color: $white;
   display: block;
   font-size: 1.2em;
@@ -949,7 +909,7 @@
 
   &:hover,
   &:focus {
-    background-color: $navy-light;
+    background-color: $blue-dark;
     color: $yellow;
 
     .section-title {
@@ -959,7 +919,7 @@
     .btn-arrow {
       background-color: $white;
       border-color: transparent;
-      color: $navy-light;
+      color: $blue-dark;
 
     }
   }
@@ -1080,7 +1040,7 @@ ul.checklist {
 
 .content-slider-block {
   background-color: $white;
-  border: 1px solid $gray-light;
+  border: 1px solid $gray;
   padding: 1em;
   position: relative;
   margin-bottom: 1.5em;
@@ -1112,7 +1072,7 @@ ul.checklist {
   }
 
   .content-slider-caption {
-    color: $black-light;
+    color: $black;
     min-height: 3.5em;
     margin-bottom: 0;
   }
@@ -1175,7 +1135,7 @@ ul.checklist {
     }
 
     span {
-      color: $green-2;
+      color: $green-dark;
     }
   }
 }
@@ -1202,7 +1162,7 @@ ul.checklist {
 }
 
 .tech-block {
-  border: 1px solid $gray-light;
+  border: 1px solid $gray;
   margin-bottom: 1.5em;
 }
 
@@ -1259,4 +1219,12 @@ h3.styleguide {
 
 .styleguide .page {
   margin-bottom: 5em;
+}
+
+.yes { color: $green-dark; }
+.no { color: $red; }
+.exception { color: $blue; }
+.example {
+  display: block;
+  padding-left: 1em;
 }

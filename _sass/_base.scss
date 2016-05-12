@@ -116,13 +116,13 @@ hr {
 }
 
 .hide-medium {
-  @include bp-bw($small, $large) {
+  @include bp-bw($small, $medium-3) {
     display: none;
   }
 }
 
 .hide-large {
-  @include bp($large) {
+  @include bp($medium-3) {
     display: none;
   }
 }
