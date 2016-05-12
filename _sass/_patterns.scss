@@ -840,14 +840,15 @@
   }
 }
 
-.btn-landing {
+.btn-landing,
+.btn-landing-tall {
   background-color: $blue-darker;
   background-color: $blue-darker-trans-80;
   color: $white;
   display: block;
   font-size: 1.2em;
   margin: .75em 0;
-  padding: 1.5em 3em 1.5em 1em;
+  padding: 1.5em 3.5em 1.5em 1em;
   position: relative;
   text-decoration: none;
 
@@ -884,6 +885,12 @@
       color: $blue-dark;
 
     }
+  }
+}
+
+.btn-landing-tall {
+  @include bp($medium-2) {
+    min-height: 7.5em;
   }
 }
 
