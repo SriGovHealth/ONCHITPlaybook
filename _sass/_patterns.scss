@@ -671,6 +671,10 @@
   vertical-align: middle;
   white-space: nowrap;
 
+  &:visited {
+    color: $green-dark;
+  }
+
   &:hover,
   &:focus {
     background-color: $green;
