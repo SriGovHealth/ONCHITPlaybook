@@ -10,7 +10,7 @@ permalink: /styleguide/content/
     <div class="grid-12">
       <h1>Content Style Guide</h1>
 
-      <p>Last updated: May 9, 2016</p>
+      <p>Last updated: May 13, 2016</p>
 
       <p>This style guide is a resource for ONC. It supports clear content, consistent formatting, and usability in the Patient Engagement Playbook, leading to a unified ONC voice and a better user experience.</p>
 
@@ -26,6 +26,14 @@ permalink: /styleguide/content/
             <li><a href="#periods">Periods and commas</a></li>
             <li><a href="#hyphens">Dashes and hyphens</a></li>
             <li><a href="#misc">Miscellaneous</a></li>
+          </ul>
+        </li>
+        <li><a href="#links">Links</a>
+          <ul>
+            <li><a href="#link-text">Link text and punctuation</a></li>
+            <li><a href="#link-open">Opening links</a></li>
+            <li><a href="#exit">Exit disclaimer</a></li>
+            <li><a href="#pdf">PDF label and size</a></li>
           </ul>
         </li>
         <li><a href="#references">References and Attributions</a></li>
@@ -84,6 +92,7 @@ permalink: /styleguide/content/
         <li><strong class="yes">Yes:</strong> health information technology (health IT)<br> </li>
         </ul>
       </li>
+      <li>Don&rsquo;t include periods in abbreviations or acronyms, except &ldquo;U.S.&rdquo;</li>
       </ul>
 
       <h2 id="numbers">Numbers</h2>
@@ -132,7 +141,6 @@ permalink: /styleguide/content/
       <h3 id="periods">Periods and commas</h3>
       <ul>
       <li>Use only 1 space between sentences</li>
-      <li>Don&rsquo;t include periods in abbreviations or acronyms, except &ldquo;U.S.&rdquo;</li>
       <li>Don&rsquo;t punctuate page titles</li>
       <li>Use the Oxford (serial) comma<br>
       <span class="example">Example</span>
@@ -150,13 +158,13 @@ permalink: /styleguide/content/
       <li>In general, only hyphenate compound terms when they function as adjectives before a noun. <strong class="exception">Exception:</strong> always hyphenate compound nouns that start with &ldquo;self.&rdquo;<br>
       <span class="example">Example</span>
         <ul>
-        <li><strong class="yes">Yes:</strong> phone-based assessment</li>
-        <li><strong class="no">No:</strong> phone based assessment</li>
+        <li><strong class="yes">Yes:</strong> patient-generated data</li>
+        <li><strong class="no">No:</strong> patient generated data</li>
         </ul>
       <span class="example">Example</span>
         <ul>
-        <li><strong class="yes">Yes:</strong> self-assessment</li>
-        <li><strong class="no">No:</strong> self assessment</li>
+        <li><strong class="yes">Yes:</strong> self-care</li>
+        <li><strong class="no">No:</strong> self care</li>
         </ul>
       <span class="example">Examples</span>
         <ul>
@@ -176,11 +184,59 @@ permalink: /styleguide/content/
         </ul>
       </li>
       <li>Use &ldquo;smart quotes,&rdquo; not "straight quotes"</li>
-      <li>When linking to a PDF, include a file type/size indicator. Use square brackets and an en dash, with a space in the file size. Punctuation goes outside the brackets. Don&rsquo;t include final punctuation in the hyperlink.<br>
+      </ul>
+
+      <h2 id="links">Links</h2>
+      <h3 id="link-text">Link text and punctuation</h3>
+      <ul>
+      <li>Write link text as a descriptive phrase or short sentence<br>
       <span class="example">Example</span>
         <ul>
-        <li><strong class="yes">Yes:</strong> <a href="http://healthliteracy.bu.edu/documents/34/AAHLS%20Tool.pdf">Download the measure [PDF &ndash; 72 KB]</a>.</li>
-        <li><strong class="no">No:</strong> <a href="http://healthliteracy.bu.edu/documents/34/AAHLS%20Tool.pdf">Download the measure [PDF-33kB].</a></li>
+        <li><strong class="yes">Yes:</strong> <a href="https://www.healthit.gov/providers-professionals/achieve-meaningful-use/core-measures-2/use-secure-electronic-messaging">Exchange secure messages</a> with more than 5% of patients</li>
+        <li><strong class="no">No:</strong> <a href="https://www.healthit.gov/providers-professionals/achieve-meaningful-use/core-measures-2/use-secure-electronic-messaging">Click here</a> for information on exchanging secure messages</li>
+        </ul>
+      </li>
+      <li>Don’t hyperlink headers (users may not know the header is also a link) — add links only to body text</li>
+      <li>Don’t include punctuation at the end of a link<br>
+      <span class="example">Example</span>
+        <ul>
+        <li><strong class="yes">Yes:</strong> <a href="http://www.hhs.gov/about/news/2016/04/27/administration-takes-first-step-implement-legislation-modernizing-how-medicare-pays-physicians.html">Meaningful Use will soon be replaced by Advancing Care Information under the Quality Payment Program</a>. (Here, the period isn’t linked.)</li>
+        <li><strong class="no">No:</strong> <a href="http://www.hhs.gov/about/news/2016/04/27/administration-takes-first-step-implement-legislation-modernizing-how-medicare-pays-physicians.html">Meaningful Use will soon be replaced by Advancing Care Information under the Quality Payment Program.</a> (Here, the period is linked.)</li>
+        </ul>
+      </li>
+      <li>If the link text includes the title of an initiative or chapter, use title case for the title — but don’t use italics<br>
+      <span class="example">Example</span>
+        <ul>
+        <li><strong class="yes">Yes:</strong> See <a href="{{ "/chapter-2/" | prepend: site.baseurl }}">Chapter 2 of this playbook</a> for more information on portal benefits.</li>
+        <li><strong class="no">No:</strong> See <a href="{{ "/chapter-2/" | prepend: site.baseurl }}"><em>chapter 2</em> of this playbook</a> for more information on portal benefits.</li>
+        </ul>
+      </li>
+      </ul>
+
+      <h3 id="link-open">Opening links</h3>
+      <ul>
+      <li>Make links to content within the playbook open in the same tab</li>
+      <li>Make links to content outside the playbook open in a new tab</li>
+      </ul>
+
+      <h3 id="exit">Exit disclaimer</h3>
+      <ul>
+      <li>Include the exit disclaimer icon (<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAQAAACIaFaMAAAAPUlEQVR4AWMgHUz4D4FgdgOQBYVIEggphATzBEYMCZhqrEahCTcAIRaJBggb3agGFOdi8wJZEpgQvwTJAADRrod38NnIHQAAAABJRU5ErkJggg==" alt="external link icon">) on links to all non-federal sites, even state government sites</li>
+      <li>Insert 1 space between the end of the hyperlink and the exit disclaimer icon. Add punctuation after the exit disclaimer.<br>
+      <span class="example">Example</span>
+        <ul>
+        <li><strong class="yes">Yes:</strong> <a href="https://developer.apple.com/healthkit/">https://developer.apple.com/healthkit/</a>.</li>
+        </ul>
+      </li>
+      </ul>
+
+      <h3 id="pdf">PDF label and size</h3>
+      <ul>
+      <li>When linking to a PDF, include a file type/size indicator. Use square brackets and an en dash ( – ), with a space in the file size. Punctuation goes outside the brackets. Don’t include final punctuation in the hyperlink.<br>
+      <span class="example">Example</span>
+        <ul>
+        <li><strong class="yes">Yes:</strong> <a href="http://www.opennotes.org/wp-content/uploads/2012/08/OpenNotes-Fact-Sheet.pdf">http://www.opennotes.org/wp-content/uploads/2012/08/OpenNotes-Fact-Sheet.pdf [PDF &ndash; XX KB]</a>.</li>
+        <li><strong class="no">No:</strong> <a href="http://www.opennotes.org/wp-content/uploads/2012/08/OpenNotes-Fact-Sheet.pdf">http://www.opennotes.org/wp-content/uploads/2012/08/OpenNotes-Fact-Sheet.pdf [PDF–XX kB]</a>.</li>
         </ul>
       </li>
       </ul>
@@ -191,10 +247,10 @@ permalink: /styleguide/content/
       <li>Use APA reference style<br>
       <span class="example">Example</span>
         <ul>
-        <li><strong class="yes">Yes:</strong> Parker, R. M., Baker, D.W., Williams, M.V., &amp; Nurss, J. R. (1995). A new instrument for measuring patients' literacy skills. <em>J Gen Internal Med, 10</em>:537-541.</li>
+        <li><strong class="yes">Yes:</strong> Agboola S, Jethwani K, Khateeb K, Moore S, Kvedar J. Heart Failure Remote Monitoring: Evidence From the Retrospective Evaluation of a Real-World Remote Monitoring Program. <em>J Med Internet Res. 2015;17</em>(4):e101. <a href="http://www.jmir.org/2015/4/e101">http://www.jmir.org/2015/4/e101</a>.</li>
         </ul>
-        </li>
-      <li>When attributing a quote to a professional, include that person&rsquo;s name, credential, title, and affiliation<br>
+      </li>
+      <li>When attributing a quote to a professional, include that person’s name, credential, title, and affiliation<br>
       <span class="example">Example</span>
         <ul>
         <li><strong class="yes">Yes:</strong> Joseph C. Kvedar, MD, Vice President, Connected Health, Partners HealthCare</li>
@@ -203,13 +259,36 @@ permalink: /styleguide/content/
       </ul>
 
       <h2 id="word-choice">Word Choice</h2>
-      <ul>
-      <li>Use &ldquo;for example&rdquo; instead of &ldquo;e.g.&rdquo;</li>
-      <li>Use &ldquo;electronic health record (EHR)&rdquo; instead of &ldquo;electronic medical record (EMR)&rdquo;</li>
-      <li>When referring to a medical professional who delivers care to patients, use &ldquo;provider&rdquo; or &ldquo;clinician&rdquo; instead of &ldquo;doctor&rdquo; (unless referring specifically to a MD or DO)</li>
-      <li>Use &ldquo;health care&rdquo; instead of &ldquo;healthcare,&rdquo; unless quoting another source verbatim or referring to a proper noun (e.g., Partners HealthCare)</li>
-      </ul>
 
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"><span class="yes">Yes</span></th><th scope="col"><span class="no">No</span></th><th scope="col"><span class="exception">Exceptions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>for example</td>
+            <td>e.g.</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>electronic health record (EHR)</td>
+            <td>electronic medical record (EMR)</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>provider, clinician</td>
+            <td>doctor</td>
+            <td>When referring specifically to a MD or DO</td>
+          </tr>
+          <tr>
+            <td>health care</td>
+            <td>healthcare</td>
+            <td>When quoting another source verbatim or referring to a proper noun (like Partners HealthCare)</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </div>
