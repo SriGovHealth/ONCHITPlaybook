@@ -971,6 +971,15 @@
     img {
       max-height: 100%;
     }
+
+    .first-third {
+      width: 44%;
+
+      @include bp-max($medium-2) {
+        top: 50%;
+        width: 100%;
+      }
+    }
   }
 
   #slide-03 {
@@ -988,6 +997,15 @@
 
     img {
       max-height: 100%;
+    }
+
+    .first-third {
+      width: 44%;
+
+      @include bp-max($medium-2) {
+        top: 50%;
+        width: 100%;
+      }
     }
   }
 
