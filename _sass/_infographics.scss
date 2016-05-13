@@ -621,14 +621,96 @@
 
   #slide-02 {
     background-color: $green;
-    padding: 2em;
+    padding: 1.5em 2em;
 
     h2 {
-      font-size: 2em;
+      font-size: 2.3em;
     }
 
     p {
       font-size: 1.5em;
+    }
+  }
+
+  #slide-03 {
+    background-color: $black;
+    background-image: url('../img/ig2-sil1bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 1em 1.5em;
+
+    h2 {
+      border-bottom: 1px solid $green;
+      color: $white;
+      font-size: 2.2em;
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+    }
+
+    p {
+      font-size: 1.2375em;
+
+      strong {
+        color: $yellow;
+      }
+    }
+  }
+
+  #slide-04 {
+    background-color: $black;
+    background-image: url('../img/ig2-sil2bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 1em 1.5em;
+
+    h2 {
+      border-bottom: 1px solid $green;
+      color: $white;
+      font-size: 2em;
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+    }
+
+    p {
+      font-size: 1.2375em;
+
+      strong {
+        color: $yellow;
+      }
+    }
+
+    .ig-checklist .check-item {
+      margin-bottom: .75em;
+    }
+  }
+
+  #slide-05 {
+    background-color: $black;
+    background-image: url('../img/ig2-sil3bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 1em 1.5em;
+
+    h2 {
+      border-bottom: 1px solid $green;
+      color: $white;
+      font-size: 2em;
+      margin-bottom: .5em;
+      padding-bottom: .5em;
+    }
+
+    p {
+      font-size: 1.2375em;
+
+      strong {
+        color: $yellow;
+      }
     }
   }
 }
