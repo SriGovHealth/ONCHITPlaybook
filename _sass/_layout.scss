@@ -488,12 +488,25 @@
   }
 }
 
-.logo {
-  text-align: center;
-  margin-top: -.5em;
+.healthit-logo {
+  position: absolute;
+  top: 0;
+  left: .5em;
 
-  @include bp($medium-2) {
-    margin-top: 1em;
-    text-align: right;
+  img {
+    max-width: 8em;
   }
+}
+
+.home-highlight {
+  color: $blue-dark;
+}
+
+.stay-connected {
+  background-color: $white;
+  background-color: $white-trans-50;
+  border: 1px solid $white;
+  border-radius: .25em;
+  padding: 0 1em 1em;
+  margin-top: .75em;
 }

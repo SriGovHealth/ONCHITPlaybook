@@ -17,16 +17,14 @@ og-poster: ""
       </div>
     </div>
     <div class="row">
-      <div class="grid-3 push-9 logo">
-        <a href="https://www.healthIT.gov/"><img src="{{ "/img/healthIT-logo-medium.png" | prepend: site.baseurl }}" alt="A product of HealthIT.gov"></a>
-      </div>
-      <div class="grid-9 pull-3">
-        <p>Using a patient portal has big benefits &mdash; for you, your staff, and your patients. Learn how patient portals can work in your office. Get tips, hacks, success stories, supporting data, and more..</p>
+      <div class="grid-12">
+        <p><strong class="home-highlight">Patient portals can have big benefits for your practice and your patients.</strong> They&rsquo;re tools for patient involvement that can lead to better communication, better care, and better outcomes.</p>
+        <p><strong class="home-highlight">Make your portal work for you &mdash; and use the Patient Engagement Playbook to help you get there.</strong> The Playbook is an evolving resource: a compilation of tips, hacks, and workarounds we learned from innovative providers and health systems like yours.</p>
       </div>
     </div>
     <div class="row">
       <div class="grid-12">
-        <a href="{{ "/introduction/" | prepend: site.baseurl }}" class="btn-landing"><span class="section-title">Introduction</span> Patient Engagement Playbook <span class="btn btn-arrow" aria-hidden="true">&rarr;</span></a>
+        <a href="{{ "/introduction/" | prepend: site.baseurl }}" class="btn-landing btn-landing-first"><span class="section-title">Introduction to the Patient Engagement Playbook</span> <span class="btn btn-arrow" aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
     <div class="row">
@@ -45,11 +43,29 @@ og-poster: ""
         <a href="{{ "/chapter-4/" | prepend: site.baseurl }}" class="btn-landing-tall"><span class="section-title">Chapter 4</span> Integrate patient-generated health data <span class="btn btn-arrow" aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
+    <div class="row">
+      <div class="grid-12">
+        <div class="stay-connected">
+          <div class="row">
+            <div class="grid-9">
+              <p class="h3">Stay connected.</p>
+              <p>Want the latest on the Patient Engagement Playbook?</p>
+            </div>
+            <div class="grid-3 space-top-4">
+              <p><a href="#" class="btn btn-chapter">Sign up for emails</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   {% if page.og-url %}
   {% if page.og-title %}
     {% if page.og-description %}
-<div class="sharing">
+<div class="healthit-logo">
+  <a href="https://www.healthIT.gov/"><img src="{{ "/img/healthIT-logo-medium.png" | prepend: site.baseurl }}" alt="A product of HealthIT.gov"></a>
+</div>
+<div class="sharing sharing-home">
   <!--
   <a href="https://www.facebook.com/sharer/sharer.php?u=*** page.og-url ***" class="btn-sharing btn-facebook">Facebook</a>
   <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=*** page.og-url ***&amp;title=*** page.og-title | uri_escape ***&amp;summary=*** page.og-description | uri_escape ***" class="btn-sharing btn-linkedin">LinkedIn</a>

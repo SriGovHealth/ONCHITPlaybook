@@ -30,6 +30,10 @@
   background-size: cover;
   padding-bottom: 1.5em;
   padding-top: 2em;
+
+  @include bp-max($large) {
+    padding-top: 3.5em;
+  }
 }
 
 .case-block {
@@ -826,9 +830,9 @@
 
 .btn-landing .btn-arrow,
 .btn-landing-tall .btn-arrow {
-  background-color: $white;
-  border-color: $green;
-  color: $green;
+  background-color: transparent;
+  border-color: $white;
+  color: $white;
 
   &:visited {
     background-color: $white;
@@ -882,6 +886,7 @@
 .btn-landing-tall {
   background-color: $blue-darker;
   background-color: $blue-darker-trans-80;
+  border-radius: .25em;
   color: $white;
   display: block;
   font-size: 1.2em;
@@ -893,7 +898,7 @@
   .section-title {
     color: $white;
     display: block;
-    font-family: $font-header-alt;
+    font-family: $font-header;
     font-size: 1.2em;
   }
 
@@ -924,6 +929,11 @@
 
     }
   }
+}
+
+.btn-landing-first {
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .btn-landing-tall {
@@ -981,6 +991,11 @@
   right: 1em;
   top: 0;
   z-index: 1;
+}
+
+.sharing-home {
+  background-color: transparent;
+  margin-top: .5em;
 }
 
 .sharing-footer {
