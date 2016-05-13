@@ -21,7 +21,7 @@ $(".ig-nav").click(function (event) {
     $("#ig-next").addClass("limit");
   }
 
-  if(!$(".slide.on").prev('.slide').prev('.slide').length) {
+  if(!$(".slide.on").prev('.slide').length) {
     $("#ig-previous").addClass("limit");
   }
 });
@@ -72,7 +72,7 @@ $("#ig-previous").click(function (event) {
   $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
-  if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
+  if(!$(".slide.on").prev('.slide').prev('.slide').length) {
     $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
     $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-previous").addClass("limit");
@@ -100,7 +100,7 @@ $('.infographic-container [role="tab"]').on('keydown', function(e) {
   switch (e.keyCode) {
     case 37:
       $target = $prev;
-      if(!$(".slide.on").prev('.slide').prev('.slide').prev('.slide').length) {
+      if(!$(".slide.on").prev('.slide').prev('.slide').length) {
         $("#ig-previous").addClass("limit");
       }
       break;
