@@ -314,8 +314,7 @@
 
 .footer {
   @extend %clearfix;
-  margin-top: 3em;
-  border-top: 2px solid $gray;
+  //margin-top: 3em;
   padding-top: 2em;
   padding-bottom: 1em;
 
@@ -522,4 +521,12 @@
   p {
     margin-bottom: 0;
   }
+}
+
+.connect-footer {
+  @extend %clearfix;
+  border-bottom: 1px solid $off-white;
+  border-top: 1px solid $off-white;
+  padding-top: .25em;
+  margin-top: 1em;
 }
