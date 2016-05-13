@@ -13,6 +13,7 @@
 .infographic-container {
   @extend %clearfix;
   background-color: $white;
+  border: 1px solid $gray;
   margin: 0 auto;
   max-width: $content-max-width;
   min-height: 31em;
