@@ -250,10 +250,12 @@ $("#screen-view-toggle").click(function (event) {
   if($("#screen-view").hasClass("patient")) {
     $("#screen-view").removeClass("patient");
     $("#screen-view").addClass("caregiver");
+    $("#screen-view-toggle").text("See patient view");
   }
   else {
     $("#screen-view").removeClass("caregiver");
     $("#screen-view").addClass("patient");
+    $("#screen-view-toggle").text("See caregiver view");
   }
 });
 
