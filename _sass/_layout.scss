@@ -498,8 +498,13 @@
   }
 }
 
+.onc-logo {
+  max-width: 100%;
+  width: 30em;
+}
+
 .home-highlight {
-  color: $blue-dark;
+  color: $blue-home;
 }
 
 .stay-connected {
@@ -507,6 +512,14 @@
   background-color: $white-trans-50;
   border: 1px solid $white;
   border-radius: .25em;
-  padding: 0 1em 1em;
+  padding: .25em 1em 1em;
   margin-top: .75em;
+
+  .h3 {
+    margin-top: .5em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
