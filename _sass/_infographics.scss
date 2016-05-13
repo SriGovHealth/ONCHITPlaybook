@@ -281,9 +281,13 @@
   display: none;
 }
 
-.lightbox-close {
+.lightbox-close-block {
+  position: absolute;
+  bottom: 1em;
+  left: 43%;
+
   @include bp-max($medium-2) {
-    width: 100%;
+    left: 36%;
   }
 }
 
