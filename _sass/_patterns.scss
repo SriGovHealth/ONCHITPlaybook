@@ -202,7 +202,7 @@
 .panel {
   background-color: $off-white;
   border: 1px solid $off-white;
-  padding: .5em 1em;
+  padding: 1em;
 
   p {
     margin-bottom: .5em;
@@ -909,11 +909,21 @@
   padding-right: .25em;
   text-decoration: none;
 
+  .sharing-footer & {
+    background-image: url('../img/icon-print-black.png');
+    color: $black;
+  }
+
   &:hover,
   &:focus {
     color: $white;
     text-decoration: none;
     border: 2px solid $white;
+
+    .sharing-footer & {
+      color: $black;
+      border-color: $black;
+    }
   }
 }
 
@@ -935,15 +945,11 @@
   right: 1em;
   top: 0;
   z-index: 1;
+}
 
-  .footer & {
-    top: -3.5em;
-  }
-
-  .home .footer &,
-  .infographic-share .footer & {
-    display: none;
-  }
+.sharing-footer {
+  padding: .5em;
+  text-align: right;
 }
 
 .btn-sharing {
@@ -952,10 +958,15 @@
   display: inline-block;
   height: 1.75em;
   text-indent: -9999px;
+  text-align: left;
   width: 1.75em;
 
   &:hover {
     border: 2px solid $white;
+
+    .sharing-footer & {
+      border: 2px solid $black;
+    }
   }
 }
 
