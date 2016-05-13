@@ -391,18 +391,7 @@
 .in-3 {
   opacity: 1;
   transition: opacity 1s;
-  transition-delay: 2s;
-
-  .off & {
-    opacity: 0;
-    transition: opacity 1s;
-  }
-}
-
-.in-4 {
-  opacity: 1;
-  transition: opacity 1s;
-  transition-delay: 3s;
+  transition-delay: 1s;
 
   .off & {
     opacity: 0;
