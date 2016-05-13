@@ -257,4 +257,22 @@ $("#screen-view-toggle").click(function (event) {
   }
 });
 
+$(".patient-quote-toggle").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
 
+  var target = $(this).attr('href');
+  $(this).attr("aria-expanded", "true");
+  $(target).removeClass("off").addClass("on").attr("aria-hidden", "false");
+
+});
+
+$(".patient-quote-close").click(function (event) {
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  var target = $(this).attr('href') + "-patient-quote";
+  var toggle = $(this).attr('href') + "-patient-quote-toggle";
+  $(target).removeClass("on").addClass("off").attr("aria-hidden", "true");
+  $(toggle).attr("aria-expanded", "false");
+});

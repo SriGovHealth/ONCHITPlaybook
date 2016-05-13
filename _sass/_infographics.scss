@@ -644,17 +644,22 @@
     h2 {
       border-bottom: 1px solid $green;
       color: $white;
-      font-size: 2.2em;
-      margin-bottom: .5em;
-      padding-bottom: .5em;
+      font-size: 2em;
+      margin-bottom: .25em;
+      padding-bottom: .25em;
     }
 
     p {
-      font-size: 1.2375em;
+      font-size: 1.125em;
 
       strong {
         color: $yellow;
       }
+    }
+
+    .ig-checklist .check-item {
+      font-size: 1em;
+      margin-bottom: .75em;
     }
   }
 
@@ -671,12 +676,12 @@
       border-bottom: 1px solid $green;
       color: $white;
       font-size: 2em;
-      margin-bottom: .5em;
-      padding-bottom: .5em;
+      margin-bottom: .25em;
+      padding-bottom: .25em;
     }
 
     p {
-      font-size: 1.2375em;
+      font-size: 1.125em;
 
       strong {
         color: $yellow;
@@ -684,6 +689,7 @@
     }
 
     .ig-checklist .check-item {
+      font-size: 1em;
       margin-bottom: .75em;
     }
   }
@@ -701,19 +707,86 @@
       border-bottom: 1px solid $green;
       color: $white;
       font-size: 2em;
-      margin-bottom: .5em;
-      padding-bottom: .5em;
+      margin-bottom: .25em;
+      padding-bottom: .25em;
     }
 
     p {
-      font-size: 1.2375em;
+      font-size: 1.125em;
 
       strong {
         color: $yellow;
       }
     }
+
+    .ig-checklist .check-item {
+      font-size: 1em;
+      margin-bottom: .75em;
+    }
+  }
+
+  .patient-quote {
+    color: $black;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    z-index: 12;
+
+    &.off {
+      display: none;
+      z-index: 3;
+    }
+  }
+
+  .quote-bubble {
+    background-color: $white;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    padding: 2em;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2em;
+      right: -1em;
+      width: 0;
+      border-width: 1.75em 0 1.75em 2em;
+      border-style: solid;
+      border-color: transparent $white;
+    }
+  }
+
+  #slide-03-patient-quote {
+    background-color: $white;
+    background-image: url('../img/ig2-quote1.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-04-patient-quote {
+    background-color: $white;
+    background-image: url('../img/ig2-quote2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #slide-05-patient-quote {
+    background-color: $white;
+    background-image: url('../img/ig2-quote3.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
+
 
 
 // Infographic 3

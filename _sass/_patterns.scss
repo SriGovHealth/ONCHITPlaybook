@@ -726,6 +726,25 @@
   }
 }
 
+.btn-dark {
+  background-color: $black;
+  border: 1px solid $white;
+  color: $white;
+  font-size: 1.25em;
+  padding: .5em 1.5em;
+
+  &:visited {
+    color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+
 .btn-chapter {
   background-color: $blue;
   border: 1px solid $blue;
