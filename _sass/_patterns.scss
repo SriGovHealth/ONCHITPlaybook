@@ -896,7 +896,7 @@
   &:focus {
     background-color: $green;
     background-image: url('../img/icon-arrow-wh-r.png');
-    border-color: $green;
+    border-color: $green-dark;
     color: $white;
     transition: all .4s;
   }
@@ -935,8 +935,8 @@
   &:hover,
   &:focus {
     background-color: $green;
-    background-image: url('../img/icon-arrow-wh-d.png');
-    border-color: $green;
+    background-image: url('../img/icon-arrow-gr-d.png');
+    border-color: $green-dark;
     color: $white;
     transition: all .4s;
   }
@@ -975,8 +975,8 @@
   &:hover,
   &:focus {
     background-color: $green;
-    background-image: url('../img/icon-arrow-wh-r.png');
-    border-color: $green;
+    background-image: url('../img/icon-arrow-gr-r.png');
+    border-color: $green-dark;
     color: $white;
     transition: all .4s;
   }
@@ -1015,8 +1015,8 @@
   &:hover,
   &:focus {
     background-color: $green;
-    background-image: url('../img/icon-arrow-wh-u.png');
-    border-color: $green;
+    background-image: url('../img/icon-arrow-gr-u.png');
+    border-color: $green-dark;
     color: $white;
     transition: all .4s;
   }

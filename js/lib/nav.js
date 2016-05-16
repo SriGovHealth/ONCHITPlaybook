@@ -44,6 +44,7 @@ $(".subnav-toggle").click(function (event) {
     $(".subnav").addClass("closed").attr("aria-hidden", "true");
     $(".has-subnav").removeClass("active");
     $(".subnav-toggle").removeClass("btn-arrow-img-right").removeClass("btn-arrow-img-up").addClass("btn-arrow-img-down").attr("aria-expanded", "false");
+    $(".group.current").children("a.subnav-toggle").removeClass("btn-arrow-img-down").addClass("btn-arrow-img-right");
 
     $(this).parent().find(".subnav").removeClass("closed").attr("aria-hidden", "false");
     $(this).removeClass("btn-arrow-img-right").removeClass("btn-arrow-img-down").addClass("btn-arrow-img-up").attr("aria-expanded", "true");
@@ -51,6 +52,7 @@ $(".subnav-toggle").click(function (event) {
   }
   else {
     $(this).parent().find(".subnav").addClass("closed").attr("aria-hidden", "true");
+    $(".group.current").children("a.subnav-toggle").removeClass("btn-arrow-img-down").addClass("btn-arrow-img-right");
     $(this).removeClass("btn-arrow-img-right").removeClass("btn-arrow-img-up").addClass("btn-arrow-img-down").attr("aria-expanded", "false");
     $(this).parent().removeClass("active");
   }
