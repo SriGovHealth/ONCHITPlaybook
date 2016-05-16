@@ -794,6 +794,10 @@
   text-align: center;
   width: 1.5em;
 
+  .current & {
+    background-color: $white;
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
