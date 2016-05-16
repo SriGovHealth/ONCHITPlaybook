@@ -788,11 +788,11 @@
   font-family: $font-header-alt;
   font-size: 1em;
   font-weight: 300;
-  height: 2em;
+  height: 1.5em;
   line-height: 1;
   padding: .5em;
   text-align: center;
-  width: 2em;
+  width: 1.5em;
 
   &:visited {
     background-color: $white;
@@ -829,10 +829,18 @@
 }
 
 .btn-landing .btn-arrow,
-.btn-landing-tall .btn-arrow {
+.btn-landing-tall .btn-arrow,
+.btn-landing .btn-arrow-img,
+.btn-landing-tall .btn-arrow-img {
   background-color: transparent;
+  background-image: url('../img/icon-arrow-wh-r.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.25em;
   border-color: $white;
   color: $white;
+  height: 2em;
+  width: 2em;
 
   &:visited {
     background-color: $white;
@@ -843,6 +851,167 @@
   &:hover,
   &:focus {
     background-color: $green;
+    background-image: url('../img/icon-arrow-gr-r.png');
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
+.btn-arrow-img {
+  background-image: url('../img/icon-arrow-gr-r.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.25em;
+  border-color: $green-dark;
+  color: $green-dark;
+  font-family: $font-header-alt;
+  font-size: 1em;
+  font-weight: 300;
+  height: 2em;
+  line-height: 1;
+  padding: .5em;
+  text-align: center;
+  text-indent: -9999px;
+  width: 2em;
+
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    background-image: url('../img/icon-arrow-wh-r.png');
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
+.btn-arrow-img-down {
+  background-image: url('../img/icon-arrow-gr-d.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: .8em;
+  border-color: $green-dark;
+  color: $green-dark;
+  font-family: $font-header-alt;
+  font-size: 1em;
+  font-weight: 300;
+  height: 1.5em;
+  line-height: 1;
+  padding: .5em;
+  text-align: center;
+  text-indent: -9999px;
+  width: 1.5em;
+
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    background-image: url('../img/icon-arrow-wh-d.png');
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
+.btn-arrow-img-right {
+  background-image: url('../img/icon-arrow-gr-r.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: .8em;
+  border-color: $green-dark;
+  color: $green-dark;
+  font-family: $font-header-alt;
+  font-size: 1em;
+  font-weight: 300;
+  height: 1.5em;
+  line-height: 1;
+  padding: .5em;
+  text-align: center;
+  text-indent: -9999px;
+  width: 1.5em;
+
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    background-image: url('../img/icon-arrow-wh-r.png');
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+
+  &:active {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    transition: all .4s;
+  }
+}
+
+.btn-arrow-img-up {
+  background-image: url('../img/icon-arrow-gr-u.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: .8em;
+  border-color: $green-dark;
+  color: $green-dark;
+  font-family: $font-header-alt;
+  font-size: 1em;
+  font-weight: 300;
+  height: 1.5em;
+  line-height: 1;
+  padding: .5em;
+  text-align: center;
+  text-indent: -9999px;
+  width: 1.5em;
+
+  &:visited {
+    background-color: $white;
+    border-color: $green-dark;
+    color: $green-dark;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+    background-image: url('../img/icon-arrow-wh-u.png');
     border-color: $green;
     color: $white;
     transition: all .4s;
@@ -902,7 +1071,8 @@
     margin-bottom: .25em;
   }
 
-  .btn-arrow {
+  .btn-arrow,
+  .btn-arrow-img {
     background-color: transparent;
     position: absolute;
     right: 1em;
