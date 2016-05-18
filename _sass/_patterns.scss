@@ -1165,6 +1165,14 @@
   right: 1em;
   top: 0;
   z-index: 1;
+
+  a {
+    color: $white;
+
+    &:visited {
+      color: $white;
+    }
+  }
 }
 
 .sharing-home {
@@ -1175,6 +1183,14 @@
 .sharing-footer {
   padding: .5em;
   text-align: right;
+
+  a {
+    color: $black;
+
+    &:visited {
+      color: $black;
+    }
+  }
 }
 
 .btn-sharing {
