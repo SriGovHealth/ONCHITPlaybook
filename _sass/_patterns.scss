@@ -886,6 +886,10 @@
   text-indent: -9999px;
   width: 2em;
 
+  .ie8 & {
+    background-image: url('../img/icon-arrow-gr-r-sm.png');
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
@@ -926,6 +930,10 @@
   text-indent: -9999px;
   width: 1.5em;
 
+  .ie8 & {
+    background-image: url('../img/icon-arrow-gr-d-sm.png');
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
@@ -939,6 +947,10 @@
     border-color: $green-dark;
     color: $white;
     transition: all .4s;
+
+    .ie8 & {
+      background-image: url('../img/icon-arrow-gr-d-sm.png');
+    }
   }
 
   &:active {
@@ -966,6 +978,10 @@
   text-indent: -9999px;
   width: 1.5em;
 
+  .ie8 & {
+    background-image: url('../img/icon-arrow-gr-r-sm.png');
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
@@ -979,6 +995,10 @@
     border-color: $green-dark;
     color: $white;
     transition: all .4s;
+
+    .ie8 & {
+      background-image: url('../img/icon-arrow-gr-r-sm.png');
+    }
   }
 
   &:active {
@@ -1006,6 +1026,10 @@
   text-indent: -9999px;
   width: 1.5em;
 
+  .ie8 & {
+    background-image: url('../img/icon-arrow-gr-u-sm.png');
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green-dark;
@@ -1019,6 +1043,10 @@
     border-color: $green-dark;
     color: $white;
     transition: all .4s;
+
+    .ie8 & {
+      background-image: url('../img/icon-arrow-gr-u-sm.png');
+    }
   }
 
   &:active {
