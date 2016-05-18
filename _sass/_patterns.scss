@@ -846,6 +846,10 @@
   height: 2em;
   width: 2em;
 
+  .ie8 & {
+    background-image: url('../img/icon-arrow-wh-r.png');
+  }
+
   &:visited {
     background-color: $white;
     border-color: $green;
