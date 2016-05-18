@@ -633,11 +633,11 @@ bodyclass: styleguide
 
     <div class="slide-nav">
       <ul class="dot-nav" role="tablist">
-        <li role="presentation"><a href="#slide-02" role="tab" id="slide-02-control" class="ig-nav slide-control" aria-controls="slide-02">1</a></li>
-        <li role="presentation"><a href="#slide-03" role="tab" id="slide-03-control" class="ig-nav slide-control">2</a></li>
-        <li role="presentation"><a href="#slide-04" role="tab" id="slide-04-control" class="ig-nav slide-control">3</a></li>
-        <li role="presentation"><a href="#slide-05" role="tab" id="slide-05-control" class="ig-nav slide-control">4</a></li>
-        <li role="presentation"><a href="#slide-06" role="tab" id="slide-06-control" class="ig-nav slide-control">5</a></li>
+        <li role="presentation"><a href="#" role="tab" id="slide-02-control" class="ig-nav slide-control" aria-controls="slide-02">1</a></li>
+        <li role="presentation"><a href="#" role="tab" id="slide-03-control" class="ig-nav slide-control">2</a></li>
+        <li role="presentation"><a href="#" role="tab" id="slide-04-control" class="ig-nav slide-control">3</a></li>
+        <li role="presentation"><a href="#" role="tab" id="slide-05-control" class="ig-nav slide-control">4</a></li>
+        <li role="presentation"><a href="#" role="tab" id="slide-06-control" class="ig-nav slide-control">5</a></li>
       </ul>
       <a href="#ig-next" id="ig-next" class="btn btn-next">Next<span aria-hidden="true"> &rarr;</span></a>
       <a href="#ig-previous" id="ig-previous" class="btn btn-previous"><span aria-hidden="true">&larr; </span>Previous</a>
@@ -665,29 +665,29 @@ bodyclass: styleguide
       <h3 class="styleguide">Myth vs. Reality</h3>
       <div class="clearfix">
         <div class="mythreality mythreality-right" id="mythreality-1">
-          <ul class="mythreality-header" role="tablist">
-            <li role="presentation">
-              <a href="#myth-1" class="myth-control" role="tab" aria-controls="myth-1">Myth</a>
-            </li>
-            <li role="presentation">
-              <a href="#reality-1" class="reality-control" role="tab" aria-controls="reality-1">Reality</a>
-            </li>
-          </ul>
-          <div class="mythreality-content myth-content" role="tabpanel" aria-hidden="false" id="myth-1">
-            <p class="mythreality-subhead" aria-hidden="true">Myth:</p>
-            <p>Providers worry that activating email in the patient portal will lead to an email deluge that burdens their practice and impedes efficiency.</p>
-            <div class="mythreality-footer">
-              <p><a href="#reality-1" class="mythreality-toggle reality-control myth-1-toggle" aria-controls="reality-1">Learn the reality <span aria-hidden="true">&rarr;</span></a></p>
-            </div>
-          </div>
-          <div class="mythreality-content reality-content" role="tabpanel" aria-hidden="true" id="reality-1">
-            <p class="mythreality-subhead" aria-hidden="true">Reality:</p>
-            <p>When practices integrate email into their workflow, providers often find communicating with patients more convenient and less time-consuming.</p>
-            <div class="mythreality-footer">
-              <p><a href="#myth-1" class="mythreality-toggle myth-control reality-1-toggle" aria-controls="myth-1"><span aria-hidden="true">&larr;</span> View the myth</a></p>
-            </div>
+        <ul class="mythreality-header" role="tablist">
+          <li role="presentation">
+            <a href="#myth-1" id="myth-1-control" class="myth-control" role="tab" aria-controls="myth-1" aria-selected="true">Myth</a>
+          </li>
+          <li role="presentation">
+            <a href="#reality-1" id="reality-1-control" class="reality-control" role="tab" aria-controls="reality-1"  aria-selected="false">Reality</a>
+          </li>
+        </ul>
+        <div class="mythreality-content myth-content" role="tabpanel" aria-hidden="false" aria-labelledby="myth-1-control" id="myth-1">
+          <p class="mythreality-subhead" aria-hidden="true">Myth:</p>
+          <p>Providers worry that activating email in the patient portal will lead to an email deluge that burdens their practice and impedes efficiency.</p>
+          <div class="mythreality-footer">
+            <p><a href="#reality-1" class="mythreality-toggle reality-control myth-1-toggle" aria-controls="reality-1">Learn the reality <span aria-hidden="true">&rarr;</span></a></p>
           </div>
         </div>
+        <div class="mythreality-content reality-content" role="tabpanel" aria-hidden="true" aria-labelledby="reality-1-control" id="reality-1">
+          <p class="mythreality-subhead" aria-hidden="true">Reality:</p>
+          <p>When practices integrate email into their workflow, providers often find communicating with patients more convenient and less time-consuming.</p>
+          <div class="mythreality-footer">
+            <p><a href="#myth-1" class="mythreality-toggle myth-control reality-1-toggle" aria-controls="myth-1"><span aria-hidden="true">&larr;</span> View the myth</a></p>
+          </div>
+        </div>
+      </div>
       </div>
 
       <h3 class="styleguide">Screenshot Slider</h3>
