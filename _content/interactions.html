@@ -142,20 +142,20 @@ next-url: "/chapter-2/"
       <div class="mythreality mythreality-right" id="mythreality-1">
         <ul class="mythreality-header" role="tablist">
           <li role="presentation">
-            <a href="#myth-1" class="myth-control" role="tab" aria-controls="myth-1">Myth</a>
+            <a href="#myth-1" id="myth-1-control" class="myth-control" role="tab" aria-controls="myth-1" aria-selected="true">Myth</a>
           </li>
           <li role="presentation">
-            <a href="#reality-1" class="reality-control" role="tab" aria-controls="reality-1">Reality</a>
+            <a href="#reality-1" id="reality-1-control" class="reality-control" role="tab" aria-controls="reality-1"  aria-selected="false">Reality</a>
           </li>
         </ul>
-        <div class="mythreality-content myth-content" role="tabpanel" aria-hidden="false" id="myth-1">
+        <div class="mythreality-content myth-content" role="tabpanel" aria-hidden="false" aria-labelledby="myth-1-control" id="myth-1">
           <p class="mythreality-subhead" aria-hidden="true">Myth:</p>
           <p>Providers worry that activating email in the patient portal will lead to an email deluge that burdens their practice and impedes efficiency.</p>
           <div class="mythreality-footer">
             <p><a href="#reality-1" class="mythreality-toggle reality-control myth-1-toggle" aria-controls="reality-1">Learn the reality <span aria-hidden="true">&rarr;</span></a></p>
           </div>
         </div>
-        <div class="mythreality-content reality-content" role="tabpanel" aria-hidden="true" id="reality-1">
+        <div class="mythreality-content reality-content" role="tabpanel" aria-hidden="true" aria-labelledby="reality-1-control" id="reality-1">
           <p class="mythreality-subhead" aria-hidden="true">Reality:</p>
           <p>When practices integrate email into their workflow, providers often find communicating with patients more convenient and less time-consuming.</p>
           <div class="mythreality-footer">
