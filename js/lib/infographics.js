@@ -7,6 +7,9 @@ $(".ig-nav").click(function (event) {
   $(".lightbox-container").removeClass("backdrop");
   $(".slide").removeClass("backdrop-on");
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
+  if($(this).hasClass("btn-start")) {
+    $(this).attr("aria-expanded", "true");
+  }
 
   var target = $(this).attr('href');
 
