@@ -1051,7 +1051,9 @@
       }
 
       .toggle {
-        margin-top: 1em;
+        background-color: $white;
+        border-radius: .25em;
+        padding: 1em .5em .5em;
 
         @include bp($medium-2) {
           position: absolute;
