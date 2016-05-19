@@ -14,8 +14,8 @@ $(".ig-nav").click(function (event) {
   var target = $(this).attr('href');
 
   if ($(target).hasClass("off")) {
-    $(".slide").addClass("off").removeClass("on").attr("aria-hidden", "true").attr("aria-live", "off");
-    $(target).removeClass("off").addClass("on").attr("aria-hidden", "false").attr("aria-live", "polite");
+    $(".slide").addClass("off").removeClass("on").attr("aria-hidden", "true");
+    $(target).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $(".slide-control").removeClass("current").attr("aria-selected", "false").attr("tabindex", "-1");
     $(target + "-control").addClass("current").attr("aria-selected", "true").attr("tabindex", "0");
   }
@@ -47,13 +47,13 @@ $("#ig-next").click(function (event) {
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").next('.slide').next('.slide').length) {
-    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true").attr("aria-live", "off");
-    $(nextItem).removeClass("off").addClass("on").attr("aria-hidden", "false").attr("aria-live", "polite");
+    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
+    $(nextItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-next").addClass("limit");
   }
   else {
-    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true").attr("aria-live", "off");
-    $(nextItem).removeClass("off").addClass("on").attr("aria-hidden", "false").attr("aria-live", "polite");
+    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
+    $(nextItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-next").removeClass("limit");
   }
 });
@@ -76,13 +76,13 @@ $("#ig-previous").click(function (event) {
   $(".lightbox-content").addClass("lightbox-off").attr("aria-hidden", "true");
 
   if(!$(".slide.on").prev('.slide').prev('.slide').length) {
-    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true").attr("aria-live", "off");
-    $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false").attr("aria-live", "polite");
+    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
+    $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-previous").addClass("limit");
   }
   else {
-    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true").attr("aria-live", "off");
-    $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false").attr("aria-live", "polite");
+    $(".slide.on").removeClass("on").addClass("off").attr("aria-hidden", "true");
+    $(prevItem).removeClass("off").addClass("on").attr("aria-hidden", "false");
     $("#ig-previous").removeClass("limit");
   }
 });
@@ -131,14 +131,14 @@ $('.infographic-container [role="tab"]').on('keydown', function(e) {
       // Hide panels
 
       $($container +' .slide')
-        .attr('aria-hidden', 'true').addClass('off').removeClass('on').removeClass('backdrop-on').attr("aria-live", "off");
+        .attr('aria-hidden', 'true').addClass('off').removeClass('on').removeClass('backdrop-on');
       $(".lightbox-content").addClass("lightbox-off").removeClass("lightbox-on").attr("aria-hidden", "true");
       $(".lightbox-container").removeClass("backdrop");
 
       // Show panel which corresponds to target
 
       $($($target).attr('href'))
-        .attr('aria-hidden', 'false').removeClass('off').addClass('on').attr("aria-live", "polite");
+        .attr('aria-hidden', 'false').removeClass('off').addClass('on');
   }
 });
 
