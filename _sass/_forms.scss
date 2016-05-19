@@ -6,6 +6,7 @@ fieldset {
 
 input,
 textarea {
+  border: 1px solid $gray;
   max-width: 100%; // to prevent overflow
 }
 
