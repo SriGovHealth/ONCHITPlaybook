@@ -4,6 +4,11 @@ fieldset {
   padding: .5em 1em;
 }
 
-input {
+input,
+textarea {
   max-width: 100%; // to prevent overflow
+}
+
+label {
+  font-weight: 700;
 }
