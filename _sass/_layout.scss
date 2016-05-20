@@ -49,12 +49,17 @@
     box-shadow: none;
   }
 
+  &.veryClosed {
+    display:none;
+  }
+
   &.closed {
 
     left: -$sidebar-width;
     transition: left .15s ease;
 
     @include bp($sidebar-switch-point) {
+      display:block;
       left: 0;
     }
   }
