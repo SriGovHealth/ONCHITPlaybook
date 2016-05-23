@@ -30,6 +30,14 @@ headers and v2.0.0 or above)
 * ```grunt a11y``` - scans all HTML files in the compiled _site directory against WCAG2A accessibility guidelines
 * ```grunt update``` - checks for version updates on all grunt dependencies
 
+## Deployment
+
+With access to ONC's BitBucket repo, run ```grunt buildfordeploy``` locally to build the site using the production-specific config file. This sets the base URL and base path to match healthit.gov.
+
+You can also work in this production-ready environment, locally, by running ```grunt servefordeploy```.
+
+In BitBucket, **legacy** is the master branch to create working branches from. We're putting PE Playbook work into the **pe-playbook** branch. Request a merge into **legacy-stg** for staging or **legacy** for production by emailing Ashish Pagar [mailto:ashish.pagar@dsfederal.com](ashish.pagar@dsfederal.com) and cc'ing Katrina, Jason, and Matt.
+
 ## Options
 
 ### Uglify HTML output
