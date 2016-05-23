@@ -22,6 +22,8 @@ headers and v2.0.0 or above)
 * ```grunt``` - runs JS check, minification, then serves and watches Jekyll site (including SCSS compiling) at [http://127.0.0.1:4000](http://127.0.0.1:4000)
 * ```grunt serve``` - same as running ```grunt```
 * ```grunt build``` - runs JS check, minification, image optimization, then builds Jekyll site (including SCSS compiling)
+* ```grunt buildfordeploy``` - runs JS check, minification, then builds Jekyll site (including SCSS compiling) using production-specific config file
+* ```grunt servefordeploy``` - runs JS check, minification, then serves Jekyll site (including SCSS compiling) using production-specific config file
 * ```grunt js``` - runs JS check, concatenates, and minifies JS
 * ```grunt images``` - runs image optimization on images in /img folder
 * ```grunt validate-html``` - runs HTML validation on all HTML files in the compiled _site directory

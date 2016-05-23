@@ -41,8 +41,14 @@ module.exports = function(grunt) {
       jekyllBuild: {
         command: 'bundle exec jekyll build'
       },
+      jekyllDeployBuild: {
+        command: 'bundle exec jekyll build --config _config-prod.yml'
+      },
       jekyllServe: {
         command: 'bundle exec jekyll serve --watch'
+      },
+      jekyllDeployServe: {
+        command: 'bundle exec jekyll serve --watch --config _config-prod.yml'
       }
     },
 
@@ -115,6 +121,14 @@ module.exports = function(grunt) {
 
   // grunt build - Run js, imagemin tasks, then build Jekyll site + SCSS compilation
   grunt.registerTask('build', ['js', 'images', 'shell:jekyllBuild']);
+
+  // grunt buildfordeploy - Run js, then build Jekyll site + SCSS compilation
+  // using production-specific config file
+  grunt.registerTask('buildfordeploy', ['js', 'shell:jekyllDeployBuild']);
+
+  // grunt servefordeploy - Run js, then serve Jekyll site + SCSS compilation
+  // using production-specific config file
+  grunt.registerTask('servefordeploy', ['js', 'shell:jekyllDeployServe']);
 
   // grunt js - Error checks, concatenation, minify JS
   grunt.registerTask('js', ['jshint', 'uglify']);
