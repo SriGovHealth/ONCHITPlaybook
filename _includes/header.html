@@ -7,10 +7,11 @@
   <div class="header">
     <div class="site-name"><a href="{{ "/" | prepend: site.baseurl }}"><img src="{{ "/img/site-logo.png" | prepend: site.baseurl }}" alt="ONC Patient Engagement Playbook"></a></div>
 
-    <form class="search" accept-charset="UTF-8" action="https://search.usa.gov/search" method="get">
+    <form class="search" accept-charset="UTF-8" action="http://search.usa.gov/search/docs" method="get">
       <label for="query" class="search-label">Search</label>
       <div class="search-block">
-        <input name="utf8" type="hidden" value="✓">
+        <input type="hidden" name="dc" value="3622">
+        <input name="utf8" type="hidden" value="&#x2713;">
         <input id="affiliate" name="affiliate" type="hidden" value="healthit.gov">
         <input autocomplete="off" class="search-text" id="query" name="query" type="text" /><button type="submit" class="search-button"><img src="{{ "/img/icon-search-white.png" | prepend: site.baseurl }}" alt="Search"></button>
       </div>
