@@ -730,6 +730,28 @@
   }
 }
 
+.btn-greenyellow {
+  background-color: $green;
+  border: 1px solid $black;
+  color: $black;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:hover {
+    background-color: $green;
+    border: 1px solid $white;
+    color: $white;
+  }
+
+  &:focus {
+    background-color: $yellow;
+    border: 1px solid $black;
+    color: $black;
+  }
+}
+
 .btn-dark {
   background-color: $black;
   border: 1px solid $white;
