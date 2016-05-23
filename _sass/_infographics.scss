@@ -10,6 +10,10 @@
   }
 }
 
+.infographic-poster {
+  display: none;
+}
+
 .infographic-container {
   @extend %clearfix;
   background-color: $white;

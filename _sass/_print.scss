@@ -259,6 +259,10 @@
     }
   }
 
+  .infographic-poster {
+    display: block;
+  }
+
   nav,
   .site-menu,
   .search,
@@ -268,7 +272,8 @@
   .footer,
   .btn-print,
   .sidebar,
-  .content-slider-control {
+  .content-slider-control,
+  .infographic-container {
     display: none !important;
   }
 }
