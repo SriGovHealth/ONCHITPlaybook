@@ -1353,6 +1353,10 @@ ul.ig-checklist {
     text-align: center;
     transition: all .5s;
 
+    @include bp($xlarge) {
+      line-height: .5;
+    }
+
     &:visited {
       color: $green;
     }
