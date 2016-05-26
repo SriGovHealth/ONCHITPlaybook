@@ -307,9 +307,14 @@
     color: $black;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     background-color: $white;
+    transition: all .3s;
+  }
+
+  &:focus {
+    background-color: $yellow-light;
+    color: $black;
     transition: all .3s;
   }
 
