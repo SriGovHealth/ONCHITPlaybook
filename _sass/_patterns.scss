@@ -109,6 +109,10 @@
     font-family: $font-header-alt;
     //text-align: center;
     padding-left: 1em;
+
+    @include bp-max($medium) {
+      padding-left: 0;
+    }
   }
 
   .quote-source {
@@ -158,6 +162,7 @@
 
     @include bp-max($medium) {
       margin-left: 0;
+      padding-left: 0;
     }
 
     p {
@@ -341,6 +346,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include bp-max($medium-2) {
+    background-position: 34% top;
+  }
 }
 
 .bg-chapter-2 {
@@ -348,6 +357,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include bp-max($medium-2) {
+    background-position: 60% top;
+  }
 }
 
 .bg-chapter-3 {
@@ -362,6 +375,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include bp-max($medium-2) {
+    background-position: 65% top;
+  }
 }
 
 .bg-references {
@@ -376,6 +393,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 1.5em;
   max-width: 25em;
   padding-top: 15em;
 
@@ -498,6 +516,7 @@
   background-color: $black;
   border-radius: .25em;
   color: $white;
+  margin-bottom: 1.5em;
   margin-top: 1em;
   padding: .5em 1em;
 
@@ -1191,6 +1210,11 @@
   .btn-chapter {
     font-size: 1.4em;
     padding: .75em 1.5em;
+
+    @include bp-max($medium) {
+      padding-left: .75em;
+      padding-right: .75em;
+    }
   }
 }
 
@@ -1227,6 +1251,11 @@
 .sharing-footer {
   padding: .5em;
   text-align: right;
+
+  @include bp-max($medium-2) {
+    text-align: left;
+    padding-left: 0;
+  }
 
   a {
     color: $black;
@@ -1461,6 +1490,7 @@ ul.checklist {
 .tech-block {
   border: 1px solid $gray;
   margin-bottom: 1.5em;
+  padding: 1em;
 }
 
 .tech {

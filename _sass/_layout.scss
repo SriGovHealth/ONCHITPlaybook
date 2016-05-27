@@ -339,6 +339,10 @@
       margin-right: 1em;
       text-decoration: none;
 
+      @include bp-max($small-2) {
+        display: block;
+      }
+
       &:visited {
         color: $black;
       }
