@@ -204,6 +204,19 @@
     font-size: 2em !important;
   }
 
+  .recap {
+    margin-top: 2.5em;
+
+    .recap-title {
+      display: block;
+      padding-top: .2em;
+    }
+
+    .section-number {
+      margin-top: 0;
+    }
+  }
+
   .content-slide {
     display: block !important;
     min-height: inherit !important;
@@ -273,7 +286,8 @@
   .btn-print,
   .sidebar,
   .content-slider-control,
-  .infographic-container {
+  .infographic-container,
+  .connect-footer {
     display: none !important;
   }
 }
