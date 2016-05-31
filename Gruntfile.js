@@ -28,7 +28,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         options : {
-          mangle : true,
+          mangle : false,
           compress : true
         },
         src: ['js/lib/jumplink.js','js/lib/outlink.js', 'js/vendor/jquery.js', 'js/lib/nav.js', 'js/vendor/sticky-kit.js', 'js/lib/onc.js', 'js/lib/infographics.js'],

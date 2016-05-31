@@ -24,21 +24,6 @@ $(document).scroll(function () {
       });
     }
 
-    /*else if (distance < -30 && currentHash === hash) {
-      if (typeof prevHash !== 'undefined') {
-        path = window.location.pathname + "#" + prevHash;
-
-        $('.subnav li a').each(function(){
-          var myHref = $(this).attr('href');
-          if (path === myHref) {
-            $('.has-subnav').removeClass("current");
-            $('.subnav li a').removeClass("now");
-            $(this).addClass("now");
-          }
-        });
-      }
-    }*/
-
     if (path.indexOf(topHash) > -1) {
       $('.has-subnav').each(function(){
         if ($(this).hasClass('active')) {
