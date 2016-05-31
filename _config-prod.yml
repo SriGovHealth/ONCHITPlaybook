@@ -20,12 +20,7 @@ timezone: America/New_York
 feed:
   path: feed.xml
 
-exclude: [node_modules, '.sass-cache', Gemfile, Gemfile.lock, README.md, package.json, Gruntfile.js]
-
-gems:
-- jekyll-feed
-- jekyll-redirect-from
-- jekyll-sitemap
+exclude: [node_modules, '.sass-cache', Gemfile, Gemfile.lock, README.md, package.json, Gruntfile.js, _content/styleguide.html, _content/styleguide-grammar.html]
 
 collections:
   content:
