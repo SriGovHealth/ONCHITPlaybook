@@ -419,8 +419,8 @@
     h2 {
       border-bottom: 3px solid $yellow;
       color: $white;
-      font-size: 2.5em;
-      max-width: 14em;
+      font-size: 2.75em;
+      max-width: 12em;
       margin: 2em auto;
       padding-bottom: .5em;
 
@@ -492,17 +492,17 @@
       span {
         color: $yellow;
         display: block;
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 700;
 
         @include bp-max($medium-2) {
-          font-size: 1.1em;
+          font-size: 1em;
         }
       }
 
       strong {
         display: block;
-        font-size: 2.5em;
+        font-size: 2.75em;
         padding-bottom: 0;
         padding-top: 0;
         text-transform: uppercase;
