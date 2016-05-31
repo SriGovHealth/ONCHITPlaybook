@@ -129,18 +129,18 @@ var $container = '.mythreality';
 
 // Change focus between tabs with arrow keys
 
-$('[role="tab"]').on('keydown', function(e) {
+$('[role="tab"]').on('keydown', function(event) {
 
   // define current, previous and next (possible) tabs
 
   var $original = $(this);
-  var $prev = $(this).parents('li').prev().children('[role="tab"]');
-  var $next = $(this).parents('li').next().children('[role="tab"]');
+  var $prev = $(this).parent('li').prev().children('[role="tab"]');
+  var $next = $(this).parent('li').next().children('[role="tab"]');
   var $target;
-
+  var containerId = $(this).parent().parent().parent().attr("id");
   // find the direction (prev or next)
 
-  switch (e.keyCode) {
+  switch (event.keyCode) {
     case 37:
       $target = $prev;
       break;
@@ -165,8 +165,7 @@ $('[role="tab"]').on('keydown', function(e) {
 
   // Hide panels
 
-  $($container +' [role="tabpanel"]')
-    .attr('aria-hidden', 'true');
+  $('#' + containerId +' [role="tabpanel"]').attr('aria-hidden', 'true');
 
   // Show panel which corresponds to target
 
@@ -177,13 +176,17 @@ $('[role="tab"]').on('keydown', function(e) {
 
 // Handle click on tab to show + focus tabpanel
 
-$('[role="tab"]').on('click', function(e) {
+$('[role="tab"]').on('click', function(event) {
 
-  e.preventDefault();
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  // get container id
+  var containerId = $(this).parent().parent().parent().attr("id");
 
   // remove focusability [sic] and aria-selected
 
-  $('[role="tab"]').attr({
+  $('#' + containerId + ' [role="tab"]').attr({
     'tabindex': '-1',
     'aria-selected' : false
   });
@@ -197,7 +200,7 @@ $('[role="tab"]').on('click', function(e) {
 
   // Hide panels
 
-  $($container +' [role="tabpanel"]').attr('aria-hidden', 'true');
+    $('#' + containerId +' [role="tabpanel"]').attr('aria-hidden', 'true');
 
   // show corresponding panel
 
@@ -208,15 +211,19 @@ $('[role="tab"]').on('click', function(e) {
 
 // Change focus between tabs with toggle-button
 
-$('.mythreality-toggle').on('keydown', function(e) {
+$('.mythreality-toggle').on('keydown', function(event) {
 
   if (event.keyCode === 13) {
 
-    e.preventDefault();
+    if (event.preventDefault) { event.preventDefault(); }
+    else { event.returnValue = false; } // IE
+
+    // get id of parent container
+    var containerId = $(this).parent().parent().parent().parent().attr("id");
 
     // remove focusability [sic] and aria-selected
 
-    $('[role="tab"]').attr({
+    $('#' + containerId + ' [role="tab"]').attr({
       'aria-selected' : false
     });
 
@@ -228,7 +235,7 @@ $('.mythreality-toggle').on('keydown', function(e) {
 
     // Hide panels
 
-    $($container +' [role="tabpanel"]').attr('aria-hidden', 'true');
+    $('#' + containerId + ' [role="tabpanel"]').attr('aria-hidden', 'true');
 
     // show corresponding panel
 
@@ -241,13 +248,17 @@ $('.mythreality-toggle').on('keydown', function(e) {
 
 // Handle click on tab to show + focus tabpanel
 
-$('.mythreality-toggle').on('click', function(e) {
+$('.mythreality-toggle').on('click', function(event) {
 
-  e.preventDefault();
+  if (event.preventDefault) { event.preventDefault(); }
+  else { event.returnValue = false; } // IE
+
+  // get id of parent container
+  var containerId = $(this).parent().parent().parent().parent().attr("id");
 
   // remove focusability [sic] and aria-selected
 
-  $('[role="tab"]').attr({
+  $('#' + containerId + ' [role="tab"]').attr({
     'aria-selected' : false
   });
 
@@ -259,7 +270,7 @@ $('.mythreality-toggle').on('click', function(e) {
 
   // Hide panels
 
-  $($container +' [role="tabpanel"]').attr('aria-hidden', 'true');
+  $('#' + containerId + ' [role="tabpanel"]').attr('aria-hidden', 'true');
 
   // show corresponding panel
 
