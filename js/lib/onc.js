@@ -171,7 +171,7 @@ $('[role="tab"]').on('keydown', function(e) {
   // Show panel which corresponds to target
 
   $('#' + $(document.activeElement).attr('href').substring(1))
-    .attr('aria-hidden', null);
+    .attr('aria-hidden', 'false');
 
 });
 
@@ -202,7 +202,7 @@ $('[role="tab"]').on('click', function(e) {
   // show corresponding panel
 
   $('#' + $(this).attr('href').substring(1))
-    .attr('aria-hidden', null);
+    .attr('aria-hidden', 'false');
 
 });
 
@@ -233,7 +233,7 @@ $('.mythreality-toggle').on('keydown', function(e) {
     // show corresponding panel
 
     $('#' + $(this).attr('href').substring(1))
-      .attr('aria-hidden', null);
+      .attr('aria-hidden', 'false');
 
   }
 
@@ -264,6 +264,6 @@ $('.mythreality-toggle').on('click', function(e) {
   // show corresponding panel
 
   $('#' + $(this).attr('href').substring(1))
-    .attr('aria-hidden', null);
+    .attr('aria-hidden', 'false');
 
 });
