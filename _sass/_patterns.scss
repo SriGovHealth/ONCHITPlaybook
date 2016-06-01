@@ -390,7 +390,7 @@
 
 .bg-feedback {
   background-image: url('../img/bg-feedback.jpg');
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   @include bp-max($medium-2) {
