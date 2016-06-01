@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           mangle : false,
           compress : true
         },
-        src: ['js/lib/jumplink.js','js/lib/outlink.js', 'js/vendor/jquery.js', 'js/lib/nav.js', 'js/vendor/sticky-kit.js', 'js/lib/onc.js', 'js/lib/infographics.js'],
+        src: ['js/lib/jumplink.js','js/lib/outlink.js', 'js/vendor/jquery.js', 'js/lib/nav.js', 'js/vendor/sticky-kit.js', 'js/vendor/jquery-scrollspy.js', 'js/lib/onc.js', 'js/lib/infographics.js'],
         dest: 'js/base.js'
       }
     },

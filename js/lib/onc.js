@@ -1,38 +1,49 @@
-// Scrolling URL update, nav state change
-var topHash = "#intro";
-var currentHash = "#top";
-$(document).scroll(function () {
-  $('.section-header').each(function () {
-    var top = window.pageYOffset;
-    var distance = top - $(this).offset().top;
-    var hash = $(this).attr('id');
-    var path = window.location.pathname + window.location.hash;
-    var prevHash = $(this).prevAll('.section-header:first').attr('id');
 
-    if (distance < 30 && distance > -30 && currentHash !== hash) {
-      history.replaceState({page: 1}, hash, "#" + hash);
-      currentHash = hash;
-      path = window.location.pathname + window.location.hash;
+// scroll spy
+$(function domReady($) {
+    // for each element with the class 'color'
+    $('.section-header').each(function eachElement() {
+        // cache the jQuery object
+        var $this = $(this);
+        var position = $this.position();
+        window.console.log(position);
+        window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
+        $this.scrollspy({
+            min: position.top,
+            max: position.top + $this.height(),
+            onEnter: function onEnter(element/*, position*/) {
+                var currentHash = "#top";
+                var hash = $this.attr('id');
+                console.log("current hash - " + hash);
+                var path = window.location.pathname + window.location.hash;
 
-      $('.subnav li a').each(function(){
-        var myHref = $(this).attr('href');
-        if (path === myHref) {
-          $('.has-subnav').removeClass("current");
-          $('.subnav li a').removeClass("now");
-          $(this).addClass("now");
-        }
-      });
-    }
+                if (currentHash !== hash) {
+                  history.replaceState({page: 1}, hash, "#" + hash);
+                  currentHash = hash;
+                  path = window.location.pathname + window.location.hash;
+                }
 
-    if (path.indexOf(topHash) > -1) {
-      $('.has-subnav').each(function(){
-        if ($(this).hasClass('active')) {
-          $(this).addClass('current');
-        }
-      });
-      $('.subnav li a').removeClass("now");
-    }
-  });
+                $('.subnav li a').each(function(){
+                  var myHref = $(this).attr('href');
+                  if (path === myHref) {
+                    $('.has-subnav').removeClass("current");
+                    $('.subnav li a').removeClass("now");
+                    $(this).addClass("now");
+                  }
+                });
+
+                if (hash === "intro") {
+                  $('.subnav li a').removeClass("now");
+                  $('.has-subnav.active').addClass("current");
+                }
+
+                window.console.log('Entering ' + element.id);
+            },
+            onLeave: function onLeave(element/*, position*/) {
+                window.console.log('Leaving ' + element.id);
+            }
+        });
+    });
 });
 
 
