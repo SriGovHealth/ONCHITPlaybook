@@ -10,7 +10,7 @@
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-accessibility": "^4.1.0",
-    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-uglify": "^1.0.1",
     "grunt-dev-update": "^2.0.0",

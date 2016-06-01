@@ -37,14 +37,3 @@ With access to ONC's BitBucket repo, run ```grunt buildfordeploy``` locally to b
 You can also work in this production-ready environment, locally, by running ```grunt servefordeploy```.
 
 In BitBucket, **legacy** is the master branch to create working branches from. We're putting PE Playbook work into the **pe-playbook** branch. Request a merge into **legacy-stg** for staging or **legacy** for production by emailing Ashish Pagar [ashish.pagar@dsfederal.com](mailto:ashish.pagar@dsfederal.com) and cc'ing Katrina, Jason, and Matt.
-
-## Options
-
-### Uglify HTML output
-
-Calling the compress.html layout from the default.htm layout file will remove all whitespace from compiled HTML (via [http://jch.penibelst.de/](http://jch.penibelst.de/)). To use compress.html add the following to the top of _includes/default.html:
-
-    ---
-    layout: compress
-    ---
-
