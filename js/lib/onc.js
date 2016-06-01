@@ -6,15 +6,12 @@ $(function domReady($) {
         // cache the jQuery object
         var $this = $(this);
         var position = $this.position();
-        window.console.log(position);
-        window.console.log('min: ' + position.top + ' / max: ' + window.parseInt(position.top + $this.height(), 10));
         $this.scrollspy({
             min: position.top,
             max: position.top + $this.height(),
             onEnter: function onEnter(element/*, position*/) {
                 var currentHash = "#top";
                 var hash = $this.attr('id');
-                console.log("current hash - " + hash);
                 var path = window.location.pathname + window.location.hash;
 
                 if (currentHash !== hash) {
@@ -36,11 +33,8 @@ $(function domReady($) {
                   $('.subnav li a').removeClass("now");
                   $('.has-subnav.active').addClass("current");
                 }
-
-                window.console.log('Entering ' + element.id);
             },
             onLeave: function onLeave(element/*, position*/) {
-                window.console.log('Leaving ' + element.id);
             }
         });
     });
