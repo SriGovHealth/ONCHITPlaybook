@@ -13,11 +13,14 @@ $(function domReady($) {
                 var currentHash = "#top";
                 var hash = $this.attr('id');
                 var path = window.location.pathname + window.location.hash;
-
-                if (currentHash !== hash) {
-                  history.replaceState({page: 1}, hash, "#" + hash);
-                  currentHash = hash;
-                  path = window.location.pathname + window.location.hash;
+                console.log(path);
+                if (window.location.hash !== hash) {
+                  if (hash.indexOf("section-") > -1 || hash.indexOf("intro") > -1) {
+                    currentHash = hash;
+                    console.log(currentHash);
+                    history.replaceState({page: 1}, hash, "#" + hash);
+                    path = window.location.pathname + window.location.hash;
+                  }
                 }
 
                 $('.subnav li a').each(function(){
