@@ -21,4 +21,9 @@
   {% if page.og-title %}{% if page.og-title != "" %}<meta property="og:title" content="{{ page.og-title }}">{% endif %}{% endif %}
   {% if page.og-description %}{% if page.og-description != "" %}<meta property="og:description" content="{{ page.og-description }}">{% endif %}{% endif %}
   {% if page.og-poster %}{% if page.og-poster != "" %}<meta property="og:image" content="{{ page.og-poster }}">{% endif %}{% endif %}
+  {% if page.og-url %}{% if page.og-url != "" %}<meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@ONC_HealthIT">{% endif %}{% endif %}
+  {% if page.og-title %}{% if page.og-title != "" %}<meta property="twitter:title" content="{{ page.og-title }}">{% endif %}{% endif %}
+  {% if page.og-description %}{% if page.og-description != "" %}<meta property="twitter:description" content="{{ page.og-description }}">{% endif %}{% endif %}
+  {% if page.og-poster %}{% if page.og-poster != "" %}<meta property="twitter:image" content="{{ page.og-poster }}">{% endif %}{% endif %}
 </head>
