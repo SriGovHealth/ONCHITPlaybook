@@ -388,6 +388,16 @@
   background-size: cover;
 }
 
+.bg-feedback {
+  background-image: url('../img/bg-feedback.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include bp-max($medium-2) {
+    background-position: 98% top;
+  }
+}
+
 .callout {
   background-image: url('../img/bg-callout-1.jpg');
   background-position: top center;
