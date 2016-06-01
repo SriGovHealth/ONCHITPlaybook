@@ -1,46 +1,37 @@
 
 // scroll spy
 $(function domReady($) {
-    // for each element with the class 'color'
-    $('.section-header').each(function eachElement() {
-        // cache the jQuery object
-        var $this = $(this);
-        var position = $this.position();
-        $this.scrollspy({
-            min: position.top,
-            max: position.top + $this.height(),
-            onEnter: function onEnter(element/*, position*/) {
-                var currentHash = "#top";
-                var hash = $this.attr('id');
-                var path = window.location.pathname + window.location.hash;
-                console.log(path);
-                if (window.location.hash !== hash) {
-                  if (hash.indexOf("section-") > -1 || hash.indexOf("intro") > -1) {
-                    currentHash = hash;
-                    console.log(currentHash);
-                    history.replaceState({page: 1}, hash, "#" + hash);
-                    path = window.location.pathname + window.location.hash;
-                  }
-                }
+  // for each element with the class 'color'
+  $('.section-header').each(function eachElement() {
+    // cache the jQuery object
+    var $this = $(this);
+    var position = $this.position();
+    $this.scrollspy({
+      min: position.top,
+      max: position.top + $this.height(),
+      onEnter: function onEnter(element/*, position*/) {
+        // Change nav highlight on scroll
+        var hash = $this.attr('id');
+        var matchHash = window.location.pathname + "#" + hash;
 
-                $('.subnav li a').each(function(){
-                  var myHref = $(this).attr('href');
-                  if (path === myHref) {
-                    $('.has-subnav').removeClass("current");
-                    $('.subnav li a').removeClass("now");
-                    $(this).addClass("now");
-                  }
-                });
-
-                if (hash === "intro") {
-                  $('.subnav li a').removeClass("now");
-                  $('.has-subnav.active').addClass("current");
-                }
-            },
-            onLeave: function onLeave(element/*, position*/) {
-            }
+        $('.subnav li a').each(function(){
+          var myHref = $(this).attr('href');
+          if (matchHash === myHref) {
+            $('.has-subnav').removeClass("current");
+            $('.subnav li a').removeClass("now");
+            $(this).addClass("now");
+          }
         });
+
+        if (hash === "intro") {
+          $('.subnav li a').removeClass("now");
+          $('.has-subnav.active').addClass("current");
+        }
+      },
+      onLeave: function onLeave(element/*, position*/) {
+      }
     });
+  });
 });
 
 
